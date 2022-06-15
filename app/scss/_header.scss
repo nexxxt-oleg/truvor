@@ -1,0 +1,130 @@
+body {
+  font-family: 'Franklin Gothic Book';
+}
+.truvor {
+  position: relative;
+  overflow: hidden;
+}
+.ico {
+  color: #666;
+}
+
+.ico2 {
+  color: #202123;
+}
+
+.truvor__header {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #E4E6EA;
+  &__row {
+    width: 100%;
+  }
+  &__dropdown-menu {
+
+    position: static;
+  }
+  &__row-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+  &__nav-page {
+
+    li   {
+      padding: 0 15px;
+      a {
+        font-size: 16px;
+        line-height: 24px;
+        color: #202123;
+        text-decoration: none;
+      }
+    }
+  }
+  &__callback {
+    margin-right: 40px;
+  }
+  &__phone {
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #666;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  &__logo {
+    margin-right: 20px;
+  }
+}
+.truvor__header__right {
+  margin-right: 30px;
+  li {
+    margin-right: 20px;
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      text-decoration: none;
+      .count {
+        background: #EF7C00;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+        justify-content: center;
+        text-align: center;
+        top: -10px;
+        left: 10px;
+        @include medium_fonts;
+      }
+    }
+  }
+
+}
+.truvor__header__search-mob {
+  display: none;
+}
+.btn-border {
+  background: transparent;
+  height: 44px;
+  border: 1px solid #666666;
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 16px;
+  line-height: 140%;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.border-ico {
+  background: #FFFFFF;
+  border: 1px solid #666666;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ico-burger {
+  margin-right: 10px;
+  svg {
+    display: block;
+  }
+}
+.truvor__header__dropdown-menu__label {
+  display: none;
+}

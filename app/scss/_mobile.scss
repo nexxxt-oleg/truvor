@@ -1,0 +1,93 @@
+@media screen and (max-width: 1720px) {
+  .truvor__header__right {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1560px) {
+  .truvor__header__nav-page,
+  .truvor__header__dropdown-menu__xxl-label {
+    display: none !important;
+  }
+  .truvor__header__dropdown-menu__label {
+    display: block;
+  }
+  .truvor__header__row-nav {
+    justify-content: flex-start;
+  }
+  .truvor__header__dropdown-menu {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .truvor__header__dropdown-menu {
+    margin-left: 0;
+    padding-right: 30px;
+  }
+  .truvor__header__right {
+     margin-right: 0;
+   }
+  .truvor__header__phone,
+  .truvor__header__callback {
+    margin-right: 20px;
+  }
+  .truvor__header__right li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 940px) {
+  .hidden-mob {
+    display: none !important;
+  }
+  .truvor__header__row-nav {
+    flex-grow: 0;
+    order: 1;
+  }
+  .truvor__header__search-mob {
+    display: block;
+    order: 2;
+  }
+  .truvor__header__logo {
+    margin-left: auto;
+    margin-right: auto;
+    order: 3;
+  }
+  .truvor__header__phone {
+    order: 4;
+  }
+  .truvor__header__right {
+    order: 5;
+  }
+  .ico-burger {
+    margin-right: 0;
+  }
+  .truvor__header__phone .border-ico {
+    margin-right: 0;
+    width: 34px;
+    height: 34px
+  }
+  .truvor__header__dropdown-toggle {
+    padding: 5px;
+    width: 34px;
+    height: 34px
+  }
+  .truvor__header__dropdown-menu  {
+    padding-right: 20px;
+  }
+  .truvor__header__logo img {
+    width: 125px;
+    height: auto;
+  }
+  .truvor__header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .truvor__header__dropdown-menu  {
+    padding-right: 10px;
+  }
+  .truvor__header__phone {
+    margin-right: 10px;
+  }
+}

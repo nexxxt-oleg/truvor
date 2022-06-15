@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Franklin Gothic Book';
+  src: local('Franklin Gothic Book'), local('Franklin-Gothic-Book'),
+  url('../fonts/franklin_gothic_book.woff') format('woff'),
+  url('../fonts/franklin_gothic_book.woff2') format('woff2'),
+  url('../fonts/franklin_gothic_book.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Demi';
+  src: local('Franklin Gothic Demi'), local('Franklin-Gothic-Demi'),
+  url('../fonts/franklin_gothic_demi.woff2') format('woff2'),
+  url('../fonts/franklin_gothic_demi.woff') format('woff'),
+  url('../fonts/franklin_gothic_demi.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Medium';
+  src: local('Franklin Gothic Medium'), local('FranklinGothic-Med'),
+  url('../fonts/franklin_gothic_medium.woff2') format('woff2'),
+  url('../fonts/franklin_gothic_medium.woff') format('woff'),
+  url('../fonts/franklin_gothic_medium.ttf') format('truetype');
+  font-display: swap;
+}
+
