@@ -31,7 +31,7 @@
                     <div class="dropdown truvor__header__dropdown-menu">
                         <button
                                 class="truvor__header__dropdown-toggle btn-border"
-                                data-bs-toggle="dropdown"
+                                data-bs-toggle="collapse" data-bs-target="#menu"
                         >
                             <span class="ico-burger">
                                  <svg class="ico" width="17" height="14">
@@ -41,9 +41,7 @@
                             <span class="truvor__header__dropdown-menu__xxl-label">Каталог</span>
                             <span class="truvor__header__dropdown-menu__label hidden-mob">Меню</span>
                         </button>
-                        <div class="dropdown-menu">
-                            1111
-                        </div>
+
                     </div>
                     <div class="truvor__header__search-mob">
                         <a href="" class="truvor__header__search">
@@ -52,7 +50,7 @@
                             </svg>
                         </a>
                     </div>
-                    <ul class="nav align-items-center truvor__header__nav-page d-none d-xxl-flex d-xl-flex">
+                    <ul class="nav align-items-center truvor__header__nav-page">
                         <li><a href="">Как оформить заказ</a></li>
                         <li><a href="">Оплата и доставка</a></li>
                         <li><a href="">Возврат</a></li>
@@ -103,13 +101,94 @@
                 </ul>
             </div>
         </div>
+        <div class="truvor__header__menu accordion-collapse collapse" id="menu">
+            <div class="truvor__header__dropdown">
+                <div class="truvor__header__dropdown__wrap">
+                    <div class="d-flex truvor__header__dropdown__row-top">
+                        <div class="truvor__header__dropdown__col1 accordion">
+                            <div class="accordion-item">
+                                <a href="" class="accordion-header" data-bs-toggle="collapse" data-bs-target="#nav1">МУЖСКАЯ ОДЕЖДА</a>
+                                <div class="accordion-collapse collapse show" id="nav1">
+                                    <ul class="nav flex-column truvor__header__dropdown__menu">
+                                        <li><a href="">Костюмы</a></li>
+                                        <li><a href="">Пиджаки</a></li>
+                                        <li><a href="">Брюки</a></li>
+                                        <li><a href="">Верхняя одежда</a></li>
+                                        <li><a href="">Жилеты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="truvor__header__dropdown__col2">
+                            <div class="truvor__header__banner">
+                                <img src="images/dist/banner-nav.jpg" width="350" height="200" alt="">
+                                <div class="truvor__header__banner__inner">
+                                    <span class="truvor__header__banner__title">СКИДКИ ДО 50%</span>
+                                    НА 36 МОДЕЛЕЙ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="truvor__header__dropdown__col3 accordion">
+                            <div class="accordion-item">
+                                <a href="" class="accordion-header collapsed" data-bs-toggle="collapse" data-bs-target="#nav2">ДЕТСКАЯ ОДЕЖДА ДЛЯ МАЛЬЧИКОВ</a>
+                                <div class="accordion-collapse collapse" id="nav2">
+                                    <ul class="nav flex-column truvor__header__dropdown__menu">
+                                        <li><a href="">Костюмы</a></li>
+                                        <li><a href="">Пиджаки</a></li>
+                                        <li><a href="">Брюки</a></li>
+                                        <li><a href="">Верхняя одежда</a></li>
+                                        <li><a href="">Жилеты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a href="" class="accordion-header collapsed" data-bs-toggle="collapse" data-bs-target="#nav3">ДЕТСКАЯ ОДЕЖДА ДЛЯ ДЕВОЧЕК</a>
+                                <div class="accordion-collapse collapse" id="nav3">
+                                    <ul class="nav flex-column truvor__header__dropdown__menu">
+                                        <li><a href="">Костюмы</a></li>
+                                        <li><a href="">Пиджаки</a></li>
+                                        <li><a href="">Брюки</a></li>
+                                        <li><a href="">Верхняя одежда</a></li>
+                                        <li><a href="">Жилеты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav align-items-center truvor__header__dropdown__footer">
+                        <li><a href="">Как оформить заказ</a></li>
+                        <li><a href="">Оплата и доставка</a></li>
+                        <li><a href="">Возврат</a></li>
+                        <li><a href="">Как снять мерки</a></li>
+                    </ul>
+                    <div class="truvor__header__dropdown__mob-bottom">
+                        <a href="tel:88005505258" class="truvor__header__phone">
+                            <span class="border-ico mr-5">
+                                <svg class="ico" width="18" height="18">
+                                    <use xlink:href="#svg-tel"></use>
+                                </svg>
+                            </span>
+                            <span>8 800 550-52-58</span>
+                        </a>
+                        <button class="btn-border">Заказать обратный звонок</button>
+                        <a href="" class="truvor__lk-link">Войти в личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
 
 
 
-<footer class="atb__footer">
+<footer class="truvor__footer">
+    <div class="container-fluid">
+        <div class="truvor__footer__top">
+            <a href="/" class="truvor__footer__logo">
 
+            </a>
+        </div>
+    </div>
 </footer>
 
 
