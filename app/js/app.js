@@ -9,12 +9,12 @@ import './lazyload.min.js'
 //import './imask.min.js'
 
 
-/*
+
 
 var lazyLoadInstance = new LazyLoad({
     // Your custom settings go here
 });
-
+/*
 var scroll = new SmoothScroll('.js-scroll', {
     speed: 300
 });*/
@@ -37,36 +37,43 @@ function setEqualHeight(elements) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('homeSlider')) {
+    if (document.getElementById('sliderCarusel')) {
 
-        new Swiper('#homeSlider', {
-
-            //loop: true,
+        new Swiper('#sliderCarusel', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
             lazy: {
                 loadPrevNext: true,
             },
-            // If we need pagination
-            pagination: {
-                el: '#homeSliderPag',
-                clickable: true,
-            },
-            effect: 'creative',
-            creativeEffect: {
-                prev: {
-                    // will set `translateZ(-400px)` on previous slides
-                    translate: [0, 0, -400],
-                },
-                next: {
-                    // will set `translateX(100%)` on next slides
-                    translate: ['100%', 0, 0],
-                },
-            },
-            parallax: true,
+            pagination: false,
             navigation: {
-                nextEl: '#homeSliderNext',
-                prevEl: '#homeSliderPrev',
+                nextEl: '#caruselNext',
+                prevEl: '#caruselPrev',
             },
+            breakpoints: {
 
+                300: {
+                    slidesPerView: 1,
+                    pagination: {
+                        el: '#sliderCarusel .pagination',
+                        clickable: true,
+                    },
+                },
+                660: {
+                    slidesPerView: 2,
+                    pagination:false
+                },
+                960: {
+                    slidesPerView: 2,
+                    pagination:false
+                },
+
+                1280: {
+                    slidesPerView: 3,
+                    pagination: false
+                }
+            }
 
         });
     }

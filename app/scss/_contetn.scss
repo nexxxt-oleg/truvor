@@ -1,0 +1,118 @@
+.truvor__full-banner {
+  display: block;
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+  }
+  &__inner {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    .container-fluid {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      margin-left: 280px;
+    }
+  }
+  &__title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  &__text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 34px;
+    padding-bottom: 15px;
+  }
+  &__footer-link {
+    padding-top: 35px;
+    .truvor__btn-blue {
+      width: 234px;
+    }
+  }
+}
+.truvor__btn-blue {
+  background: #09214D;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.truvor__carusel-catalog {
+  position: relative;
+  background-color: #fff;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  margin-bottom: 20px;
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(-180deg, #F2F3F4, #F2F3F4), #FFFFFF;
+
+    text-decoration: none;
+    &__title {
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      height: 60px;
+      margin-top: -30px;
+      font-size: 34px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0px 0px 30px #000000;
+    }
+  }
+  &__nav {
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: -24px;
+    top: 50%;
+    &.button-next {
+      right: 15px;
+    }
+    &.button-prev {
+      left: 15px;
+    }
+  }
+
+
+}

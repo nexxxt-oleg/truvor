@@ -8,6 +8,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.row {
+  --bs-gutter-x: 20px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.row > * {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
 .ico {
   color: #666;
 }
@@ -227,4 +238,10 @@ body {
 }
 .truvor__header__dropdown__mob-bottom {
   display: none;
+}
+.container-fluid {
+  max-width: 1760px;
+}
+.truvor__header .container-fluid {
+  max-width: 100%;
 }
