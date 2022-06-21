@@ -51,12 +51,16 @@
     color: #202123;
   }
 }
+.mobail-collapsed {
+  display: none;
+}
 .truvor__footer__nav {
   padding-bottom: 50px;
   padding-right: 30px;
   &__caption {
     display: flex;
     padding-bottom: 20px;
+    position: relative;
     a {
       display: block;
       font-size: 18px;
