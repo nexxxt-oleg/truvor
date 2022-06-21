@@ -73,8 +73,14 @@
     align-items: flex-end;
     justify-content: center;
     background: linear-gradient(-180deg, #F2F3F4, #F2F3F4), #FFFFFF;
-
+    height: 820px;
     text-decoration: none;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
     &__title {
       position: absolute;
       z-index: 10;
@@ -113,6 +119,98 @@
       left: 15px;
     }
   }
+  .pagination {
+    display: none;
+  }
+}
+.fpad20 {
+  padding-bottom: 20px;
+}
+.truvor__brends {
+  padding-top: 100px;
+  background: #F2F3F4;
+  padding-bottom: 30px;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 176px;
+    background-color: #fff;
+    padding-top: 15px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #fff;
+    &:hover {
+      border: 1px solid #AFAFAF;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+.tpad30 {
+  padding-top: 30px;
+}
+.w29 {
+  width: 290px;
+}
 
-
+.truvor__collection {
+  border-bottom: 1px solid #A5A5A5;
+  &__img {
+    display: block;
+  }
+  &__desc {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #202123;
+  margin-bottom: 40px;
+}
+p {
+  font-size: 20px;
+  line-height: 180%;
+  color: #5A5D62;
+  margin-bottom: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.fpad30 {
+  padding-bottom: 30px;
+}
+.tpad50 {
+  padding-top: 50px;
+}
+.fpad50 {
+  padding-bottom: 50px;
+}
+.truvor__benefit {
+  padding: 0 50px;
+}
+.truvor__benefit__item {
+  text-align: center;
+  &__ico {
+    height: 93px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: #6F6F6F;
+  }
 }

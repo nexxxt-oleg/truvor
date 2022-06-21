@@ -46,7 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
             lazy: {
                 loadPrevNext: true,
             },
-            pagination: false,
+            pagination: {
+                el: '#pagination',
+                clickable: true,
+            },
             navigation: {
                 nextEl: '#caruselNext',
                 prevEl: '#caruselPrev',
@@ -55,23 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 300: {
                     slidesPerView: 1,
-                    pagination: {
-                        el: '#sliderCarusel .pagination',
-                        clickable: true,
-                    },
                 },
                 660: {
                     slidesPerView: 2,
-                    pagination:false
+
                 },
                 960: {
                     slidesPerView: 2,
-                    pagination:false
                 },
 
                 1280: {
                     slidesPerView: 3,
-                    pagination: false
                 }
             }
 

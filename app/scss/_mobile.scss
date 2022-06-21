@@ -43,7 +43,28 @@
     margin-left: 70px;
   }
 }
-
+@media screen and (max-width: 1399px) {
+  .truvor__footer__col-right {
+    display: flex;
+    .truvor__footer__contact-info {
+      width: 50%;
+    }
+    .truvor__footer__contact-info {
+      width: 50%;
+      padding-left: 10px;
+    }
+  }
+  .truvor__full-banner__inner__text {
+    margin-left: 30px;
+  }
+  .truvor__full-banner__title {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+  .truvor__full-banner__footer-link {
+    padding-top: 15px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .truvor__header__dropdown-menu {
     margin-left: 0;
@@ -65,6 +86,25 @@
   .truvor__footer__nav {
     padding-right: 0;
   }
+  .truvor__carusel-catalog__item {
+    height: 610px;
+  }
+  .truvor__carusel-catalog {
+    padding: 80px 40px;
+  }
+  .truvor__carusel-catalog__nav.button-prev {
+    left: 0;
+  }
+  .truvor__carusel-catalog__nav.button-next {
+    right: 0;
+  }
+  .truvor__brends {
+    padding-top: 60px;
+  }
+  .truvor__collection {
+    border-bottom: none;
+  }
+
 }
 @media screen and (max-width: 940px) {
   .hidden-mob {
@@ -148,6 +188,9 @@
   .truvor__footer__nav__submenu.collapse:not(.show) {
     display: none !important;
   }
+  .truvor__carusel-catalog__item {
+    height: 520px;
+  }
   .truvor__footer__nav__caption {
     padding-bottom: 10px;
   }
@@ -166,6 +209,79 @@
   }
   .truvor__footer__logo {
     width: 180px;
+  }
+  .truvor__footer__col-right {
+    display: block;
+    .truvor__footer__contact-info {
+      width: 100%;
+    }
+    .truvor__footer__contact-info {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  .truvor__footer__contact-info {
+    padding-bottom: 30px;
+  }
+  .truvor__footer__soc {
+    width: 100%;
+    li {
+      width: 72px;
+    }
+  }
+  .truvor__collection {
+    margin: -30px -15px 0 -15px;
+    border-bottom: none;
+    &__img {
+      margin: 0 auto 50px;
+    }
+    &__desc {
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
+  .h2, h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .truvor__full-banner__inner {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    .container-fluid {
+      height: auto;
+      padding-top: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    &__text {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  .truvor__full-banner__title {
+    font-size: 26px;
+    line-height: 30px;
+    color: #000;
+    padding-bottom: 5px;
+  }
+  .truvor__carusel-catalog {
+    padding: 10px 0;
+  }
+  .truvor__full-banner__text {
+    color: #000;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .fpad50 {
+    padding-bottom: 30px;
+  }
+  .tpad50 {
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -234,6 +350,24 @@
     max-height: calc(100vh - 55px);
     overflow-x: hidden;
     overflow-y: auto;
+  }
+  .truvor__benefit {
+    padding: 0;
+  }
+  .truvor__carusel-catalog .pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    .swiper-pagination-bullet {
+      margin: 5px 2px 0;
+      width: 50px;
+      height: 4px;
+      background: #DEDFE0;
+      &-active {
+        background: #09214D;
+      }
+    }
   }
 }
 @media screen and (max-width: 440px) {
