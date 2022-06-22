@@ -11,9 +11,7 @@ import './lazyload.min.js'
 
 
 
-var lazyLoadInstance = new LazyLoad({
-    // Your custom settings go here
-});
+
 /*
 var scroll = new SmoothScroll('.js-scroll', {
     speed: 300
@@ -37,6 +35,12 @@ function setEqualHeight(elements) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+    });
+
+
     if (document.getElementById('sliderCarusel')) {
 
         new Swiper('#sliderCarusel', {

@@ -56,6 +56,10 @@
   }
   .truvor__full-banner__inner__text {
     margin-left: 30px;
+    &--right {
+      margin-left: auto;
+      width: 50%;
+    }
   }
   .truvor__full-banner__title {
     font-size: 40px;
@@ -64,6 +68,13 @@
   .truvor__full-banner__footer-link {
     padding-top: 15px;
   }
+  .truvor__category-list__item {
+    height: 320px;
+    &--big-pc {
+      height: 100%;
+    }
+  }
+
 }
 @media screen and (max-width: 1199px) {
   .truvor__header__dropdown-menu {
@@ -104,7 +115,19 @@
   .truvor__collection {
     border-bottom: none;
   }
-
+  .truvor__category-list__item {
+    height: 50vw;
+    &--big-pc {
+      grid-row: span 1;
+    }
+  }
+  .truvor__category-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .truvor__category-list__item--mob-footer {
+    order: 10;
+    grid-column: span 2;
+  }
 }
 @media screen and (max-width: 940px) {
   .hidden-mob {
@@ -262,6 +285,20 @@
       margin-left: 0;
       width: 100%;
     }
+    &--mob-v2 {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      .truvor__full-banner__inner__text {
+        padding-left: 30px;
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+        .truvor__full-banner__title {
+          color: #fff;
+        }
+      }
+    }
   }
   .truvor__full-banner__title {
     font-size: 26px;
@@ -400,6 +437,45 @@
       &-active {
         background: #09214D;
       }
+    }
+  }
+  .truvor__category-list {
+    display: flex !important;
+    flex-wrap: wrap;
+    grid-gap: 0;
+    &__item {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 250px;
+      padding-top: 0;
+    }
+  }
+  .truvor__category-list__item__wrap__img {
+    picture {
+      height: 100% !important;
+      display: block;
+    }
+    img {
+      height: 100% !important;
+      width: auto;
+      object-fit: contain;
+      object-position: 100% 100%;
+    }
+  }
+  .truvor__category-list__item__title {
+    padding: 30px;
+    h3 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+  }
+  .truvor__page__header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h1 {
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 }
