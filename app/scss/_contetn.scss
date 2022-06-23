@@ -299,3 +299,98 @@ img {
     }
   }
 }
+.truvor__brends-slider {
+  max-width: 1180px;
+  margin: 0 auto 30px;
+  position: relative;
+  .truvor__brends__item {
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #DEDFE0;
+    background-color: #fff;
+    &.active {
+      border: 1px solid #09214D;
+    }
+  }
+}
+.truvor__page__cat-desc {
+  max-width: 940px;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+}
+.truvor__page__sub-menu-catalog {
+  border-bottom: 1px solid #B8B9BA;
+  margin-bottom: 40px;
+  .swiper {
+    margin-bottom: -1px;
+  }
+  .swiper-slide {
+    width: auto;
+    .sub-menu-catalog-item {
+      display: block;
+      white-space: nowrap;
+      height: 34px;
+      line-height: 24px;
+      position: relative;
+      padding: 0 5px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #77797E;
+      transition: all 0.3s ease-in-out;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: #09214D;
+        transition: all 0.3s ease-in-out;
+        width: 0;
+      }
+      &.active,
+      &:hover {
+        color: #09214D;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
+.truvor__filter-pc {
+  flex-grow: 1;
+  li {
+    padding: 0 20px 20px 0;
+  }
+  &__item {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 10px 30px;
+    height: 48px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #B8B9BA;
+    color: #202123;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    svg {
+      margin-right: 10px;
+    }
+    &.active {
+      color: #09214D;
+      border-color: #09214D;
+      svg {
+        path {
+          stroke: #09214D !important;
+        }
+      }
+    }
+  }
+}

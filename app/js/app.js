@@ -79,6 +79,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (document.getElementById('brendSlider')) {
+
+        new Swiper('#brendSlider', {
+            slidesPerView: 6,
+            spaceBetween: 20,
+            lazy: {
+                loadPrevNext: true,
+            },
+
+
+            breakpoints: {
+
+                300: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 10,
+                },
+                660: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                960: {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
+                },
+
+                1280: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                }
+            }
+
+        });
+    }
+
+    if (document.getElementById('sliderSubCatalog')) {
+        var items = document.getElementById('sliderSubCatalog').getElementsByClassName('sub-menu-catalog-item');
+
+        for (var i = 0; i < items.length; ++i) {
+            items[i].parentNode.style.width = items[i].clientWidth + 'px';
+        }
+
+        new Swiper('#sliderSubCatalog', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+        });
+    }
+
 });
 
 
