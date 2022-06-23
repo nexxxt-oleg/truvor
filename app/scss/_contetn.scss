@@ -383,7 +383,8 @@ img {
     svg {
       margin-right: 10px;
     }
-    &.active {
+    &.active,
+    &:hover{
       color: #09214D;
       border-color: #09214D;
       svg {
@@ -393,4 +394,169 @@ img {
       }
     }
   }
+}
+.truvor__sort-btn {
+  height: 48px;
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6H4' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 12H8' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 18H12' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+  }
+}
+.dropdown-menu {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 0;
+  border: 1px solid #F2F3F4;
+  box-shadow: 0px 5px 20px rgba(9, 33, 77, 0.1);
+  padding: 0;
+  a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202123;
+  }
+}
+.fpad10 {
+  padding-bottom: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.fpad50 {
+  padding-bottom: 50px;
+}
+.truvor__products__item {
+  position: relative;
+  &__images {
+    background-color: #F2F3F4;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    user-select: none;
+  }
+  &__label {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 8px 17px;
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 120%;
+    color: #202123;
+    white-space: nowrap;
+  }
+}
+.truvor__products__favorite {
+  position: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  display: block;
+  color: transparent;
+  &.active {
+    svg {
+      path {
+        fill: #09214D !important;
+      }
+    }
+  }
+  &:not(.active) {
+    svg {
+      path {
+        stroke: #202123;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    }
+  }
+}
+.slider_products__pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5px;
+  .swiper-pagination-bullet {
+    margin: 0 3px 6px;
+    width: calc(20% - 10px);
+    height: 4px;
+    background: #DEDFE0;
+    &-active {
+      background: #09214D !important;
+    }
+  }
+}
+.truvor__products__item__footer {
+  text-decoration: none;
+  display: block;
+  padding: 18px 0 0;
+  h2 {
+    margin: 0 auto 15px;
+    max-width: 400px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #09214D;
+  }
+}
+.truvor__products__item__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  .old-price {
+    position: relative;
+    margin: 0 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #77797E;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 13px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #77797E;
+    }
+  }
+  .price {
+    margin: 0 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #09214D;
+  }
+}
+.truvor__products__item__props {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 5px;
+  color: #77797E;
 }

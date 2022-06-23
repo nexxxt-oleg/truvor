@@ -126,6 +126,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (document.getElementsByClassName("slider_products").length) {
+        let swiperCatalog = new Swiper('.slider_products', {
+            pagination: {
+                el: '.slider_products__pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+            },
+            //loop: true,
+            //simulateTouch: false,
+
+        });
+    }
+
 });
 
 
