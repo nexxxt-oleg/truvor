@@ -1,6 +1,7 @@
 .truvor__full-banner {
   display: block;
   position: relative;
+
   img {
     display: block;
     width: 100%;
@@ -8,6 +9,7 @@
     z-index: 1;
     position: relative;
   }
+
   &__inner {
     position: absolute;
     z-index: 10;
@@ -15,19 +17,23 @@
     left: 0;
     right: 0;
     height: 100%;
+
     .container-fluid {
       height: 100%;
       display: flex;
       align-items: center;
     }
+
     &__text {
       margin-left: 280px;
+
       &--right {
         margin-left: auto;
         width: 40%;
       }
     }
   }
+
   &__title {
     color: #fff;
     font-weight: 400;
@@ -36,22 +42,27 @@
     text-transform: uppercase;
     padding-bottom: 20px;
   }
+
   &__text {
     color: #fff;
     font-size: 30px;
     line-height: 34px;
     padding-bottom: 15px;
   }
+
   &__footer-link {
     padding-top: 15px;
+
     .truvor__btn-blue {
       width: 234px;
     }
   }
 }
+
 .mb-30 {
   margin-bottom: 30px;
 }
+
 .truvor__btn-blue {
   background: #09214D;
   height: 48px;
@@ -74,6 +85,7 @@
   padding-top: 110px;
   padding-bottom: 110px;
   margin-bottom: 20px;
+
   &__item {
     position: relative;
     display: flex;
@@ -82,12 +94,14 @@
     background: linear-gradient(-180deg, #F2F3F4, #F2F3F4), #FFFFFF;
     height: 820px;
     text-decoration: none;
+
     img {
       max-width: 100%;
       max-height: 100%;
       width: auto;
       height: auto;
     }
+
     &__title {
       position: absolute;
       z-index: 10;
@@ -107,6 +121,7 @@
       text-shadow: 0px 0px 30px #000000;
     }
   }
+
   &__nav {
     position: absolute;
     z-index: 30;
@@ -119,24 +134,30 @@
     cursor: pointer;
     margin-top: -24px;
     top: 50%;
+
     &.button-next {
       right: 15px;
     }
+
     &.button-prev {
       left: 15px;
     }
   }
+
   .pagination {
     display: none;
   }
 }
+
 .fpad20 {
   padding-bottom: 20px;
 }
+
 .truvor__brends {
   padding-top: 100px;
   background: #F2F3F4;
   padding-bottom: 30px;
+
   &__item {
     display: flex;
     align-items: center;
@@ -146,10 +167,12 @@
     padding-top: 15px;
     transition: all 0.3s ease-in-out;
     border: 1px solid #fff;
+
     &:hover {
       border: 1px solid #AFAFAF;
       box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
     }
+
     img {
       display: block;
       max-width: 100%;
@@ -159,24 +182,29 @@
     }
   }
 }
+
 .tpad30 {
   padding-top: 30px;
 }
+
 .w29 {
   width: 290px;
 }
 
 .truvor__collection {
   border-bottom: 1px solid #A5A5A5;
+
   &__img {
     display: block;
   }
+
   &__desc {
     max-width: 620px;
     width: 100%;
     margin: 0 auto;
   }
 }
+
 h2 {
   font-weight: 400;
   font-size: 30px;
@@ -184,42 +212,53 @@ h2 {
   color: #202123;
   margin-bottom: 40px;
 }
+
 p {
   font-size: 20px;
   line-height: 180%;
   color: #5A5D62;
   margin-bottom: 15px;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .fpad30 {
   padding-bottom: 30px;
 }
+
 .tpad50 {
   padding-top: 50px;
 }
+
 .fpad50 {
   padding-bottom: 50px;
 }
+
 .truvor__benefit {
   padding: 0 50px;
 }
+
 .truvor__benefit__item {
   text-align: center;
+
   &__ico {
     height: 93px;
+
     img {
       display: block;
       margin: 0 auto;
     }
   }
+
   &__title {
     font-size: 22px;
     line-height: 24px;
     padding-bottom: 30px;
   }
+
   &__text {
     font-weight: 400;
     font-size: 21px;
@@ -228,10 +267,12 @@ img {
     color: #6F6F6F;
   }
 }
+
 .truvor__page__header {
   padding-top: 50px;
   padding-bottom: 40px;
   text-align: center;
+
   h1 {
     margin: 0;
     font-weight: 400;
@@ -241,20 +282,24 @@ img {
     text-transform: uppercase;
   }
 }
+
 .truvor__category-list {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-bottom: 40px;
 }
+
 .truvor__category-list__item {
   position: relative;
   height: 450px;
   background: #F2F3F4;
   overflow: hidden;
+
   &--big-pc {
     grid-row: span 2;
     height: 100%;
   }
+
   &__wrap {
     text-decoration: none;
     display: block;
@@ -271,11 +316,13 @@ img {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
+
       img {
         display: block;
       }
     }
   }
+
   &__title {
     position: absolute;
     z-index: 2;
@@ -283,6 +330,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+
     h3 {
       font-weight: 400;
       font-size: 40px;
@@ -291,6 +339,7 @@ img {
       color: #202123;
       padding: 0;
     }
+
     span {
       display: block;
       font-size: 18px;
@@ -299,20 +348,24 @@ img {
     }
   }
 }
+
 .truvor__brends-slider {
   max-width: 1180px;
   margin: 0 auto 30px;
   position: relative;
+
   .truvor__brends__item {
     height: 120px;
     padding: 10px;
     border: 1px solid #DEDFE0;
     background-color: #fff;
+
     &.active {
       border: 1px solid #09214D;
     }
   }
 }
+
 .truvor__page__cat-desc {
   max-width: 940px;
   margin: 0 auto 60px;
@@ -321,14 +374,18 @@ img {
   line-height: 24px;
   color: #666;
 }
+
 .truvor__page__sub-menu-catalog {
   border-bottom: 1px solid #B8B9BA;
   margin-bottom: 40px;
+
   .swiper {
     margin-bottom: -1px;
   }
+
   .swiper-slide {
     width: auto;
+
     .sub-menu-catalog-item {
       display: block;
       white-space: nowrap;
@@ -340,6 +397,7 @@ img {
       text-decoration: none;
       color: #77797E;
       transition: all 0.3s ease-in-out;
+
       &::after {
         content: "";
         display: block;
@@ -352,9 +410,11 @@ img {
         transition: all 0.3s ease-in-out;
         width: 0;
       }
+
       &.active,
       &:hover {
         color: #09214D;
+
         &::after {
           width: 100%;
         }
@@ -363,11 +423,14 @@ img {
 
   }
 }
+
 .truvor__filter-pc {
   flex-grow: 1;
+
   li {
     padding: 0 20px 20px 0;
   }
+
   &__item {
     display: inline-flex;
     white-space: nowrap;
@@ -380,13 +443,16 @@ img {
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
+
     svg {
       margin-right: 10px;
     }
+
     &.active,
-    &:hover{
+    &:hover {
       color: #09214D;
       border-color: #09214D;
+
       svg {
         path {
           stroke: #09214D !important;
@@ -395,8 +461,10 @@ img {
     }
   }
 }
+
 .truvor__sort-btn {
   height: 48px;
+
   &::after {
     content: "";
     display: block;
@@ -409,6 +477,7 @@ img {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6H4' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 12H8' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 18H12' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
   }
 }
+
 .dropdown-menu {
   width: 100%;
   background: #FFFFFF;
@@ -416,6 +485,7 @@ img {
   border: 1px solid #F2F3F4;
   box-shadow: 0px 5px 20px rgba(9, 33, 77, 0.1);
   padding: 0;
+
   a {
     display: block;
     padding: 12px 20px;
@@ -424,17 +494,22 @@ img {
     color: #202123;
   }
 }
+
 .fpad10 {
   padding-bottom: 10px;
 }
+
 .ml-15 {
   margin-left: 15px;
 }
+
 .fpad50 {
   padding-bottom: 50px;
 }
+
 .truvor__products__item {
   position: relative;
+
   &__images {
     background-color: #F2F3F4;
     height: 750px;
@@ -444,6 +519,7 @@ img {
     text-decoration: none;
     user-select: none;
   }
+
   &__label {
     position: absolute;
     z-index: 10;
@@ -460,6 +536,7 @@ img {
     white-space: nowrap;
   }
 }
+
 .truvor__products__favorite {
   position: absolute;
   z-index: 20;
@@ -467,6 +544,7 @@ img {
   right: 20px;
   display: block;
   color: transparent;
+
   &.active {
     svg {
       path {
@@ -474,6 +552,7 @@ img {
       }
     }
   }
+
   &:not(.active) {
     svg {
       path {
@@ -485,6 +564,7 @@ img {
     }
   }
 }
+
 .slider_products__pagination {
   position: absolute;
   z-index: 20;
@@ -495,20 +575,24 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 5px;
+
   .swiper-pagination-bullet {
     margin: 0 3px 6px;
     width: calc(20% - 10px);
     height: 4px;
     background: #DEDFE0;
+
     &-active {
       background: #09214D !important;
     }
   }
 }
+
 .truvor__products__item__footer {
   text-decoration: none;
   display: block;
   padding: 18px 0 0;
+
   h2 {
     margin: 0 auto 15px;
     max-width: 400px;
@@ -520,11 +604,13 @@ img {
     color: #09214D;
   }
 }
+
 .truvor__products__item__price {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
+
   .old-price {
     position: relative;
     margin: 0 5px;
@@ -532,6 +618,7 @@ img {
     font-size: 18px;
     line-height: 26px;
     color: #77797E;
+
     &::after {
       content: "";
       display: block;
@@ -544,6 +631,7 @@ img {
       background-color: #77797E;
     }
   }
+
   .price {
     margin: 0 5px;
     font-weight: 400;
@@ -552,6 +640,7 @@ img {
     color: #09214D;
   }
 }
+
 .truvor__products__item__props {
   text-align: center;
   font-weight: 400;
@@ -559,4 +648,219 @@ img {
   line-height: 24px;
   padding-bottom: 5px;
   color: #77797E;
+}
+
+.rouble {
+  font-family: 'rouble';
+}
+
+.truvor__pagination {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  &__pages {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5A5D62;
+    padding-bottom: 15px;
+
+    b {
+      color: #202123;
+      @include medium_fonts;
+      font-weight: 400;
+    }
+  }
+
+  &__progress {
+    width: 180px;
+    margin: 0 auto 15px;
+    position: relative;
+    height: 2px;
+    background-color: #DEDFE0;
+
+    &__val {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      height: 2px;
+      background: #09214D;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 60px;
+    gap: 10px;
+    border: none;
+    width: 229px;
+    height: 48px;
+    margin: 0 auto;
+    background: #09214D;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+}
+.modal-content-filter {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 0;
+  border: none;
+  .h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #77797E;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+}
+.modal-content-filter__nav {
+  justify-content: center;
+  min-height: 130px;
+  padding-bottom: 20px;
+  li {
+    padding: 0 10px 20px;
+    .nav-link {
+      background: #fff;
+      padding: 12px 60px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #B8B9BA;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 24px;
+      color: #202123;
+      &.active {
+        border: 1px solid #09214D;
+      }
+    }
+  }
+}
+.form-control {
+  background: #FFFFFF;
+ border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  height: 48px;
+  border: 1px solid #DEDFE0;
+  width: auto;
+  &.w-14 {
+    width: 140px;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #202123;
+    color: #202123;
+  }
+}
+.modal-content-filter__params {
+  padding-top: 30px;
+  min-height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: self-start;
+  &__item {
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    &__label {
+      padding: 0 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: #77797E;
+    }
+  }
+}
+.fpad40 {
+  padding-bottom: 40px;
+}
+.active-filter-btn {
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #09214D;
+  svg {
+    margin-right: 15px;
+  }
+  &:hover {
+    svg {
+      animation: rotate-btn 1s linear infinite;
+    }
+  }
+}
+
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-close {
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 2L2 50' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square' stroke-linejoin='round'/%3E%3Cpath d='M2 2L50 50' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  opacity: 1;
+  background-size: contain;
+  border-radius: 0;
+}
+.custom-checkbox {
+  display: block;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    min-height: 48px;
+    border: 1px solid #B8B9BA;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #5A5D62;
+  }
+  input:checked + span {
+    border-color: #09214D;
+    color: #09214D;
+  }
+}
+.modal-content-filter__desc {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }

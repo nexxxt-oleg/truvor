@@ -146,6 +146,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (document.getElementById('filterModal')) {
+        var filterModal = document.getElementById('filterModal')
+        filterModal.addEventListener('show.bs.modal', function (event) {
+
+            var button = event.relatedTarget;
+            if( button.getAttribute('data-tab-btn') ) {
+                var recipient = button.getAttribute('data-tab-btn');
+                if (document.getElementById(recipient)) {
+                    document.getElementById(recipient).click();
+                }
+                console.log(recipient);
+            }
+
+
+        })
+    }
 });
 
 
