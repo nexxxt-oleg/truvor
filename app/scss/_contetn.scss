@@ -464,6 +464,10 @@ img {
 
 .truvor__sort-btn {
   height: 48px;
+  width: 194px;
+  min-width: 194px;
+  border-color: #B8B9BA !important;
+  color: #202123 !important;
 
   &::after {
     content: "";
@@ -927,4 +931,8 @@ a {
       border: 1px solid #09214D;
     }
   }
+}
+.truvor__filter-mob,
+.modal-content-filter__wrap__footer__header {
+  display: none;
 }

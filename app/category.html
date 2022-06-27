@@ -227,6 +227,28 @@
             </li>
         </ul>
 
+        <div class="truvor__filter-mob">
+            <a href="" class="truvor__filter-pc__item"
+               data-bs-toggle="modal"
+               data-bs-target="#filterModal"
+            >
+                Фильтры
+                <svg class="ml-15" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 8H21" stroke="#77797E" stroke-width="1.5"/>
+                    <path d="M7 8H3" stroke="#77797E" stroke-width="1.5"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.5813 9.38464C12.2675 8.35342 12.095 6.97523 11.1759 6.14489C10.2568 5.31454 8.86815 5.28246 7.91165 6.06946C6.95515 6.85647 6.71921 8.22522 7.35701 9.28703C7.99482 10.3488 9.31403 10.7835 10.4581 10.3088C10.9153 10.118 11.306 9.79654 11.5813 9.38464Z"
+                          stroke="#77797E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16H3" stroke="#77797E" stroke-width="1.5"/>
+                    <path d="M17 16H21" stroke="#77797E" stroke-width="1.5"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.4187 17.3846C11.7325 16.3534 11.905 14.9752 12.8241 14.1449C13.7432 13.3145 15.1318 13.2825 16.0884 14.0695C17.0449 14.8565 17.2808 16.2252 16.643 17.287C16.0052 18.3488 14.686 18.7835 13.5419 18.3088C13.0847 18.118 12.694 17.7965 12.4187 17.3846Z"
+                          stroke="#77797E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+
         <div class="dropdown">
             <button class="btn-border truvor__sort-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Сначала дорогие
@@ -667,434 +689,484 @@
     <div class="modal-dialog container-xxl modal-full-w">
         <div class="modal-content modal-content-filter">
             <div class="modal-content-filter__wrap">
-                <ul class="nav modal-content-filter__nav" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="filter-tab1" data-bs-toggle="tab"
-                                data-bs-target="#tab1"
-                                type="button" role="tab" aria-selected="true">
-                            Рост / Размер
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="filter-tab2" data-bs-toggle="tab" data-bs-target="#tab2"
-                                type="button" role="tab" aria-selected="false">
-                            Силуэт
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="filter-tab3" data-bs-toggle="tab" data-bs-target="#tab3"
-                                type="button" role="tab" aria-selected="false">
-                            Бренд
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="filter-tab4" data-bs-toggle="tab" data-bs-target="#tab4"
-                                type="button" role="tab" aria-selected="false">
-                            Состав ткани
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="filter-tab5" data-bs-toggle="tab" data-bs-target="#tab5"
-                                type="button" role="tab" aria-selected="false">
-                            Цвет
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="filter-tab6" data-bs-toggle="tab" data-bs-target="#tab6"
-                                type="button" role="tab" aria-selected="false">
-                            Цена
-                        </button>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                        <div class="h2">ВЫБЕРИТЕ ВАШ РОСТ И РАЗМЕР</div>
-                        <div class="text-center fpad30">
-                            <a href="" class="fonts-16">Как определить размер?</a>
-                        </div>
-                        <div class="modal-content-filter__row-params">
-                            <div class="modal-content-filter__row-params__label">
-                                Рост
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">165</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">168</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1" checked>
-                                    <span class="custom-checkbox__text">170</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">172</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">174</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">174</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">180</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">182</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">186</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">190</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">192</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="modal-content-filter__row-params">
-                            <div class="modal-content-filter__row-params__label">
-                                Размер
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">38</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">40</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">42</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">43</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">44</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">46</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">48</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">50</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">52</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">55</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__row-params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">56</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab2" role="tabpanel">
-                        <div class="h2">ВЫБЕРИТЕ CИЛУЭТ</div>
-                        <div class="modal-content-filter__params">
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Сильно прилегающий / Slim fit</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1" checked>
-                                    <span class="custom-checkbox__text">Полуприлегающий / Regular fit</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Прилегающий / Tailored fit</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Увеличенная полнота / King size</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__desc">
-                                Тут краткое описание выбранного силуэта. Например, Regular Fit. При выборе<br>
-                                определенного силуэта, появляется его краткое описание.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab3" role="tabpanel">
-                        <div class="h2">ВЫБЕРИТЕ БРЕНД</div>
-                        <div class="modal-content-filter__params">
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Truvor Classic</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1" checked>
-                                    <span class="custom-checkbox__text">Truvor Luxor</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Truvor City</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Truvor Perfect</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Dovmont</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Fasti Donici</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__desc">
-                                Тут краткое описание выбранного бренда. Например, Truvor Perfect. При выборе<br>
-                                определенного бренда, появляется его краткое описание.
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="tab-pane fade" id="tab4" role="tabpanel">
-                        <div class="h2">ВЫБЕРИТЕ СОСТАВ ТКАНИ</div>
-                        <div class="modal-content-filter__params">
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Шерсть Полушерсть</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1" checked>
-                                    <span class="custom-checkbox__text">Шерсть + мохер</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Шерсть super 130’s</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Шерсть super 120’s</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Шерсть super 100’s</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Бамбук (вискоза)</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Шерсть + лён</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Шерсть super 110’s</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Хлопок</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Полиэстер</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Лён</span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="1">
-                                    <span class="custom-checkbox__text">Вискоза</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab5" role="tabpanel">
-                        <div class="h2">ВЫБЕРИТЕ ЦВЕТ</div>
-                        <div class="modal-content-filter__params">
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox-color">
-                                    <input type="checkbox" checked>
-                                    <span class="custom-checkbox-color__wrap">
-                                        <span class="custom-checkbox-color__wrap__color" style="background: #778CB1;"></span>
-                                        <span class="custom-checkbox-color__wrap__name">Синий</span>
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox-color">
-                                    <input type="checkbox" checked>
-                                    <span class="custom-checkbox-color__wrap">
-                                        <span class="custom-checkbox-color__wrap__color" style="background: #97B4E9;"></span>
-                                        <span class="custom-checkbox-color__wrap__name">Голубой</span>
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox-color">
-                                    <input type="checkbox" checked>
-                                    <span class="custom-checkbox-color__wrap">
-                                        <span class="custom-checkbox-color__wrap__color" style="background: #202123;"></span>
-                                        <span class="custom-checkbox-color__wrap__name">Черный</span>
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox-color">
-                                    <input type="checkbox" >
-                                    <span class="custom-checkbox-color__wrap">
-                                        <span class="custom-checkbox-color__wrap__color" style="background: #804329;"></span>
-                                        <span class="custom-checkbox-color__wrap__name">Коричневый</span>
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox-color">
-                                    <input type="checkbox" >
-                                    <span class="custom-checkbox-color__wrap">
-                                        <span class="custom-checkbox-color__wrap__color" style="background: #fff;"></span>
-                                        <span class="custom-checkbox-color__wrap__name">Белый</span>
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <label class="custom-checkbox-color">
-                                    <input type="checkbox" >
-                                    <span class="custom-checkbox-color__wrap">
-                                        <span class="custom-checkbox-color__wrap__color" style="background: #09214D;"></span>
-                                        <span class="custom-checkbox-color__wrap__name">Темно-синий</span>
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab6" role="tabpanel">
-                        <div class="h2">УКАЖИТЕ ДИАПАЗОН ЦЕНЫ</div>
-                        <div class="modal-content-filter__params">
-                            <div class="modal-content-filter__params__item">
-                                <span class="modal-content-filter__params__item__label">от</span>
-                                <input type="text" class="form-control w-14" value="4 850 Р">
-                            </div>
-                            <div class="modal-content-filter__params__item">
-                                <span class="modal-content-filter__params__item__label">до</span>
-                                <input type="text" class="form-control w-14" value="24 850 Р">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center fpad40">
-                    <button class="active-filter-btn" data-bs-dismiss="modal">
-                        <svg class="ico" width="24" height="24">
-                            <use xlink:href="#svg-refresh"></use>
-                        </svg>
-                        ГОТОВО
-                    </button>
-                </div>
-                <div class="d-flex justify-content-center">
+                <div class="modal-content-filter__wrap__footer__header">
+                    ФИЛЬТРЫ
                     <button data-bs-dismiss="modal" class="btn-close">
                     </button>
+                </div>
+                <div class="modal-content-filter__wrap__footer__body">
+                    <ul class="nav modal-content-filter__nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="filter-tab1" data-bs-toggle="tab"
+                                    data-bs-target="#tab1"
+                                    type="button" role="tab" aria-selected="true">
+                                Рост / Размер
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="filter-tab2" data-bs-toggle="tab" data-bs-target="#tab2"
+                                    type="button" role="tab" aria-selected="false">
+                                Силуэт
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="filter-tab3" data-bs-toggle="tab" data-bs-target="#tab3"
+                                    type="button" role="tab" aria-selected="false">
+                                Бренд
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="filter-tab4" data-bs-toggle="tab" data-bs-target="#tab4"
+                                    type="button" role="tab" aria-selected="false">
+                                Состав ткани
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="filter-tab5" data-bs-toggle="tab" data-bs-target="#tab5"
+                                    type="button" role="tab" aria-selected="false">
+                                Цвет
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="filter-tab6" data-bs-toggle="tab" data-bs-target="#tab6"
+                                    type="button" role="tab" aria-selected="false">
+                                Цена
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                            <div class="mobail-collapsed-filter" data-bs-toggle="collapse"
+                                 data-bs-target="#mob-filter1">
+                                Рост и размер
+                            </div>
+                            <div class="truvor__filter-collapse accordion-collapse collapse show" id="mob-filter1">
+                                <div class="h2">ВЫБЕРИТЕ ВАШ РОСТ И РАЗМЕР</div>
+                                <div class="text-center fpad30">
+                                    <a href="" class="fonts-16">Как определить размер?</a>
+                                </div>
+                                <div class="modal-content-filter__row-params">
+                                    <div class="modal-content-filter__row-params__label">
+                                        Рост
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">165</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">168</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1" checked>
+                                            <span class="custom-checkbox__text">170</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">172</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">174</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">174</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">180</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">182</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">186</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">190</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">192</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-content-filter__row-params">
+                                    <div class="modal-content-filter__row-params__label">
+                                        Размер
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">38</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">40</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">42</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">43</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">44</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">46</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">48</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">50</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">52</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">55</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__row-params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">56</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                            <div class="mobail-collapsed-filter collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob-filter2">
+                                Силуэт <span class="mobail-collapsed-filter__number">2</span>
+                            </div>
+                            <div class="truvor__filter-collapse accordion-collapse collapse" id="mob-filter2">
+                                <div class="h2">ВЫБЕРИТЕ CИЛУЭТ</div>
+                                <div class="modal-content-filter__params modal-content-filter__params--mob-list">
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Сильно прилегающий / Slim fit</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1" checked>
+                                            <span class="custom-checkbox__text">Полуприлегающий / Regular fit</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Прилегающий / Tailored fit</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Увеличенная полнота / King size</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__desc">
+                                        Тут краткое описание выбранного силуэта. Например, Regular Fit. При выборе<br>
+                                        определенного силуэта, появляется его краткое описание.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                            <div class="mobail-collapsed-filter collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob-filter3">
+                                Бренд
+                            </div>
+                            <div class="truvor__filter-collapse accordion-collapse collapse" id="mob-filter3">
+                                <div class="h2">ВЫБЕРИТЕ БРЕНД</div>
+                                <div class="modal-content-filter__params modal-content-filter__params--mob-list">
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Truvor Classic</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1" checked>
+                                            <span class="custom-checkbox__text">Truvor Luxor</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Truvor City</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Truvor Perfect</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Dovmont</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Fasti Donici</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__desc">
+                                        Тут краткое описание выбранного бренда. Например, Truvor Perfect. При выборе<br>
+                                        определенного бренда, появляется его краткое описание.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel">
+                            <div class="mobail-collapsed-filter collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob-filter4">
+                                Состав ткани
+                            </div>
+                            <div class="truvor__filter-collapse accordion-collapse collapse" id="mob-filter4">
+                                <div class="h2">ВЫБЕРИТЕ СОСТАВ ТКАНИ</div>
+                                <div class="modal-content-filter__params modal-content-filter__params--mob-list">
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Шерсть Полушерсть</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1" checked>
+                                            <span class="custom-checkbox__text">Шерсть + мохер</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Шерсть super 130’s</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Шерсть super 120’s</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Шерсть super 100’s</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Бамбук (вискоза)</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Шерсть + лён</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Шерсть super 110’s</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Хлопок</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Полиэстер</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Лён</span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="1">
+                                            <span class="custom-checkbox__text">Вискоза</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab5" role="tabpanel">
+                            <div class="mobail-collapsed-filter collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob-filter5">
+                                Цвет
+                            </div>
+                            <div class="truvor__filter-collapse accordion-collapse collapse" id="mob-filter5">
+                                <div class="h2">ВЫБЕРИТЕ ЦВЕТ</div>
+                                <div class="modal-content-filter__params modal-content-filter__params--mob-color">
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox-color">
+                                            <input type="checkbox" checked>
+                                            <span class="custom-checkbox-color__wrap">
+                                        <span class="custom-checkbox-color__wrap__color"
+                                              style="background: #778CB1;"></span>
+                                        <span class="custom-checkbox-color__wrap__name">Синий</span>
+                                    </span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox-color">
+                                            <input type="checkbox" checked>
+                                            <span class="custom-checkbox-color__wrap">
+                                        <span class="custom-checkbox-color__wrap__color"
+                                              style="background: #97B4E9;"></span>
+                                        <span class="custom-checkbox-color__wrap__name">Голубой</span>
+                                    </span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox-color">
+                                            <input type="checkbox" checked>
+                                            <span class="custom-checkbox-color__wrap">
+                                        <span class="custom-checkbox-color__wrap__color"
+                                              style="background: #202123;"></span>
+                                        <span class="custom-checkbox-color__wrap__name">Черный</span>
+                                    </span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox-color">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox-color__wrap">
+                                        <span class="custom-checkbox-color__wrap__color"
+                                              style="background: #804329;"></span>
+                                        <span class="custom-checkbox-color__wrap__name">Коричневый</span>
+                                    </span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox-color">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox-color__wrap">
+                                        <span class="custom-checkbox-color__wrap__color"
+                                              style="background: #fff;"></span>
+                                        <span class="custom-checkbox-color__wrap__name">Белый</span>
+                                    </span>
+                                        </label>
+                                    </div>
+                                    <div class="modal-content-filter__params__item">
+                                        <label class="custom-checkbox-color">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox-color__wrap">
+                                        <span class="custom-checkbox-color__wrap__color"
+                                              style="background: #09214D;"></span>
+                                        <span class="custom-checkbox-color__wrap__name">Темно-синий</span>
+                                    </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab6" role="tabpanel">
+                            <div class="mobail-collapsed-filter collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob-filter6">
+                                Цена
+                            </div>
+                            <div class="truvor__filter-collapse accordion-collapse collapse" id="mob-filter6">
+                                <div class="h2">УКАЖИТЕ ДИАПАЗОН ЦЕНЫ</div>
+                                <div class="modal-content-filter__params modal-content-filter__params--price">
+                                    <div class="modal-content-filter__params__item modal-content-filter__params__item--price">
+                                        <span class="modal-content-filter__params__item__label">от</span>
+                                        <input type="text" class="form-control w-14" value="4 850 Р">
+                                    </div>
+                                    <div class="modal-content-filter__params__item modal-content-filter__params__item--price">
+                                        <span class="modal-content-filter__params__item__label">до</span>
+                                        <input type="text" class="form-control w-14" value="24 850 Р">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content-filter__wrap__footer">
+                    <div class="d-flex justify-content-center fpad40">
+                        <button class="active-filter-btn" data-bs-dismiss="modal">
+                            <svg class="ico" width="24" height="24">
+                                <use xlink:href="#svg-refresh"></use>
+                            </svg>
+                            ГОТОВО
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button data-bs-dismiss="modal" class="btn-close">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
