@@ -77,6 +77,8 @@
   line-height: 24px;
   text-transform: uppercase;
   justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 .truvor__carusel-catalog {
@@ -935,4 +937,170 @@ a {
 .truvor__filter-mob,
 .modal-content-filter__wrap__footer__header {
   display: none;
+}
+
+.truvor__product__images .swiper-wrapper {
+  display: block;
+  height: auto;
+  .swiper-slide {
+    padding-bottom: 40px;
+  }
+}
+.truvor__product__right {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  padding: 0;
+  color: #202123;
+}
+.truvor__breadcrumbs {
+  padding-bottom: 30px;
+  align-items: center;
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .sep {
+    width: 12px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 2.5L8 6L4.5 9.5' stroke='%239B9DA2' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+    background-position: 50% 50%;
+    background-size: 12px auto;
+    background-repeat: no-repeat;
+  }
+  a, span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9B9DA2;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.truvor__product {
+  &__price {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    .old-price {
+      margin-right: 20px;
+      font-size: 24px;
+      line-height: 32px;
+      color: #77797E;
+      position: relative;
+    }
+    .price {
+      font-size: 24px;
+      line-height: 32px;
+      color: #09214D;
+    }
+  }
+  &__btns {
+    display: flex;
+    &__col-adv {
+      position: relative;
+      width: 69px;
+      padding-right: 15px;
+      min-width: 69px;
+      .truvor__products__favorite.single {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        border: 1px solid #DEDFE0;
+      }
+    }
+  }
+}
+.truvor__link-size {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+  span {
+    font-size: 16px;
+    line-height: 20px;
+    color: #09214D;
+    border-bottom: 1px dotted #09214D;
+  }
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.truvor__product__desc__item__title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E4E6EA;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #09214D;
+  margin-bottom: 15px;
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='10' viewBox='0 0 18 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.53033 0.96967L2 0.43934L0.93934 1.5L1.46967 2.03033L2.53033 0.96967ZM9 8.5L8.46967 9.03033L9 9.56066L9.53033 9.03033L9 8.5ZM16.5303 2.03033L17.0607 1.5L16 0.43934L15.4697 0.96967L16.5303 2.03033ZM1.46967 2.03033L8.46967 9.03033L9.53033 7.96967L2.53033 0.96967L1.46967 2.03033ZM9.53033 9.03033L16.5303 2.03033L15.4697 0.96967L8.46967 7.96967L9.53033 9.03033Z' fill='%2377797E'/%3E%3C/svg%3E%0A");
+    margin-left: auto;
+  }
+
+  &:not(.collapsed) {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+.truvor__product__desc__item__body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.truvor__product__har {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  dt {
+    width: 40%;
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    color: #5A5D62;
+    font-weight: 400;
+  }
+  dd {
+    width: 60%;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    color: #202123;
+  }
+}
+.truvor__text,
+.truvor__text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5A5D62;
+}
+.truvor__text p {
+  margin: 0;
+  padding-bottom: 10px;
 }
