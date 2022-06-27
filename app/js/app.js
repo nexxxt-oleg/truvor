@@ -113,6 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (document.getElementById('productSingleSlider') && window.screen.width < 768) {
+
+        new Swiper('#productSingleSlider', {
+            pagination: {
+                el: '.pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '#productSingleSlider .button-next',
+                prevEl: '#productSingleSlider .button-prev',
+            },
+        });
+    }
+
     if (document.getElementById('sliderSubCatalog')) {
         var items = document.getElementById('sliderSubCatalog').getElementsByClassName('sub-menu-catalog-item');
 

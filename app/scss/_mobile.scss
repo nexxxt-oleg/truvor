@@ -162,6 +162,12 @@
     width: 32px;
     height: 32px;
   }
+  .truvor__product__right {
+    padding-left: 10px;
+  }
+  .truvor__product__images {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 940px) {
@@ -605,6 +611,46 @@
   }
   .truvor__filter-mob {
     padding-bottom: 10px;
+  }
+  .truvor__product__images .swiper-wrapper {
+    display: flex;
+    height: 100%;
+  }
+  .truvor__product__images .swiper-wrapper .swiper-slide {
+    padding-bottom: 0;
+  }
+  .truvor__product__right .truvor__breadcrumbs {
+    display: none;
+  }
+  .truvor__product__right {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .truvor__product__images img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .truvor__product__images .pagination {
+    position: absolute;
+    z-index: 30;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+      background: #dedfe0;
+      height: 4px;
+      margin: 0 3px 6px;
+      width: calc(20% - 10px);
+      &-active {
+        background: #09214d!important;
+      }
+    }
+  }
+  .truvor__product__images .truvor__carusel-catalog__nav {
+    display: flex;
   }
 }
 
