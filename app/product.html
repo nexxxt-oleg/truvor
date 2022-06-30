@@ -1,7 +1,7 @@
 <!--#set var="title" value="ПРИТАЛЕННЫЕ КОСТЮМЫ" -->
 <!--#include virtual="/parts/header.html" -->
-<div class="container-fluid" id="truvor__product">
-    <div class="row truvor__product fpad50">
+<div class="container-fluid mb-50" id="truvor__product">
+    <div class="row truvor__product">
         <div class="col-xl-8 col-md-6 ">
             <div class="swiper truvor__product__images" id="productSingleSlider">
                 <div class="truvor__products__item__label">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
 
-                        <div class="truvor__product__desc truvor__text">
+                        <div class="truvor__product__desc truvor__text fpad50">
                             <div class="truvor__product__desc__item">
                                 <div class="truvor__product__desc__item__title collapsed" data-bs-toggle="collapse"
                                      data-bs-target="#desc1">
@@ -387,12 +387,30 @@
 
     document.addEventListener("DOMContentLoaded", () => {
         imagesLoaded(document.querySelector('#productSingleSlider'), function (instance) {
-            var sidebar = new StickySidebar('.truvor__product__sidebar', {
+            var stickySidebar = new StickySidebar('.truvor__product__sidebar', {
                 topSpacing: 20,
-                bottomSpacing: 200,
+                bottomSpacing: 50,
                 containerSelector: '#truvor__product',
-                innerWrapperSelector: '.truvor__product__sidebar__inner'
+                innerWrapperSelector: '.truvor__product__sidebar__inner',
+                resizeSensor: true,
+                minWidth: 991
             });
+            if (document.getElementsByClassName("truvor__product__desc__item__body").length) {
+
+                var mainDivs = document.getElementsByClassName('truvor__product__desc__item__body');
+                for (var i = 0; i < mainDivs.length; ++i) {
+                    mainDivs[i].addEventListener('shown.bs.collapse', function () {
+                        console.log('show');
+                        stickySidebar.updateSticky();
+                    });
+
+                    mainDivs[i].addEventListener('hidden.bs.collapse', function () {
+                        console.log('hidden');
+                        stickySidebar.updateSticky();
+                    });
+                }
+
+            }
         });
 
 

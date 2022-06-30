@@ -180,8 +180,8 @@
 
 
 
-<div class="container-fluid">
-    <div class="row truvor__product fpad50">
+<div class="container-fluid mb-50" id="truvor__product">
+    <div class="row truvor__product">
         <div class="col-xl-8 col-md-6 ">
             <div class="swiper truvor__product__images" id="productSingleSlider">
                 <div class="truvor__products__item__label">
@@ -191,16 +191,15 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="d-block">
-                            <source media="(max-width: 600px)" data-srcset="images/dist/single1_2.jpg"/>
-                            <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 class="lazy" data-src="images/dist/single1.jpg" alt="">
+                            <source media="(max-width: 600px)" srcset="images/dist/single1_2.jpg"/>
+                            <img src="images/dist/single1.jpg" alt="">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture class="d-block">
-                            <source media="(max-width: 600px)" data-srcset="images/dist/single2_2.jpg"/>
-                            <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 class="lazy" data-src="images/dist/single2.jpg" alt="">
+                            <source media="(max-width: 600px)" srcset="images/dist/single2_2.jpg"/>
+                            <img
+                                    src="images/dist/single2.jpg" alt="">
                         </picture>
                     </div>
                 </div>
@@ -221,16 +220,17 @@
         </div>
         <div class="col-xl-4 col-md-6 ">
 
-            <div class="truvor__product__sidebar">
-                <div class="truvor__product__sidebar__inner">
-                    <div class="truvor__product__right">
-                        <ul class="nav truvor__breadcrumbs">
-                            <li><a href="">Костюмы</a></li>
-                            <li class="sep"></li>
-                            <li>
-                                <span>Повседневные</span>
-                            </li>
-                        </ul>
+
+            <div class="truvor__product__right">
+                <ul class="nav truvor__breadcrumbs">
+                    <li><a href="">Костюмы</a></li>
+                    <li class="sep"></li>
+                    <li>
+                        <span>Повседневные</span>
+                    </li>
+                </ul>
+                <div class="truvor__product__sidebar">
+                    <div class="truvor__product__sidebar__inner">
                         <h1 class="h1">
                             Полуприлегающий мужской классический пиджак коричневый полушерстяной в клетку с декоративной
                             вспушкой лацкана
@@ -268,13 +268,13 @@
                             </div>
                         </div>
 
-                        <div class="truvor__product__desc truvor__text">
+                        <div class="truvor__product__desc truvor__text fpad50">
                             <div class="truvor__product__desc__item">
-                                <div class="truvor__product__desc__item__title" data-bs-toggle="collapse"
+                                <div class="truvor__product__desc__item__title collapsed" data-bs-toggle="collapse"
                                      data-bs-target="#desc1">
                                     Общее
                                 </div>
-                                <div class="truvor__product__desc__item__body accordion-collapse collapse show"
+                                <div class="truvor__product__desc__item__body accordion-collapse collapse"
                                      id="desc1">
                                     <dl class="truvor__product__har">
                                         <dt>Бренд:</dt>
@@ -561,16 +561,39 @@
 </div>
 
 <script src="./js/sticky-sidebar.min.js"></script>
+<script src="./js/imagesloaded.pkgd.min.js"></script>
 <script>
 
 
     document.addEventListener("DOMContentLoaded", () => {
-        var sidebar = new StickySidebar('.truvor__product__sidebar', {
-            topSpacing: 20,
-            bottomSpacing: 20,
-            containerSelector: '.truvor__product',
-            innerWrapperSelector: '.truvor__product__sidebar__inner'
+        imagesLoaded(document.querySelector('#productSingleSlider'), function (instance) {
+            var stickySidebar = new StickySidebar('.truvor__product__sidebar', {
+                topSpacing: 20,
+                bottomSpacing: 50,
+                containerSelector: '#truvor__product',
+                innerWrapperSelector: '.truvor__product__sidebar__inner',
+                resizeSensor: true,
+                minWidth: 991
+            });
+            if (document.getElementsByClassName("truvor__product__desc__item__body").length) {
+
+                var mainDivs = document.getElementsByClassName('truvor__product__desc__item__body');
+                for (var i = 0; i < mainDivs.length; ++i) {
+                    mainDivs[i].addEventListener('shown.bs.collapse', function () {
+                        console.log('show');
+                        stickySidebar.updateSticky();
+                    });
+
+                    mainDivs[i].addEventListener('hidden.bs.collapse', function () {
+                        console.log('hidden');
+                        stickySidebar.updateSticky();
+                    });
+                }
+
+            }
         });
+
+
     });
 </script>
 <footer class="truvor__footer">
