@@ -1424,3 +1424,79 @@ a {
     color: #666;
   }
 }
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  padding-right: 30px;
+  background-image: none !important;
+  border-color: #BB1717;
+}
+.invalid-feedback {
+  font-weight: 400;
+  font-size: 22px !important;
+  line-height: 25px !important;
+  letter-spacing: 0.02em;
+  color: #BB1717;
+  padding-top: 14px !important;
+  margin: 0 !important;
+}
+.truvor__form__pass-col {
+  width: calc(50% - 50px);
+}
+.truvor__form__footer{
+  border-top: 1px solid #D5D5D5;
+  padding-top: 50px;
+}
+.truvor__form__submit-col {
+  margin: 0 auto;
+  max-width: 565px;
+}
+.truvor__btn-blue.h-66 {
+  height: 66px;
+}
+.tpad20 {
+  padding-top: 20px;
+}
+.custom-checkbox-form {
+  display: block;
+  position: relative;
+  input {
+    display: none;
+    &:checked + span {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 11;
+        top: 9px;
+        left: 4px;
+        width: 14px;
+        height: 14px;
+        background: #09214D;
+      }
+    }
+  }
+  span {
+    display: block;
+    position: relative;
+    padding-left: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 5px;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: #FFFFFF;
+      border: 1px solid #09214D;
+    }
+  }
+}
