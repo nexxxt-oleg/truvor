@@ -185,6 +185,81 @@
   .truvor__product__images {
     margin-top: 30px;
   }
+  .truvor__lk__nav__item a {
+    padding: 0 2px 15px;
+    height: 35px;
+  }
+  .truvor__page__header .h1, .truvor__page__header h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .truvor__lk__order-info {
+    padding: 30px;
+  }
+  .order-history-info__img {
+    min-width: 112px;
+    height: 158px;
+    width: 112px;
+    padding: 10px;
+  }
+  .order-history-info__desc {
+    padding-top: 0;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .order-history-info__title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: -3px;
+    min-height: 60px;
+    flex-grow: 1;
+  }
+  .order-history-info__har {
+    dt {
+      font-size: 14px;
+      line-height: 16px;
+      padding-bottom: 0;
+      padding-top: 10px;
+      margin: 0;
+    }
+    dd {
+      font-size: 14px;
+      line-height: 16px;
+      padding-bottom: 0;
+      padding-top: 10px;
+      margin: 0;
+    }
+  }
+  .order-history-info__right {
+    padding-top: 20px;
+  }
+  .order-history-info__quantity {
+    max-width: 100px;
+    height: 38px;
+    line-height: 36px;
+  }
+  .order-history-info__cost, .order-history-info__cost-old {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  .order-history-info__cost-old::after {
+    top: 10px;
+  }
+  .order-history-info {
+    border-top: 1px solid #cdcfd1;
+    padding-top: 20px;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+  .order-history-info__cost {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 940px) {
@@ -198,6 +273,10 @@
   .truvor__header__search-mob {
     display: block;
     order: 2;
+  }
+  .truvor__form__footer {
+    border-top: none;
+    padding-top: 20px;
   }
   .truvor__header__logo {
     margin-left: auto;
@@ -276,6 +355,10 @@
 @media screen and (max-width: 767px) {
   .truvor__footer__nav__submenu.collapse:not(.show) {
     display: none !important;
+  }
+  .invalid-feedback {
+    font-size: 20px !important;
+    padding-top: 8px !important;
   }
   .truvor__carusel-catalog__item {
     height: 520px;
@@ -699,6 +782,91 @@
   .modal-dialog-right .modal-content .truvor__modal-add .modal-content-filter__row-params__label {
     text-align: left !important;
     justify-content: flex-start !important;
+  }
+  .truvor__lk__desc br {
+    display: none;
+  }
+  .form-label {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .fpad30 {
+    padding-bottom: 20px;
+  }
+  .truvor__lk__desc {
+    font-size: 16px;
+  }
+  .truvor__lk__nav .nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .truvor__lk__nav__item a {
+      white-space: nowrap;
+  }
+  .truvor__lk__nav__item a svg {
+    margin-right: 10px;
+  }
+  .truvor__lk__nav .nav {
+    border-bottom: none;
+  }
+  .truvor__lk__desc {
+    border-top: 1px solid #D5D5D5;
+  }
+  .h2, h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .truvor__lk__order-info__header__row {
+    display: block;
+  }
+  .truvor__lk__order-info__header__col1,
+  .truvor__lk__order-info__header__col2 {
+    width: 100%;
+  }
+  .truvor__lk__order-info__number {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .truvor__lk__order-info__header__col2 span,
+  .truvor__lk__order-info__header__col1 span {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .truvor__lk__order-info__label-top {
+    display: none;
+  }
+  .order-history-info__cost-old  {
+    display: inline-block;
+  }
+  .order-history-info:last-child {
+    padding-bottom: 0;
+  }
+  .order-history-info__mob-label {
+    display: block;
+    font-size: 12.4587px;
+    line-height: 14px;
+    color: #09214D;
+    padding-bottom: 10px;
+  }
+  .order-history-info__quantity {
+    margin-left: 0;
+  }
+  .order-history-info__cost,
+  .order-history-info__cost-old {
+    text-align: left;
+  }
+  .order-history-info__cost {
+    padding-bottom: 10px;
+  }
+  .order-history-info__right {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #CDCFD1;
+  }
+  .truvor__lk__order-info {
+    padding: 20px;
   }
 }
 

@@ -160,6 +160,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
     }
+    if (document.getElementsByClassName("truvor__lk__nav").length && window.screen.width < 768) {
+
+        var items = document.getElementsByClassName('truvor__lk__nav__item');
+
+        for (var i = 0; i < items.length; ++i) {
+            items[i].style.width = items[i].clientWidth + 'px';
+        }
+
+        new Swiper('.truvor__lk__nav', {
+            slideClass: 'truvor__lk__nav__item',
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+        });
+    }
+
 
     if (document.getElementById('filterModal')) {
         var filterModal = document.getElementById('filterModal')

@@ -256,24 +256,84 @@
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-xl-8">
-                <div class="fpad30">
-                    <h2 class="mb-0">ЛИЧНЫЕ ДАННЫЕ И КОНТАКТЫ</h2>
-                    <p class="fonts-16">Ваше ФИО, чтобы мы знали как к Вам обращаться. Телефон и e-mail для связи и
-                        восстановления пароля</p>
-                </div>
-                <div class="fpad30">
-                    <label class="form-label">Имя</label>
-                    <input type="text" class="form-control" placeholder="Введите ваше имя" >
-                </div>
-                <div class="fpad30">
-                    <label class="form-label">Фамилия</label>
-                    <input type="text" class="form-control" placeholder="Введите вашу фамилию" >
-                </div>
-                <div class="fpad30">
-                    <label class="form-label">Отчество</label>
-                    <input type="text" class="form-control" placeholder="Введите ваше отчество" >
-                </div>
+            <div class="col-xl-8 fpad50">
+                <form action="" class="truvor__form">
+                    <div class="fpad30">
+                        <h2 class="mb-0">ЛИЧНЫЕ ДАННЫЕ И КОНТАКТЫ</h2>
+                        <p class="fonts-16 hidden-mob">Ваше ФИО, чтобы мы знали как к Вам обращаться. Телефон и e-mail для связи и
+                            восстановления пароля</p>
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">Имя</label>
+                        <input type="text" class="form-control" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" placeholder="Введите вашу фамилию">
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">Отчество</label>
+                        <input type="text" class="form-control" placeholder="Введите ваше отчество">
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">Телефон</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <div class="fpad30">
+                        <h2 class="mb-0">АДРЕС ДОСТАВКИ</h2>
+                        <p class="fonts-16 hidden-mob">Тут вы можете ввести адрес, на который будет осущетсвляться доставка. Чтобы
+                            не вводить всякий раз при оформлении заказа</p>
+                    </div>
+
+                    <div class="fpad30">
+                        <label class="form-label">Город</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">Адрес (начните вводить улицу, дом, квартиру)</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="fpad30">
+                        <h2 class="mb-0">ДАННЫЕ ВХОДА</h2>
+                        <p class="fonts-16 hidden-mob">Ваши данные для входа в личный кабинет. Используйте логигн и пароль, чтобы
+                            зайти в личный кабинет </p>
+                    </div>
+                    <div class="fpad30">
+                        <label class="form-label">Login</label>
+                        <input type="text" class="form-control is-invalid">
+                        <div class="invalid-feedback">
+                            Это имя пользователя уже занято, попробуйте другой
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="fpad30 truvor__form__pass-col">
+                            <label class="form-label">Новый пароль</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="fpad30 truvor__form__pass-col">
+                            <label class="form-label">Подтвердите новый пароль</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="truvor__form__footer">
+                        <div class="truvor__form__submit-col">
+                            <button class="truvor__btn-blue w-100 h-66">СОХРАНИТЬ</button>
+                            <div class="tpad20">
+                                <label class="custom-checkbox-form">
+                                    <input type="checkbox" checked>
+                                    <span>Отправляя форму, я соглашаюсь с <a href="">договором оферты</a>, <a href="">правилами сайта</a>
+                                        и с <a href="">политикой ЗАО "Славянка"</a> в отношении обработки персональных данных.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
