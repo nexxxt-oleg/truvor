@@ -1376,7 +1376,7 @@ a {
   }
   &__col1 {
     width: 265px;
-    padding-right: 30px;
+    padding-right: 10px;
     min-width: 265px;
     span {
       font-size: 24px;
@@ -1393,6 +1393,9 @@ a {
       color: #202123;
     }
   }
+}
+.truvor__lk__order-info__header__row--first {
+  padding-right: 50px;
 }
 .fpad15 {
   padding-bottom: 15px;
@@ -1626,4 +1629,75 @@ a {
 }
 .order-history-info__mob-label {
   display: none;
+}
+.truvor__lk__order-nav {
+  .nav-link {
+    width: 215px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0;
+
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &.active {
+      background: #FFFFFF;
+      border-color: #09214D;
+      color: #09214D;
+    }
+  }
+}
+.truvor__lk__order-info__accordion-button {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  right: 40px;
+  padding-right: 20px;
+  height: 30px;
+  cursor: pointer;
+  span {
+    font-size: 24px;
+    line-height: 30px;
+    color: #35486C;
+    &.open {
+      display: none;
+    }
+    &.close {
+      display: block;
+    }
+  }
+  &.collapsed {
+    .close {
+      display: none;
+    }
+    .open {
+      display: block;
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-right: 1.5px solid #35486C;
+    border-bottom: 1.5px solid #35486C;
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+  }
 }
