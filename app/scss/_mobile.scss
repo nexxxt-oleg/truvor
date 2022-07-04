@@ -110,6 +110,9 @@
       justify-content: center;
     }
   }
+  .truvor__lk__sale {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -356,6 +359,10 @@
     span {
       font-size: 16px;
     }
+  }
+  .truvor__lk__sale__wrap {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -875,6 +882,20 @@
   .truvor__lk__order-info {
     padding: 20px;
   }
+  .truvor__lk__sale__progress__item--last .truvor__lk__sale__progress__cost, .truvor__lk__sale__progress__item--last .truvor__lk__sale__progress__percentages {
+    display: none;
+  }
+  .truvor__lk__sale__text2 {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    b {
+      display: block;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1052,6 +1073,31 @@
   .modal-content-filter {
     min-height: 100vh;
   }
+  .truvor__lk__sale__wrap {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    &__row {
+      display: block;
+      text-align: center;
+    }
+  }
+  .truvor__lk__sale__label {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 5px;
+  }
+  .truvor__lk__sale__value {
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+  }
+  .truvor__lk__sale__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -1103,5 +1149,19 @@
   }
   .truvor__lk__order-info {
     margin-bottom: 20px;
+  }
+  .truvor__lk__sale__progress__cost,
+  .truvor__lk__sale__progress__percentages {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    top: 0;
+  }
+  .truvor__lk__sale__progress__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .truvor__lk__sale__progress__percentages {
+    margin-top: 60px;
   }
 }
