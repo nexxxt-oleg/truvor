@@ -251,3 +251,109 @@ body {
   outline: none;
   box-shadow: none;
 }
+.mr-15 {
+  margin-right: 15px;
+}
+.fonts-18 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.truvor__page__calc-delivery__table {
+  border-top: 1px solid #D5D4CF;
+  border-left: 1px solid #D5D4CF;
+  border-right: 1px solid #D5D4CF;
+  margin-bottom: 20px;
+  td {
+    height: 60px;
+   vertical-align: middle;
+    background: #FAFAFA;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: #000000;
+    border-bottom: 1px solid #D5D4CF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+}
+.truvor__page__calc-delivery__logo {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 15%;
+}
+.truvor__page__calc-delivery__price {
+  border-left: 1px solid #D5D4CF;
+  width: 15%;
+  text-align: center;
+}
+.truvor__page__calc-delivery__date {
+  border-left: 1px solid #D5D4CF;
+  width: 15%;
+  text-align: center;
+}
+.truvor__page__calc-delivery__title {
+  width: 55%;
+}
+.caption-box {
+  text-align: center;
+  h2 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202123;
+  }
+}
+.truvor__page__calc-delivery__footer {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  padding-bottom: 50px;
+  color: #000000
+}
+.truvor__page__faq-border {
+  display: flex;
+  align-items: center;
+  padding: 35px 40px;
+  margin-bottom: 50px;
+  &__left {
+    width: 50%;
+    padding: 0 50px;
+    border-right: 1px dashed #d5d5d5;
+  }
+  &__right {
+    width: 50%;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4E4E4E;
+  }
+}
+.truvor__page__faq-list {
+  padding-bottom: 30px;
+}
+.truvor__page__faq-item {
+  margin-bottom: 15px;
+  border: 1px solid #DEDEDE;
+  padding: 20px 50px 20px 20px;
+  position: relative;
+  &__header {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: #202123;
+  }
+  &__body {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #202123;
+  }
+}

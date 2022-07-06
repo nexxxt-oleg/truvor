@@ -1924,3 +1924,72 @@ textarea.form-control {
     }
   }
 }
+.truvor__page__number-box {
+  position: relative;
+  padding-left: 73px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  &__n {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #202123;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 1;
+    color: #202123;
+  }
+}
+.text {
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: #202123;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    color: #666666
+  }
+  ul {
+    list-style-type: none;
+    margin: 0 0 12px 0;
+    padding: 0;
+    li {
+      padding: 0 0 5px 20px;
+      margin: 0;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #666666;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 1px;
+        background-color: #666;
+        position: absolute;
+        z-index: 1;
+        top: 13px;
+        left: 0;
+      }
+    }
+  }
+}
