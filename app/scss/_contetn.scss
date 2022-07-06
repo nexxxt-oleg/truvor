@@ -1819,3 +1819,108 @@ a {
 textarea.form-control {
   height: 240px;
 }
+.truvor__page__top-desc {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #202123;
+  padding-bottom: 80px;
+}
+.truvor__page__silver-box {
+  padding: 40px 0;
+  background: #F9F9F9;
+  border-top: 1px solid #D5D5D5;
+}
+.truvor__page__padding {
+  padding: 0 50px;
+}
+.truvor__page__prim {
+  text-align: center;
+  &__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+    margin-bottom: 10px;
+  }
+  &__caption {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 25px;
+  }
+  &__text {
+    font-size: 21px;
+    line-height: 25px;
+    color: #6F6F6F;
+  }
+}
+.truvor__page__delivery-calc-btn {
+  width: 100%;
+  max-width: 602px;
+  margin: 0 auto 20px;
+}
+.truvor__page__callback {
+  border: 1px solid #D5D5D5;
+  display: flex;
+  padding: 35px;
+  align-items: center;
+  margin-bottom: 30px;
+  &__left {
+    width: 45%;
+    border-right: 1px dashed #D5D5D5;
+    padding-right: 90px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a {
+      font-size: 34px;
+      line-height: 50px;
+      text-decoration: none;
+      color: #202123;
+    }
+  }
+  &__right {
+    width: 55%;
+    padding-left: 90px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4E4E4E;
+  }
+}
+.color-blue {
+  color: #09214D;
+}
+.truvor__page__tabs-nav .nav {
+  width: 100%;
+  justify-content: space-around;
+  li {
+    width: 290px;
+  }
+  .nav-link {
+    position: relative;
+    border: none;
+    background: transparent;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    width: 100%;
+    display: block;
+    height: 90px;
+    color: #09214D;
+    font-size: 26px;
+    line-height: 28px;
+    span {
+      display: block;
+      color: #666;
+    }
+    &.active {
+      border-bottom-color: #09214D;
+      span {
+        color: #09214D;
+      }
+    }
+  }
+}

@@ -246,11 +246,11 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid tpad50">
         <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-10 text-center fpad50">
+            <div class="col-xl-8 col-lg-10 text-center fpad50">
                 <div class="truvor__page__delivery-calc-btn">
-                    <a href="" class="truvor__btn-blue w-100 h-66"></a>
+                    <a href="" class="truvor__btn-blue w-100 h-66">РАССЧИТАТЬ СТОИМОСТЬ И СРОК ДОСТАВКИ</a>
                 </div>
                 <p>Стоимость и срок доставки рассчитываются автоматически в процессе оформления заказа. <br>На стоимость
                     доставки влияют удаленность вашего региона, количество и цена товара. </p>
@@ -270,12 +270,61 @@
     </div>
 
     <div class="container-fluid">
-
+        <div class="truvor__page__tabs-nav swiper" id="sliderTab">
+            <ul class="nav  swiper-wrapper" role="tablist">
+                <li class="truvor__page__tabs-nav__item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1"
+                            role="tab" aria-selected="true">
+                        СДЭК
+                        <span>(3-7 дней)</span>
+                    </button>
+                </li>
+                <li class="truvor__page__tabs-nav__item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2"
+                            role="tab" aria-selected="false">
+                        OZON
+                        <span>(3-7 дней)</span>
+                    </button>
+                </li>
+                <li class="truvor__page__tabs-nav__item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3"
+                            role="tab" aria-selected="false">
+                        ПОЧТА РОССИИ
+                        <span>(7-14 дней)</span>
+                    </button>
+                </li>
+                <li class="truvor__page__tabs-nav__item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4"
+                            role="tab" aria-selected="false">
+                        САМОВЫВОЗ
+                        <span>(в день заказа)</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="truvor__page__silver-box">
         <div class="container-fluid">
-
+            <div class="truvor__page__padding">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                        1
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" >
+                        2
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" >
+                        3
+                    </div>
+                    <div class="tab-pane fade" id="tab4" role="tabpanel" >
+                        4
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="container-fluid tpad50">
+
     </div>
 </div>
 <footer class="truvor__footer">
