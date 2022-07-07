@@ -92,7 +92,9 @@
       height: 100%;
     }
   }
-
+  .truvor__page__tabs-nav .nav li {
+    width: 240px;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -112,6 +114,9 @@
   }
   .truvor__lk__sale {
     padding: 0;
+  }
+  .truvor__page__padding {
+    padding: 0 20px;
   }
 }
 
@@ -263,11 +268,42 @@
   .order-history-info__cost {
     padding-bottom: 20px;
   }
+  .truvor__page__callback__left a {
+    white-space: nowrap;
+    font-size: 30px;
+  }
+  .truvor__page__callback,
+  .truvor__page__faq-border {
+    padding: 30px;
+  }
+  .truvor__page__callback__left {
+    height: 46px;
+    padding-right: 45px;
+    width: 350px;
+    min-width: 350px;
+  }
+  .truvor__page__callback__right {
+    flex-grow: 1;
+    padding-left: 45px;
+  }
+  .truvor__page__faq-border__left {
+    padding-left: 0;
+  }
+  .truvor__page__tabs-nav .nav .nav-link {
+    font-size: 22px;
+  }
+  .truvor__page__tabs-nav .nav li {
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 940px) {
-  .hidden-mob {
+  .hidden-mob,
+  .show-from-940 {
     display: none !important;
+  }
+  .show-before-940 {
+    display: inline;
   }
   .truvor__header__row-nav {
     flex-grow: 0;
@@ -276,6 +312,14 @@
   .truvor__header__search-mob {
     display: block;
     order: 2;
+  }
+  .truvor__page__number-box {
+    padding-left: 60px;
+  }
+  .truvor__page__callback__left {
+    min-width: 320px;
+    padding-right: 30px;
+    width: 320px;
   }
   .truvor__form__footer {
     border-top: none;
@@ -363,6 +407,20 @@
   .truvor__lk__sale__wrap {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .truvor__page__padding {
+    padding: 0;
+  }
+  .truvor__page__faq-border__caption{
+    text-align: center;
+  }
+  .faq-soc {
+    justify-content: center;
+    font-size: 20px;
+    line-height: 28px;
+    li {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -896,6 +954,68 @@
       margin-top: 10px;
     }
   }
+  .truvor__page__tabs-nav .nav li {
+    width: 190px;
+    min-width: 190px;
+  }
+  .truvor__page__tabs-nav .nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+  .truvor__page__tabs-nav {
+    overflow: visible !important;
+  }
+  .truvor__page__callback,
+  .truvor__page__faq-border {
+    display: block;
+  }
+  .truvor__page__callback__left,
+  .truvor__page__faq-border__left {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    border-right: none;
+    border-bottom: 1px dashed #d5d5d5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-right: 0;
+
+  }
+  .truvor__page__callback__left .ico {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .truvor__page__callback__right,
+  .truvor__page__faq-border__right {
+    width: 100%;
+    padding-left: 0;
+  }
+  .truvor__page__calc-delivery__top {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .truvor__page__calc-delivery__table,
+  .truvor__page__calc-delivery__table tbody,
+  .truvor__page__calc-delivery__table tr  {
+    display: block !important;
+    width: 100%;
+  }
+  .truvor__page__calc-delivery__table td {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .truvor__page__calc-delivery__date, .truvor__page__calc-delivery__price {
+    border-left: none !important;
+  }
+  .truvor__page__calc-delivery__footer {
+    text-align: center;
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1098,6 +1218,17 @@
     font-size: 18px;
     line-height: 24px;
   }
+  .caption-box .h2, .caption-box h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .truvor__page__callback, .truvor__page__faq-border {
+    padding: 20px;
+  }
+  .truvor__page__faq-border__right br {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -1163,5 +1294,9 @@
   }
   .truvor__lk__sale__progress__percentages {
     margin-top: 60px;
+  }
+  .truvor__page__calc-delivery__top {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

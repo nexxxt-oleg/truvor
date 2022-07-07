@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+
     if (document.getElementById('sliderSubCatalog')) {
         var items = document.getElementById('sliderSubCatalog').getElementsByClassName('sub-menu-catalog-item');
 
@@ -170,6 +172,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         new Swiper('.truvor__lk__nav', {
             slideClass: 'truvor__lk__nav__item',
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+        });
+    }
+
+    if (document.getElementById('sliderTab') && window.screen.width < 768) {
+
+        new Swiper('#sliderTab', {
+            slideClass: 'truvor__page__tabs-nav__item',
             slidesPerView: 'auto',
             spaceBetween: 20,
         });

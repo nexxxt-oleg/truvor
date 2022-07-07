@@ -1993,3 +1993,151 @@ textarea.form-control {
     }
   }
 }
+.truvor__page__calc-delivery__footer {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  padding-bottom: 50px;
+  color: #000000
+}
+.truvor__page__faq-border {
+  display: flex;
+  align-items: center;
+  padding: 35px 40px;
+  margin-bottom: 50px;
+  border: 1px solid #D4D4D4;
+  &__left {
+    width: 50%;
+    padding: 0 50px;
+    border-right: 1px dashed #d5d5d5;
+  }
+  &__right {
+    width: 50%;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4E4E4E;
+    a {
+      color: #09214D;
+      text-decoration: underline;
+    }
+  }
+}
+.truvor__page__faq-list {
+  padding-bottom: 30px;
+
+}
+.truvor__page__faq-item {
+  margin-bottom: 15px;
+  border: 1px solid #DEDEDE;
+  padding: 20px 50px 20px 20px;
+  position: relative;
+  &__header {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: #202123;
+  }
+  &__body {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #202123;
+  }
+}
+.truvor__page__faq-border__caption {
+  font-size: 28px;
+  line-height: 32px;
+  color: #09214D;
+  padding-bottom: 20px;
+}
+.faq-soc {
+  align-items: center;
+  li {
+    padding-right: 35px;
+    a {
+      display: block;
+      color: #09214D;
+      text-decoration: none;
+    }
+  }
+}
+.custom-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  height: 45px;
+  width: 100%;
+  padding: 5px 25px 5px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.175 0L5 4.32659L8.825 0L10 1.33198L5 7L0 1.33198L1.175 0Z' fill='%2309214D'/%3E%3C/svg%3E%0A");
+  background-size: 10px auto;
+  color: #09214D;
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    border-color: #09214D;
+  }
+}
+.truvor__page__calc-delivery__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  height: 45px;
+  background: #fff;
+  border: 1px solid #09214D;
+  color: #09214D;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+    color: #000;
+    border-color: #000;
+  }
+}
+.truvor__page__faq-item__ico {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 20px;
+  transition: all 0.3s ease-in-out;
+  margin-top: -7px;
+  width: 8px;
+  height: 14px;
+  color: #090F26;
+  svg {
+    display: block;
+  }
+}
+.truvor__page__faq-item {
+  position: relative;
+  &__header {
+    position: static;
+
+  }
+  &:not(.collapsed) {
+    border-color: #09214D;
+    .truvor__page__faq-item__ico {
+      color: #5372E7;
+      transform: rotate(90deg);
+    }
+  }
+}
+.show-before-940 {
+  display: none;
+}
