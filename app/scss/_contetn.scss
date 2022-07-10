@@ -2081,11 +2081,15 @@ textarea.form-control {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.175 0L5 4.32659L8.825 0L10 1.33198L5 7L0 1.33198L1.175 0Z' fill='%2309214D'/%3E%3C/svg%3E%0A");
   background-size: 10px auto;
   color: #09214D;
+  font-family: 'Franklin Gothic Book';
   &:focus,
   &:active,
   &:hover {
     outline: none;
     border-color: #09214D;
+  }
+  option {
+    font-family: 'Franklin Gothic Book';
   }
 }
 .truvor__page__calc-delivery__btn {
@@ -2206,4 +2210,98 @@ textarea.form-control {
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: 59px auto;
+}
+.truvor__page__size__top {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #DFDCD7;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  align-items: center;
+  &__right {
+    margin-left: auto;
+    text-align: right;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #09214D;
+    width: 450px;
+  }
+}
+.truvor__page__size__select {
+  label {
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #4E4E4E;
+  }
+  .custom-select {
+    max-width: 406px;
+  }
+}
+
+.truvor__page__size__table {
+  &--left {
+    max-width: 400px;
+  }
+  &__image {
+    display: block;
+    height: 680px;
+    margin: 0;
+    &--center {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.table-size {
+  &__header {
+    display: flex;
+    div {
+      text-align: center;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000;
+      height: 62px;
+      width: 100%;
+    }
+  }
+  &--center {
+    & .table-size__header,
+    & .table-size__body__row {
+      justify-content: space-around;
+      div {
+        width: 50%;
+      }
+    }
+  }
+
+  &__body {
+    &__row {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      div {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        width: 100%;
+        &.color-blue {
+          color: #09214D;
+        }
+      }
+      &:nth-child(2n + 1) {
+        background: #F5F5F5;
+      }
+    }
+  }
+}
+.mob-size-info-box {
+  display: none;
 }

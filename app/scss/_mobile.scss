@@ -297,6 +297,13 @@
   }
 }
 
+@media screen and (max-width: 990px) {
+  .truvor__page__size__table--left {
+    max-width: 100%
+  }
+
+}
+
 @media screen and (max-width: 940px) {
   .hidden-mob,
   .show-from-940 {
@@ -422,6 +429,8 @@
       padding: 0 10px;
     }
   }
+
+
 }
 
 @media screen and (max-width: 767px) {
