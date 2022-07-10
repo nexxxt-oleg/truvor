@@ -1016,6 +1016,19 @@
     text-align: center;
     padding-bottom: 30px;
   }
+  .truvor__page__alert-danger {
+    background-size: 34px 34px;
+    padding-left: 50px;
+    background-position: 0 30px;
+  }
+  .truvor__page__faq-item__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .truvor__page__faq-item__header {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 600px) {
