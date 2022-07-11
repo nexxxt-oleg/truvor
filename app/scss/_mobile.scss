@@ -373,6 +373,10 @@
       padding-top: 30px;
     }
   }
+  .truvor__border-form {
+
+    padding: 100px 80px 40px;
+  }
 }
 
 @media screen and (max-width: 940px) {
@@ -821,6 +825,11 @@
   .modal-content-filter__desc {
     display: none !important;
   }
+
+  .truvor__border-form {
+
+    padding: 20px;
+  }
   .modal-content-filter__params--mob-color {
     margin-left: -10px;
     margin-right: -10px;
@@ -1135,6 +1144,16 @@
   .truvor__page__merka {
     padding-top: 900px;
   }
+  .pl-35 {
+    padding-left: 0;
+  }
+  .pr-35 {
+    padding-right: 0;
+  }
+  .truvor__border-form.truvor__border-form--min-pad {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1404,6 +1423,12 @@
   .col-merka-left__inner {
     padding-right: 80px;
   }
+  .truvor__page__top-desc {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }
 
 
@@ -1492,4 +1517,5 @@
   .col-merka-right__inner2 {
     padding-right: 30px;
   }
+
 }
