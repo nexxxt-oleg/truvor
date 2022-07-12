@@ -110,6 +110,50 @@
   .truvor__page__tabs-nav .nav li {
     width: 240px;
   }
+  .truvor__page__cart {
+    .order-history-info__desc {
+      padding-left: 30px;
+      padding-top: 15px;
+    }
+  }
+  .truvor__page__cart .order-history-info,
+  .truvor__page__cart .truvor__lk__order-info__label-top {
+    padding-right: 80px;
+  }
+  .order-history-info__close {
+    right: 0;
+  }
+  .order-history-info__close__hover {
+    display: none;
+  }
+  .order-history-info__quantity-btn__value {
+    width: 20px;
+    flex-grow: 1;
+    height: 28px;
+  }
+  .order-history-info__quantity-btn__nav {
+    height: 28px;
+    width: 28px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .order-history-info__quantity-btn {
+    width: 100%;
+    max-width: 100px;
+  }
+  .truvor__page__cart .order-history-info__cost {
+    padding-top: 0;
+  }
+  .order-history-info__close__ico {
+    width: 28px;
+    height: 28px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -1154,6 +1198,49 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .truvor__page__cart .order-history-info, .truvor__page__cart .truvor__lk__order-info__label-top {
+    padding-right: 0;
+  }
+  .truvor__page__cart .order-history-info__desc {
+    padding-top: 0;
+    padding-left: 20px;
+  }
+  .truvor__page__cart .order-history-info__cost {
+    padding-bottom: 0 !important;
+  }
+  .truvor__page__cart .order-history-info__right .col-4.text-center {
+    max-width: 135px;
+  }
+  .truvor__page__cart .order-history-info {
+    border-bottom: 1px solid #cdcfd1 !important;
+    padding-bottom: 20px;
+  }
+  .order-history-info__close {
+    top: 100%;
+    margin-top: -60px;
+  }
+  .truvor__page__cart__cupon__inp,
+  .truvor__page__cart__cupon__submit {
+    height: 42px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .truvor__page__nav-cart-top li {
+    .only-pc {
+      display: none;
+    }
+    .only-mob {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      border-top: 4px solid #C8C8CA;
+      color: #C8C8CA;
+    }
+  }
+  .truvor__page__nav-cart-top {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1172,6 +1259,27 @@
   }
   .col-merka-left__inner {
     max-width: 500px;
+  }
+  .truvor__page__cart__cupon {
+    margin-bottom: 15px;
+  }
+  .truvor__page__cart__itog__sale,
+  .truvor__page__cart__itog__value {
+    width: auto;
+  }
+  .truvor__page__cart__itog__cost {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .truvor__page__cart__itog__value__caption {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .truvor__page__cart__itog__sale .truvor__page__cart__itog__cost:after {
+    top: 13px;
+  }
+  .truvor__page__cart .order-history-info__right {
+    padding-right: 30px;
   }
 }
 
@@ -1399,6 +1507,9 @@
       width: 100%;
     }
   }
+  .truvor__btn-blue.h-66 {
+    height: 42px;
+  }
   .mob-size-info-box {
     display: block;
     font-size: 16px;
@@ -1428,7 +1539,17 @@
     font-size: 16px;
     line-height: 24px;
   }
-
+  .truvor__page__cart__cupon__submit {
+    width: 120px;
+    padding: 5px;
+    min-width: 120px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .truvor__page__cart__cupon__inp {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 

@@ -1267,11 +1267,13 @@ a {
           }
         }
       }
+
       &__footer {
         .truvor__btn-blue {
           width: 100%;
           margin-bottom: 30px;
           height: 56px;
+
           &:disabled {
             background: #F2F3F4 !important;
             border: 1px solid #DEDFE0 !important;
@@ -1282,6 +1284,7 @@ a {
     }
   }
 }
+
 .truvor__btn-blue-border {
   display: inline-flex;
   align-items: center;
@@ -1297,6 +1300,7 @@ a {
   text-align: center;
   color: #202123;
 }
+
 .mb-50 {
   margin-bottom: 50px;
 }
@@ -1306,8 +1310,10 @@ a {
   overflow: hidden;
   padding-bottom: 50px;
 }
+
 .truvor__lk__nav {
   overflow: visible;
+
   .nav {
     border-bottom: 1px solid #D5D5D5;
     justify-content: space-evenly;
@@ -1324,15 +1330,19 @@ a {
     height: 50px;
     color: #666;
     position: relative;
+
     svg {
       margin-right: 20px;
     }
+
     &:hover {
       color: #09214D;
     }
   }
+
   &.active a {
     color: #09214D;
+
     &::after {
       content: "";
       display: block;
@@ -1346,6 +1356,7 @@ a {
     }
   }
 }
+
 .truvor__lk__desc {
   padding: 40px 0;
   background: #F3F3F3;
@@ -1354,14 +1365,17 @@ a {
   font-size: 22px;
   line-height: 140%;;
 }
+
 .truvor__lk__order-nav {
   padding-bottom: 40px;
 }
+
 .truvor__lk__order-info {
   margin-bottom: 36px;
   padding: 45px 70px 35px 70px;
   position: relative;
   border: 1px solid #CDCFD1;
+
   &__number {
     font-weight: 400;
     font-size: 34px;
@@ -1369,15 +1383,18 @@ a {
     color: #09214D;
   }
 }
+
 .truvor__lk__order-info__header {
   &__row {
     display: flex;
     align-items: center;
   }
+
   &__col1 {
     width: 265px;
     padding-right: 10px;
     min-width: 265px;
+
     span {
       font-size: 24px;
       line-height: 24px;
@@ -1385,8 +1402,10 @@ a {
       color: #202123;
     }
   }
+
   &__col2 {
     width: 600px;
+
     span {
       font-size: 22px;
       line-height: 24px;
@@ -1394,12 +1413,15 @@ a {
     }
   }
 }
+
 .truvor__lk__order-info__header__row--first {
   padding-right: 50px;
 }
+
 .fpad15 {
   padding-bottom: 15px;
 }
+
 .form-label {
   display: block;
   font-weight: 400;
@@ -1408,6 +1430,7 @@ a {
   color: #000000;
   margin-bottom: 12px;
 }
+
 .form-control {
   background: #FFFFFF;
   border: 1px solid #D5D5D5;
@@ -1417,21 +1440,25 @@ a {
   font-size: 24px;
   line-height: 27px;
   color: #000000;
+
   &:hover,
   &:focus {
     border: 1px solid #D5D5D5;
     outline: none;
   }
+
   &::placeholder {
     opacity: 1;
     color: #666;
   }
 }
+
 .form-control.is-invalid, .was-validated .form-control:invalid {
   padding-right: 30px;
   background-image: none !important;
   border-color: #BB1717;
 }
+
 .invalid-feedback {
   font-weight: 400;
   font-size: 22px !important;
@@ -1441,28 +1468,36 @@ a {
   padding-top: 14px !important;
   margin: 0 !important;
 }
+
 .truvor__form__pass-col {
   width: calc(50% - 50px);
 }
-.truvor__form__footer{
+
+.truvor__form__footer {
   border-top: 1px solid #D5D5D5;
   padding-top: 50px;
 }
+
 .truvor__form__submit-col {
   margin: 0 auto;
   max-width: 565px;
 }
+
 .truvor__btn-blue.h-66 {
   height: 66px;
 }
+
 .tpad20 {
   padding-top: 20px;
 }
+
 .custom-checkbox-form {
   display: block;
   position: relative;
+
   input {
     display: none;
+
     &:checked + span {
       &::before {
         content: "";
@@ -1477,6 +1512,7 @@ a {
       }
     }
   }
+
   span {
     display: block;
     position: relative;
@@ -1485,10 +1521,12 @@ a {
     font-size: 16px;
     line-height: 140%;
     color: #000000;
+
     a {
       color: #000000;
       text-decoration: underline;
     }
+
     &::after {
       content: "";
       display: block;
@@ -1503,19 +1541,24 @@ a {
     }
   }
 }
+
 .truvor__lk__nav__item a {
   white-space: nowrap;
 }
+
 .order-history-info {
   width: 100%;
   padding-bottom: 24px;
+
   &:not(:last-child) {
     margin-bottom: 24px;
     border-bottom: 1px solid #cdcfd1;
   }
+
   &__left {
     display: flex;
   }
+
   &__img {
     border: 1px solid #CDCFD1;
     min-width: 204px;
@@ -1525,7 +1568,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    img  {
+
+    img {
       display: block;
       max-width: 100%;
       height: auto;
@@ -1534,12 +1578,14 @@ a {
       object-fit: contain;
     }
   }
+
   &__desc {
     width: 200px;
     flex-grow: 1;
     padding-left: 67px;
     padding-top: 20px;
   }
+
   &__title {
     font-size: 20px;
     line-height: 28px;
@@ -1547,10 +1593,12 @@ a {
     padding-bottom: 15px;
     color: #09214D;
   }
+
   &__har {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+
     dt {
       font-size: 18px;
       line-height: 20px;
@@ -1561,6 +1609,7 @@ a {
       color: #202123;
       padding-right: 10px;
     }
+
     dd {
       font-size: 20px;
       line-height: 20px;
@@ -1570,9 +1619,11 @@ a {
       padding-bottom: 15px;
     }
   }
+
   &__right {
     padding-top: 40px;
   }
+
   &__cost {
     text-align: center;
     font-weight: 700;
@@ -1583,6 +1634,7 @@ a {
     padding-bottom: 30px;
     padding-top: 8px;
   }
+
   &__cost-old {
     position: relative;
     text-align: center;
@@ -1591,6 +1643,7 @@ a {
     line-height: 32px;
     color: #C2C2C2;
     display: block;
+
     &::after {
       content: "";
       display: block;
@@ -1603,6 +1656,7 @@ a {
       background-color: #C2C2C2;
     }
   }
+
   &__quantity {
     max-width: 130px;
     width: 100%;
@@ -1616,20 +1670,24 @@ a {
     border: 1px solid #CDCFD1;
   }
 }
+
 .truvor__lk__order-info__label-top {
   border-top: 1px solid #999999;
   padding-top: 30px;
   padding-bottom: 15px;
   margin-top: 15px;
+
   span {
     font-size: 15px;
     line-height: 17px;
     color: #09214D;
   }
 }
+
 .order-history-info__mob-label {
   display: none;
 }
+
 .truvor__lk__order-nav {
   .nav-link {
     width: 215px;
@@ -1645,9 +1703,11 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+
     &:not(:last-child) {
       margin-right: 20px;
     }
+
     &.active {
       background: #FFFFFF;
       border-color: #09214D;
@@ -1655,6 +1715,7 @@ a {
     }
   }
 }
+
 .truvor__lk__order-info__accordion-button {
   position: absolute;
   z-index: 10;
@@ -1663,28 +1724,35 @@ a {
   padding-right: 20px;
   height: 30px;
   cursor: pointer;
+
   span {
     font-size: 24px;
     line-height: 30px;
     color: #35486C;
+
     &.open {
       display: none;
     }
+
     &.close {
       display: block;
     }
   }
+
   &.collapsed {
     .close {
       display: none;
     }
+
     .open {
       display: block;
     }
+
     &::after {
       transform: rotate(45deg);
     }
   }
+
   &::after {
     content: "";
     display: block;
@@ -1701,6 +1769,7 @@ a {
     margin-top: -5px;
   }
 }
+
 .truvor__btn-blue:hover,
 .truvor__btn-blue:focus {
   color: #fff;
@@ -1708,6 +1777,7 @@ a {
 
 .truvor__lk__sale {
   padding: 0 50px;
+
   &__text {
     font-size: 24px;
     line-height: 34px;
@@ -1715,21 +1785,25 @@ a {
     text-align: center;
     color: #000000;
   }
+
   &__wrap {
     border: 1px solid #999999;
     padding: 30px 70px;
     margin-bottom: 30px;
+
     &__row {
       display: flex;
       padding: 8px 0;
     }
   }
+
   &__label {
     font-size: 20px;
     line-height: 40px;
     flex-grow: 1;
     color: #333333;
   }
+
   &__value {
     width: 180px;
     font-weight: 700;
@@ -1737,15 +1811,18 @@ a {
     line-height: 40px;
     color: #09214D;
   }
+
   &__progress {
     display: flex;
     padding-bottom: 25px;
     justify-content: space-between;
+
     &__item {
       width: 33%;
       position: relative;
       padding-top: 65px;
       padding-bottom: 65px;
+
       &--last {
         & .truvor__lk__sale__progress__cost,
         & .truvor__lk__sale__progress__percentages {
@@ -1756,6 +1833,7 @@ a {
         }
       }
     }
+
     &__cost,
     &__percentages {
       width: 180px;
@@ -1771,15 +1849,18 @@ a {
       line-height: 40px;
       color: #09214D;
     }
+
     &__percentages {
       margin-top: 80px;
     }
+
     &__line {
       background: #C4C4C4;
       border-radius: 5px;
       height: 10px;
       overflow: hidden;
       position: relative;
+
       div {
         background: #09214D;
         border-radius: 5px;
@@ -1792,6 +1873,7 @@ a {
       }
     }
   }
+
   &__text2 {
     font-weight: 400;
     font-size: 22px;
@@ -1801,6 +1883,7 @@ a {
     justify-content: center;
     color: #333333;
     padding-bottom: 20px;
+
     b {
       margin-left: 20px;
       font-size: 30px;
@@ -1810,15 +1893,18 @@ a {
       white-space: nowrap;
     }
   }
+
   &__footer {
     max-width: 404px;
     margin: 0 auto;
     width: 100%;
   }
 }
+
 textarea.form-control {
   height: 240px;
 }
+
 .truvor__page__top-desc {
   font-weight: 400;
   font-size: 24px;
@@ -1827,16 +1913,20 @@ textarea.form-control {
   color: #202123;
   padding-bottom: 80px;
 }
+
 .truvor__page__silver-box {
   padding: 40px 0;
   background: #F9F9F9;
   border-top: 1px solid #D5D5D5;
 }
+
 .truvor__page__padding {
   padding: 0 50px;
 }
+
 .truvor__page__prim {
   text-align: center;
+
   &__ico {
     display: flex;
     align-items: center;
@@ -1844,6 +1934,7 @@ textarea.form-control {
     height: 115px;
     margin-bottom: 10px;
   }
+
   &__caption {
     font-size: 22px;
     line-height: 24px;
@@ -1851,23 +1942,27 @@ textarea.form-control {
     color: #000;
     padding-bottom: 25px;
   }
+
   &__text {
     font-size: 21px;
     line-height: 25px;
     color: #6F6F6F;
   }
 }
+
 .truvor__page__delivery-calc-btn {
   width: 100%;
   max-width: 602px;
   margin: 0 auto 20px;
 }
+
 .truvor__page__callback {
   border: 1px solid #D5D5D5;
   display: flex;
   padding: 35px;
   align-items: center;
   margin-bottom: 30px;
+
   &__left {
     width: 45%;
     border-right: 1px dashed #D5D5D5;
@@ -1876,6 +1971,7 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     a {
       font-size: 34px;
       line-height: 50px;
@@ -1883,6 +1979,7 @@ textarea.form-control {
       color: #202123;
     }
   }
+
   &__right {
     width: 55%;
     padding-left: 90px;
@@ -1891,15 +1988,19 @@ textarea.form-control {
     color: #4E4E4E;
   }
 }
+
 .color-blue {
   color: #09214D;
 }
+
 .truvor__page__tabs-nav .nav {
   width: 100%;
   justify-content: space-around;
+
   li {
     width: 290px;
   }
+
   .nav-link {
     position: relative;
     border: none;
@@ -1912,23 +2013,28 @@ textarea.form-control {
     color: #09214D;
     font-size: 26px;
     line-height: 28px;
+
     span {
       display: block;
       color: #666;
     }
+
     &.active {
       border-bottom-color: #09214D;
+
       span {
         color: #09214D;
       }
     }
   }
 }
+
 .truvor__page__number-box {
   position: relative;
   padding-left: 73px;
   padding-bottom: 20px;
   padding-top: 5px;
+
   &__n {
     position: absolute;
     top: 0;
@@ -1945,6 +2051,7 @@ textarea.form-control {
     color: #202123;
   }
 }
+
 .text {
   h3 {
     font-weight: 400;
@@ -1953,6 +2060,7 @@ textarea.form-control {
     color: #202123;
     margin-bottom: 30px;
   }
+
   h4 {
     font-weight: 400;
     font-size: 22px;
@@ -1960,6 +2068,7 @@ textarea.form-control {
     color: #000;
     margin-bottom: 12px;
   }
+
   p {
     font-weight: 400;
     font-size: 20px;
@@ -1967,10 +2076,12 @@ textarea.form-control {
     margin-bottom: 12px;
     color: #666666
   }
+
   ul {
     list-style-type: none;
     margin: 0 0 12px 0;
     padding: 0;
+
     li {
       padding: 0 0 5px 20px;
       margin: 0;
@@ -1979,6 +2090,7 @@ textarea.form-control {
       line-height: 28px;
       color: #666666;
       position: relative;
+
       &::after {
         content: "";
         display: block;
@@ -1993,6 +2105,7 @@ textarea.form-control {
     }
   }
 }
+
 .truvor__page__calc-delivery__footer {
   font-weight: 400;
   font-size: 22px;
@@ -2000,38 +2113,45 @@ textarea.form-control {
   padding-bottom: 50px;
   color: #000000
 }
+
 .truvor__page__faq-border {
   display: flex;
   align-items: center;
   padding: 35px 40px;
   margin-bottom: 50px;
   border: 1px solid #D4D4D4;
+
   &__left {
     width: 50%;
     padding: 0 50px;
     border-right: 1px dashed #d5d5d5;
   }
+
   &__right {
     width: 50%;
     padding-left: 50px;
     font-size: 20px;
     line-height: 30px;
     color: #4E4E4E;
+
     a {
       color: #09214D;
       text-decoration: underline;
     }
   }
 }
+
 .truvor__page__faq-list {
   padding-bottom: 30px;
 
 }
+
 .truvor__page__faq-item {
   margin-bottom: 15px;
   border: 1px solid #DEDEDE;
   padding: 20px 50px 20px 20px;
   position: relative;
+
   &__header {
     cursor: pointer;
     font-weight: 400;
@@ -2039,6 +2159,7 @@ textarea.form-control {
     line-height: 27px;
     color: #202123;
   }
+
   &__body {
     padding-top: 20px;
     font-weight: 400;
@@ -2047,16 +2168,20 @@ textarea.form-control {
     color: #202123;
   }
 }
+
 .truvor__page__faq-border__caption {
   font-size: 28px;
   line-height: 32px;
   color: #09214D;
   padding-bottom: 20px;
 }
+
 .faq-soc {
   align-items: center;
+
   li {
     padding-right: 35px;
+
     a {
       display: block;
       color: #09214D;
@@ -2064,6 +2189,7 @@ textarea.form-control {
     }
   }
 }
+
 .custom-select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2082,16 +2208,19 @@ textarea.form-control {
   background-size: 10px auto;
   color: #09214D;
   font-family: 'Franklin Gothic Book';
+
   &:focus,
   &:active,
   &:hover {
     outline: none;
     border-color: #09214D;
   }
+
   option {
     font-family: 'Franklin Gothic Book';
   }
 }
+
 .truvor__page__calc-delivery__btn {
   display: flex;
   align-items: center;
@@ -2105,6 +2234,7 @@ textarea.form-control {
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
+
   &:focus,
   &:active,
   &:hover {
@@ -2114,6 +2244,7 @@ textarea.form-control {
     border-color: #000;
   }
 }
+
 .truvor__page__faq-item__ico {
   position: absolute;
   z-index: 10;
@@ -2124,27 +2255,34 @@ textarea.form-control {
   width: 8px;
   height: 14px;
   color: #090F26;
+
   svg {
     display: block;
   }
 }
+
 .truvor__page__faq-item {
   position: relative;
+
   &__header {
     position: static;
 
   }
+
   &:not(.collapsed) {
     border-color: #09214D;
+
     .truvor__page__faq-item__ico {
       color: #5372E7;
       transform: rotate(90deg);
     }
   }
 }
+
 .show-before-940 {
   display: none;
 }
+
 .truvor__page__download-link {
   display: inline-flex;
   align-items: center;
@@ -2153,37 +2291,46 @@ textarea.form-control {
   border-radius: 2px;
   padding: 10px 15px;
   text-decoration: none;
+
   &__ico {
     padding-right: 20px;
   }
+
   &__text {
     font-weight: 400;
     font-size: 17px;
     line-height: 23px;
     color: #010F32;
   }
+
   &__type {
     color: rgba(58, 98, 255, 1);
   }
 }
+
 .truvor__page__requirements {
   padding-top: 50px;
   background: #F9F9F9;
+
   &__item {
     display: flex;
     padding-bottom: 15px;
+
     &__ico {
       width: 40px;
       min-width: 40px;
     }
+
     &__desc {
       flex-grow: 1;
+
       h3 {
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 10px;
         color: #09214D;
       }
+
       p {
         font-size: 15px;
         line-height: 24px;
@@ -2191,6 +2338,7 @@ textarea.form-control {
       }
     }
   }
+
   &__footer {
     margin-top: 15px;
     padding-top: 25px;
@@ -2199,9 +2347,11 @@ textarea.form-control {
     border-bottom: 2px dashed #d5d4cf;
   }
 }
+
 .tpad10 {
   padding-top: 10px;
 }
+
 .truvor__page__alert-danger {
   max-width: 960px;
   padding-left: 80px;
@@ -2211,6 +2361,7 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-size: 59px auto;
 }
+
 .truvor__page__size__top {
   display: flex;
   position: relative;
@@ -2218,6 +2369,7 @@ textarea.form-control {
   padding-bottom: 20px;
   margin-bottom: 25px;
   align-items: center;
+
   &__right {
     margin-left: auto;
     text-align: right;
@@ -2228,6 +2380,7 @@ textarea.form-control {
     width: 450px;
   }
 }
+
 .truvor__page__size__select {
   label {
     margin-right: 15px;
@@ -2236,6 +2389,7 @@ textarea.form-control {
     line-height: 24px;
     color: #4E4E4E;
   }
+
   .custom-select {
     max-width: 406px;
   }
@@ -2245,10 +2399,12 @@ textarea.form-control {
   &--left {
     max-width: 400px;
   }
+
   &__image {
     display: block;
     height: 680px;
     margin: 0;
+
     &--center {
       img {
         display: block;
@@ -2261,6 +2417,7 @@ textarea.form-control {
 .table-size {
   &__header {
     display: flex;
+
     div {
       text-align: center;
       font-weight: 400;
@@ -2271,10 +2428,12 @@ textarea.form-control {
       width: 100%;
     }
   }
+
   &--center {
     & .table-size__header,
     & .table-size__body__row {
       justify-content: space-around;
+
       div {
         width: 50%;
       }
@@ -2286,41 +2445,50 @@ textarea.form-control {
       display: flex;
       align-items: center;
       height: 40px;
+
       div {
         font-size: 18px;
         line-height: 22px;
         text-align: center;
         color: #000000;
         width: 100%;
+
         &.color-blue {
           color: #09214D;
         }
       }
+
       &:nth-child(2n + 1) {
         background: #F5F5F5;
       }
     }
   }
 }
+
 .mob-size-info-box {
   display: none;
 }
+
 .col-merka-left {
   padding-top: 250px;
   text-align: right;
 }
+
 .col-merka-right__inner1 {
   padding-top: 30px;
   min-height: 450px;
 }
+
 .truvor__page__top-desc a {
   text-decoration: underline;
   color: #09214D;
 }
+
 .truvor__border-form {
   border: 1px solid #999999;
   padding: 100px 140px 40px;
 }
+
 .form-label2 {
   display: block;
   font-weight: 400;
@@ -2329,6 +2497,7 @@ textarea.form-control {
   padding-bottom: 10px;
   color: #333333;
 }
+
 .form-control-info-footer {
   display: block;
   font-weight: 400;
@@ -2336,35 +2505,268 @@ textarea.form-control {
   line-height: 18px;
   color: #666666;
 }
+
 .custom-checkbox-form.custom-checkbox-form--center {
   display: inline-flex;
   margin-bottom: 30px;
+
   span {
     line-height: 30px;
   }
 }
+
 .truvor__form__submit-col2 {
   max-width: 440px;
   margin: 0 auto;
 }
+
 .truvor__form__footer-link {
   font-size: 16px;
   line-height: 18px;
   color: #09214D;
 }
+
 .fpad15 {
   padding-bottom: 15px;
 }
+
 .color-silver {
   color: #666;
 }
+
 .pl-35 {
   padding-left: 35px;
 }
+
 .pr-35 {
   padding-right: 35px;
 }
+
 .truvor__border-form.truvor__border-form--min-pad {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.truvor__page__nav-cart-top {
+  width: 100%;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  li {
+    width: 33.333%;
+    padding: 0 3px;
+    .only-pc {
+      display: flex;
+      padding: 5px 5px 25px;
+      justify-content: center;
+      height: 60px;
+      border-bottom: 3px solid #C8C8CA;
+      font-family: 'Franklin Gothic Medium';
+      font-size: 20px;
+      line-height: 24px;
+      color: #C8C8CA;
+      align-items: center;
+      svg {
+        margin: 0 12px 0 16px;
+      }
+    }
+    .only-mob {
+      display: none;
+    }
+    &.active {
+      span {
+        color: #09214D;
+        border-color: #09214D;
+      }
+    }
+  }
+}
+.truvor__page__cart {
+  .truvor__lk__order-info__label-top {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #cdcfd1;
+    padding-right: 120px;
+  }
+  .order-history-info {
+    border-bottom: 1px solid #cdcfd1;
+    position: relative;
+    padding-right: 120px;
+  }
+}
+.order-history-info__quantity-btn {
+  display: inline-flex;
+  align-items: center;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 48px;
+    border: 1px solid #09214D;
+    color: #09214D;
+    height: 48px;
+    &:not(.disabled):hover {
+      background: #09214D;
+      color: #fff;
+    }
+    &.disabled {
+      border-color: #CDCFD1 !important;
+    }
+  }
+  &__value {
+    width: 70px;
+    height: 48px;
+    border-top: 1px solid #CDCFD1;
+    border-bottom: 1px solid #CDCFD1;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #393D46;
+
+  }
+}
+
+.order-history-info__close {
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  right: 30px;
+  &__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #202123;
+    width: 44px;
+    height: 44px;
+  }
+  &__hover {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #202123;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover {
+    .order-history-info__close__hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.truvor__page__cart__cupon {
+  padding-top: 50px;
+  max-width: 568px;
+  margin: 0 auto 30px;
+  &__form {
+    border: 1px solid #09214D;
+  }
+  &__inp {
+    flex-grow: 1;
+    width: 200px;
+    border: none;
+    padding: 10px 15px;
+    height: 58px;
+    font-size: 20px;
+    line-height: 28px;
+
+    letter-spacing: 0.02em;
+    color: #202123;
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  &__submit {
+    border-left: 1px solid #09214D;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    height: 58px;
+    text-align: center;
+    min-width: 190px;
+    padding: 10px 15px;
+    color: #09214D;
+    font-size: 20px;
+    line-height: 28px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+      background: #09214D;
+      color: #fff;
+    }
+  }
+}
+.truvor__page__cart__submit {
+  max-width: 397px;
+  margin: 0 auto;
+}
+.truvor__page__cart__itog {
+  display: flex;
+  padding-bottom: 30px;
+  align-items: flex-end;
+  &__sale {
+    width: 50%;
+    padding-right: 10px;
+    text-align: right;
+    .truvor__page__cart__itog__cost {
+      color: #C2C2C2;
+      padding: 0 3px;
+      &::after {
+        background-color: #c2c2c2;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 16px;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+  }
+  &__value {
+    width: 50%;
+    padding-left: 10px;
+    &__caption {
+      display: block;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      padding-bottom: 2px;
+      color: #202123;
+    }
+    .truvor__page__cart__itog__cost {
+      color: #09214D;
+    }
+  }
+  &__cost {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    display: inline-block;
+    position: relative;
+  }
 }
