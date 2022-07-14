@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>ЛИЧНЫЙ КАБИНЕТ</title>
+    <title>ОФОРМЛЕНИЕ ЗАКАЗА</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -180,165 +180,494 @@
 
 
 
-<div class="truvor__lk">
-    <div class="container-fluid truvor__page">
-        <header class="truvor__page__header">
-            <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
-        </header>
-        <div class="truvor__lk__nav swiper">
-            <ul class="nav swiper-wrapper">
-                <li class="truvor__lk__nav__item ">
-                    <a href="">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.6133 11.1576L10.6133 11.1576C10.6385 11.0428 10.7229 10.9194 10.8147 10.8235C10.906 10.7281 11.025 10.6386 11.1377 10.6115C11.2036 10.5956 11.3216 10.5866 11.4551 10.5815C11.5921 10.5762 11.7553 10.5749 11.9177 10.577C12.0801 10.5792 12.2428 10.5848 12.3787 10.5937C12.5108 10.6023 12.6277 10.6144 12.6918 10.6322C12.6918 10.6322 12.6918 10.6322 12.6918 10.6322L12.6651 10.7286C12.8084 10.7684 12.9142 10.8465 12.9875 10.9667C13.0917 11.1376 13.0967 11.271 13.0968 13.9033L10.6133 11.1576ZM10.6133 11.1576C10.582 11.3001 10.618 11.4566 10.6876 11.5882C10.7576 11.7203 10.8684 11.8404 11.0047 11.9051L11.0048 11.9051C11.0705 11.9363 11.1645 11.9602 11.2622 11.9766C11.3616 11.9932 11.4727 12.0033 11.5764 12.0033H11.8186V14.2881V16.5731H11.5511C11.3212 16.5731 11.1346 16.6002 10.9882 16.6682C10.8373 16.7382 10.7353 16.8487 10.6723 16.9995L10.7646 17.038L10.6723 16.9995C10.5504 17.2912 10.6173 17.5881 10.8557 17.7888L11.0211 17.928L11.049 17.9515H11.0855H12.5165H13.9474H13.9888L14.0181 17.9222L14.1822 17.7582L14.1114 17.6874L14.1822 17.7581C14.3134 17.6269 14.3828 17.4653 14.3831 17.2966C14.3834 17.1284 14.3152 16.962 14.1875 16.8191L14.1875 16.8191C14.1109 16.7333 14.0484 16.6696 13.9434 16.6334C13.8485 16.6006 13.7229 16.5923 13.5288 16.5824L13.197 16.5657L10.6133 11.1576ZM12.1363 7.06C11.7635 7.17873 11.5163 7.39376 11.3426 7.74874C11.2801 7.87639 11.2397 7.97346 11.2206 8.07585C11.2014 8.17877 11.205 8.28023 11.2189 8.41457C11.3707 9.88562 13.4413 9.98576 13.7638 8.55023C13.8669 8.0913 13.6782 7.64808 13.3605 7.35715C13.0428 7.06622 12.5846 6.91717 12.1363 7.06ZM12.1363 7.06L12.1667 7.15528L12.1363 7.06C12.1363 7.06 12.1363 7.06 12.1363 7.06ZM13.7694 1.0889L13.7586 1.18832L13.7694 1.0889C13.0373 1.00937 11.6767 1.02255 11.0069 1.11616C9.18699 1.37048 7.6043 1.96884 6.1279 2.96157C2.08243 5.68175 0.202063 10.5838 1.38709 15.3201C2.32088 19.0523 5.18979 22.133 8.8696 23.3561C14.2117 25.1318 20.0184 22.8008 22.6384 17.8284C24.9837 13.3775 24.1628 7.95589 20.6046 4.39527C18.7464 2.53583 16.3318 1.3674 13.7694 1.0889ZM4.91911 19.1159L4.84328 19.1811L4.91911 19.1159C2.02011 15.7431 1.61545 11.0161 3.90168 7.25033C5.89604 3.96532 9.67241 2.08062 13.4879 2.46567C17.4422 2.86481 20.787 5.53688 22.0401 9.29745C23.0143 12.2213 22.6123 15.3897 20.9408 17.9625C18.6854 21.4342 14.5039 23.1852 10.4658 22.3496C8.35443 21.9126 6.28602 20.7063 4.91911 19.1159Z"
-                                  fill="currentColor" stroke="currentColor" stroke-width="0.2"/>
-                        </svg>
-                        Мои данные
-                    </a>
+<div class="truvor__page">
+    <div class="fpad50">
+        <div class="container-fluid ">
+            <header class="truvor__page__header">
+                <h1>КОРЗИНА</h1>
+            </header>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xxl-8">
+                    <ul class="nav truvor__page__nav-cart-top">
+                        <li class="active">
+                        <span class="only-pc">1. <svg width="24" height="24">
+                            <use xlink:href="#svg-ico-cart"></use>
+                        </svg> Корзина</span>
+                            <span class="only-mob">
+                            <svg width="24" height="24">
+                                <use xlink:href="#svg-ico-cart"></use>
+                            </svg>
+                        </span>
+                        </li>
+                        <li class="active">
+                        <span class="only-pc">2. <svg width="28" height="18">
+                            <use xlink:href="#svg-ico-order"></use>
+                        </svg> Оформление заказа
+                        </span>
+                            <span class="only-mob">
+                            <svg width="28" height="18">
+                                <use xlink:href="#svg-ico-order"></use>
+                            </svg>
+                        </span>
+                        </li>
+                        <li>
+                        <span class="only-pc">3. <svg width="24" height="24">
+                            <use xlink:href="#svg-ico-order2"></use>
+                        </svg>  Подтверждение заказа
+                        </span>
+                            <span class="only-mob">
+                            <svg width="24" height="24">
+                                <use xlink:href="#svg-ico-order2"></use>
+                            </svg>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="truvor__page__silver-box border-none">
+            <div class="container-fluid ">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <span class="fonts-22 color-silver">Если у вас есть личный кабинет, <a href="">войдите</a> в него. Тогда вам не придется заполнять
+                        все личные данные заново</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="truvor__lk__order-info__body truvor__page__cart">
+            <div class="truvor__lk__order-info__label-top">
+                <div class="row">
+                    <div class="col-md-7">
+                        <span>Товар</span>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <div class="row">
+                            <div class="col-4"><span>Количество</span></div>
+                            <div class="col-4"><span>Цена</span></div>
+                            <div class="col-4"><span>Сумма</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav truvor__lk__order-info__list">
+                <li class="truvor__lk__order-info__list__item order-history-info">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="order-history-info__mob-label order-history-info__mob-label--top">
+                                Товар
+                            </div>
+                            <div class="order-history-info__left">
+                                <div class="order-history-info__img">
+                                    <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                         class="lazy" data-src="images/dist/prod1.png" alt="">
+                                </div>
+                                <div class="order-history-info__desc">
+                                    <div class="order-history-info__title">
+                                        Полуприлегающий мужской классический пиджак коричневый
+                                        полушерстяной в клетку с декоративной вспушкой лацкана
+                                    </div>
+                                    <dl class="order-history-info__har">
+                                        <dt>Артикул:</dt>
+                                        <dd>СПО35299 2962VB 3079</dd>
+
+                                        <dt>Размер:</dt>
+                                        <dd>60</dd>
+
+                                        <dt>Рост:</dt>
+                                        <dd>170</dd>
+
+                                        <dt>Полный размер:</dt>
+                                        <dd>182-100-88</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 ">
+                            <div class="order-history-info__right">
+                                <div class="row ">
+                                    <div class="col-4 text-center">
+                                        <div class="order-history-info__mob-label">Количество</div>
+                                        <div class="order-history-info__quantity">1 шт</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="order-history-info__mob-label">Цена</div>
+                                        <span class="order-history-info__cost">5 600 <span
+                                                class="rouble">a</span></span>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="order-history-info__mob-label">Сумма</div>
+                                        <span class="order-history-info__cost">5 600 <span
+                                                class="rouble">a</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </li>
-                <li class="truvor__lk__nav__item active">
-                    <a href="">
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 20L11 15L4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21071 5.46957 2 6 2H16C16.5304 2 17.0391 2.21071 17.4142 2.58579C17.7893 2.96086 18 3.46957 18 4V20Z"
-                                  stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                        </svg>
-                        Избранное
-                    </a>
-                </li>
-                <li class="truvor__lk__nav__item">
-                    <a href="">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.87634 10.1376L3.87634 10.1376L3.81441 10.4881L2.49428 10.4989L1.09097 10.5105L0.856899 10.5124L1.02011 10.6802L2.71097 12.4185L2.78265 12.3488L2.71097 12.4185L4.40183 14.1568L4.47351 14.2305L4.54519 14.1568L6.23604 12.4185L7.9269 10.6802L8.08993 10.5126L7.85612 10.5105L6.57123 10.4988C6.21846 10.4957 5.89822 10.4892 5.66657 10.4812C5.55363 10.4774 5.46256 10.4732 5.39929 10.469C5.4042 10.4426 5.41053 10.411 5.41833 10.3745C5.43849 10.2802 5.46649 10.1621 5.49844 10.0355C5.56245 9.78212 5.64142 9.49878 5.70367 9.31012L5.60871 9.27878L5.70367 9.31012C6.22627 7.72631 7.2417 6.30398 8.57344 5.29057C11.3392 3.1859 15.1518 3.13267 17.98 5.15944C20.6736 7.0897 21.981 10.5073 21.2715 13.7665C21.109 14.5134 20.9456 14.9826 20.5976 15.7013C19.7925 17.3638 18.5863 18.602 16.9702 19.4261C16.1386 19.8502 15.5631 20.0446 14.6258 20.2177C14.3431 20.27 13.8624 20.297 13.3703 20.297C12.8786 20.2969 12.3865 20.2699 12.0818 20.2174C10.4348 19.9337 8.98247 19.1924 7.7757 18.0193L7.77569 18.0193C7.57665 17.8259 7.31586 17.5433 7.1977 17.3937L7.11923 17.4557L7.1977 17.3937L6.97639 17.1136L6.91425 17.0349L6.83574 17.0972L6.42478 17.4235L6.42477 17.4235C6.19894 17.6028 5.95618 17.7974 5.88558 17.8559L5.75892 17.9609L5.68686 18.0205L5.74164 18.0964L5.86441 18.2664C5.98897 18.439 6.30671 18.7753 6.64136 19.1047C6.97723 19.4354 7.34043 19.7692 7.56017 19.9367C9.95487 21.7622 12.959 22.3612 15.845 21.5878C19.1601 20.6994 21.8415 17.9342 22.7057 14.5174L22.6088 14.4929L22.7057 14.5174C22.9533 13.5384 23.01 13.0672 23.01 11.9928C23.01 10.9184 22.9533 10.4472 22.7057 9.46824L22.6088 9.49276L22.7057 9.46824C22.0076 6.70827 20.1223 4.34283 17.616 3.08424C16.2885 2.41764 15.0694 2.11677 13.5776 2.08739L13.5776 2.08739C13.145 2.07892 12.6961 2.07974 12.5834 2.09031C9.9254 2.33937 7.53381 3.64143 5.86125 5.74943C4.8802 6.98583 4.14704 8.60634 3.87634 10.1376ZM5.38633 10.5578L5.38633 10.5578C5.38633 10.5578 5.38633 10.5578 5.38633 10.5578ZM11.9623 13.0097L11.9623 13.0097C11.9694 13.0265 11.9811 13.043 11.9886 13.0533C11.9981 13.0662 12.0101 13.0815 12.0241 13.0985C12.0521 13.1327 12.0907 13.1774 12.1382 13.2309C12.2334 13.3381 12.367 13.4836 12.5297 13.6574C12.8552 14.0053 13.2988 14.4684 13.7887 14.9702L15.5348 16.7587L15.6065 16.8322L15.6781 16.7585L16.1581 16.2642L16.0864 16.1945L16.1581 16.2641L16.6382 15.7697L16.7059 15.6999L16.6381 15.6303L15.0359 13.9853L13.462 12.3695V10.0951V7.77998V7.67998H13.362H12.6782H11.9945H11.8945V7.77998V10.3047C11.8945 11.3384 11.8972 11.9771 11.9061 12.372C11.9105 12.5692 11.9165 12.7075 11.9247 12.8045C11.9325 12.8977 11.943 12.9643 11.9623 13.0097Z"
-                                  fill="currentColor" stroke="currentColor" stroke-width="0.2"/>
-                        </svg>
-                        История заказов
-                    </a>
-                </li>
-                <li class="truvor__lk__nav__item">
-                    <a href="">
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M11.3887 2.57981L13.8839 1.80894C14.4742 1.62606 15.1159 1.88069 15.3982 2.40744L16.5908 4.63694C16.7118 4.86269 16.9043 5.04731 17.1417 5.16281L19.448 6.28719C20.0173 6.56456 20.2914 7.19631 20.0943 7.77731L19.2968 10.1293C19.2152 10.3708 19.2152 10.6307 19.2968 10.8722L20.1044 13.2539C20.296 13.8174 20.0292 14.4299 19.4774 14.6994L17.1417 15.8378C16.9052 15.9533 16.7118 16.1371 16.5908 16.3637L15.3973 18.5932C15.115 19.1208 14.4733 19.3746 13.883 19.1917L11.3878 18.4208C11.1348 18.3429 10.8625 18.3429 10.6095 18.4208L8.11438 19.1917C7.52405 19.3746 6.88238 19.1199 6.60005 18.5932L5.40746 16.3637C5.28646 16.1379 5.09396 15.9533 4.85655 15.8378L2.52088 14.6986C1.96813 14.4291 1.7023 13.8166 1.89388 13.2531L2.70146 10.8713C2.78305 10.6298 2.78305 10.3699 2.70146 10.1284L1.89388 7.74756C1.70321 7.18406 1.96905 6.57069 2.5218 6.30119L4.85655 5.16281C5.09396 5.04731 5.28646 4.86356 5.40746 4.63694L6.60096 2.40744C6.88238 1.88069 7.52496 1.62694 8.1153 1.80894L10.6105 2.57981C10.8625 2.65856 11.1357 2.65856 11.3887 2.57981V2.57981Z"
-                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                            <path d="M8.25 13.125L13.75 7.875" stroke="currentColor" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8.4789 7.875C8.3524 7.875 8.24974 7.973 8.25065 8.09375C8.25065 8.2145 8.35332 8.3125 8.47982 8.3125C8.60632 8.3125 8.70899 8.2145 8.70899 8.09375C8.70899 7.973 8.60632 7.875 8.4789 7.875"
-                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                            <path d="M13.5199 12.6875C13.3934 12.6875 13.2908 12.7855 13.2917 12.9062C13.2917 13.027 13.3943 13.125 13.5208 13.125C13.6473 13.125 13.75 13.027 13.75 12.9062C13.75 12.7855 13.6473 12.6875 13.5199 12.6875"
-                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                        </svg>
-                        Персональные скидки
-                    </a>
-                </li>
-                <li class="truvor__lk__nav__item">
-                    <a href="">
-                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.7901 12.5461L11.79 12.5461C11.304 12.7915 10.7341 12.8003 10.2557 12.5684C10.2557 12.5684 10.2557 12.5684 10.2557 12.5684L11.7901 12.5461ZM11.7901 12.5461C11.8091 12.5365 11.8546 12.5073 11.92 12.4639C11.9868 12.4194 12.0776 12.3579 12.1895 12.2812C12.4133 12.1278 12.722 11.9135 13.0931 11.6541C13.8354 11.1353 14.8278 10.4355 15.891 9.6801C16.9543 8.92474 17.9264 8.23448 18.636 7.7309C18.9909 7.47911 19.2801 7.27399 19.4823 7.13073L19.7176 6.96417L19.7446 6.94514M11.7901 12.5461L19.7446 6.94514M2.57956 17.6651C2.73492 17.7403 3.01633 17.7429 11 17.7429C18.9837 17.7429 19.2651 17.7403 19.4204 17.6651M2.57956 17.6651L19.7918 6.91193C19.8189 7.16528 19.8237 8.41763 19.8166 12.0509L19.8064 17.2724L19.6938 17.4298C19.6319 17.5164 19.5089 17.6223 19.4204 17.6651M2.57956 17.6651C2.49115 17.6223 2.36813 17.5164 2.30619 17.4298L2.57956 17.6651ZM19.4204 17.6651L19.3986 17.6201C19.4375 17.6013 19.4867 17.567 19.5344 17.526C19.582 17.485 19.6252 17.4398 19.6531 17.4007L19.7565 17.2563L19.7666 12.0508C19.7707 9.95383 19.7709 8.65025 19.765 7.87409C19.7621 7.48588 19.7577 7.23021 19.7516 7.07334C19.7494 7.01848 19.7471 6.97634 19.7446 6.94514M19.4204 17.6651L19.3986 17.6201C19.3691 17.6344 19.3307 17.6483 19.1588 17.6591C18.9873 17.6698 18.6894 17.6772 18.1454 17.6822C17.0579 17.6923 14.992 17.6929 11 17.6929C7.00801 17.6929 4.94206 17.6923 3.85463 17.6822C3.31061 17.6772 3.01266 17.6698 2.84122 17.6591C2.66928 17.6483 2.6309 17.6344 2.60136 17.6201L2.60135 17.6201C2.56245 17.6013 2.51327 17.567 2.46557 17.526C2.418 17.485 2.37482 17.4398 2.34686 17.4007L2.24353 17.2563L2.23337 12.0535C2.23056 10.6184 2.23027 9.31376 2.23206 8.36794C2.23295 7.89501 2.23437 7.51186 2.23625 7.24697C2.2372 7.1145 2.23825 7.01175 2.23942 6.94217C2.23951 6.93673 2.2396 6.93149 2.23969 6.92647C2.24274 6.92858 2.24588 6.93075 2.24911 6.93299L19.7446 6.94514M19.5351 18.9816L19.5241 18.9328L19.5351 18.9816C20.2662 18.8164 20.8548 18.1926 21.0036 17.4296C21.0063 17.4158 21.0082 17.3908 21.0099 17.3594C21.0118 17.3266 21.0135 17.283 21.0152 17.2295C21.0185 17.1224 21.0216 16.9748 21.0244 16.7924C21.0301 16.4277 21.0348 15.9234 21.0386 15.3263C21.0462 14.1319 21.05 12.5654 21.05 10.9989C21.05 9.43247 21.0462 7.86596 21.0386 6.67158C21.0348 6.07441 21.0301 5.57016 21.0244 5.20541C21.0216 5.02306 21.0185 4.87539 21.0152 4.76834C21.0135 4.71485 21.0118 4.67124 21.0099 4.63841C21.0082 4.60703 21.0063 4.58202 21.0036 4.56827C20.8576 3.81935 20.2825 3.20077 19.5611 3.01948C19.5444 3.01527 19.5122 3.01234 19.4719 3.00974C19.4295 3.00701 19.3725 3.00439 19.3022 3.00188C19.1615 2.99685 18.9661 2.9922 18.7241 2.98792C18.2399 2.97935 17.5679 2.97225 16.7709 2.96659C15.1768 2.95528 13.082 2.94977 10.9876 2.95001C8.89314 2.95024 6.79893 2.95622 5.20601 2.96789C4.40957 2.97372 3.73832 2.98098 3.25497 2.98965C3.01332 2.99399 2.81842 2.99868 2.67823 3.00374C2.60817 3.00627 2.55146 3.0089 2.50928 3.01164C2.46934 3.01424 2.43729 3.01718 2.42062 3.02148C1.71555 3.20345 1.14044 3.82949 0.996411 4.56827C0.993729 4.58202 0.991783 4.60703 0.990054 4.63841C0.988246 4.67124 0.986514 4.71485 0.98485 4.76834C0.981521 4.87539 0.978437 5.02306 0.975592 5.20541C0.969903 5.57016 0.965164 6.07441 0.961373 6.67158C0.953791 7.86596 0.95 9.43247 0.95 10.9989C0.95 12.5654 0.953791 14.1319 0.961373 15.3263C0.965164 15.9234 0.969903 16.4277 0.975592 16.7924C0.978437 16.9748 0.981521 17.1224 0.98485 17.2295C0.986514 17.283 0.988246 17.3266 0.990054 17.3594C0.991783 17.3908 0.993729 17.4158 0.996411 17.4296C1.14524 18.1929 1.73355 18.8163 2.4649 18.9816C2.48199 18.9855 2.51419 18.9883 2.55549 18.9909C2.59855 18.9935 2.65598 18.9961 2.72663 18.9985C2.86799 19.0035 3.06347 19.008 3.30516 19.0122C3.78862 19.0206 4.45786 19.0276 5.25086 19.0332C6.83689 19.0444 8.91847 19.05 11 19.05C13.0815 19.05 15.1631 19.0444 16.7491 19.0332C17.5421 19.0276 18.2114 19.0206 18.6948 19.0122C18.9365 19.008 19.132 19.0035 19.2734 18.9985C19.344 18.9961 19.4015 18.9935 19.4445 18.9909C19.4858 18.9883 19.518 18.9855 19.5351 18.9816ZM19.3986 4.37774L19.4204 4.33274L19.3986 4.37774C19.4375 4.39657 19.4867 4.4308 19.5344 4.47186C19.582 4.5128 19.6252 4.55802 19.6531 4.5971C19.6984 4.6604 19.7228 4.70443 19.737 4.75381C19.7515 4.80408 19.7564 4.8635 19.7564 4.95956C19.7564 5.10896 19.7336 5.21474 19.6957 5.27837C19.695 5.279 19.6941 5.27996 19.6927 5.28126C19.6884 5.28525 19.682 5.29082 19.6733 5.29812C19.6559 5.31264 19.631 5.33256 19.5986 5.35769C19.534 5.40787 19.4413 5.47775 19.3245 5.56461C19.0908 5.73828 18.7611 5.97918 18.3669 6.26484C17.5785 6.83612 16.5328 7.58606 15.4827 8.33439C14.4326 9.08273 13.3781 9.82938 12.5723 10.3941C12.1693 10.6765 11.8287 10.9133 11.5819 11.082C11.4584 11.1664 11.3586 11.2337 11.2864 11.281C11.2502 11.3048 11.2212 11.3233 11.1997 11.3365C11.1889 11.3431 11.1803 11.3481 11.1738 11.3517C11.1666 11.3557 11.164 11.3568 11.1644 11.3566C11.082 11.3872 10.9787 11.3968 10.9031 11.3825C10.9022 11.3821 10.9009 11.3815 10.8991 11.3806C10.8937 11.3778 10.8862 11.3737 10.8762 11.3678C10.8562 11.3561 10.8286 11.3389 10.7936 11.3164C10.7236 11.2715 10.6255 11.2063 10.5032 11.1237C10.2587 10.9584 9.91838 10.724 9.51425 10.4429C8.70603 9.88089 7.64319 9.13302 6.58266 8.3814C5.52213 7.62978 4.46402 6.87449 3.66523 6.29762C3.26581 6.00917 2.93138 5.76543 2.69394 5.58909C2.57518 5.50089 2.48093 5.42974 2.41502 5.37836C2.38202 5.35263 2.3565 5.33214 2.33868 5.31709C2.32973 5.30954 2.32316 5.30372 2.31872 5.29951C2.31687 5.29775 2.31572 5.29658 2.3151 5.29593C2.12169 4.97803 2.2548 4.54563 2.60429 4.37636L2.60429 4.37636C2.63253 4.36268 2.67317 4.34894 2.8495 4.33836C3.02476 4.32784 3.32756 4.32057 3.87478 4.31561C4.96868 4.30567 7.03487 4.30491 11 4.30491C14.992 4.30491 17.0579 4.30556 18.1454 4.31561C18.6894 4.32063 18.9873 4.32801 19.1588 4.33874C19.3307 4.34949 19.3691 4.36343 19.3986 4.37774Z"
-                                  fill="currentColor"/>
-                        </svg>
-                        Написать нам
-                    </a>
+                <li class="truvor__lk__order-info__list__item order-history-info">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="order-history-info__mob-label order-history-info__mob-label--top">
+                                Товар
+                            </div>
+                            <div class="order-history-info__left">
+                                <div class="order-history-info__img">
+                                    <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                         class="lazy" data-src="images/dist/prod1.png" alt="">
+                                </div>
+                                <div class="order-history-info__desc">
+                                    <div class="order-history-info__title">
+                                        Полуприлегающий мужской классический пиджак коричневый
+                                        полушерстяной в клетку с декоративной вспушкой лацкана
+                                    </div>
+                                    <dl class="order-history-info__har">
+                                        <dt>Артикул:</dt>
+                                        <dd>СПО35299 2962VB 3079</dd>
+
+                                        <dt>Размер:</dt>
+                                        <dd>60</dd>
+
+                                        <dt>Рост:</dt>
+                                        <dd>170</dd>
+
+                                        <dt>Полный размер:</dt>
+                                        <dd>182-100-88</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="order-history-info__right">
+                                <div class="row ">
+                                    <div class="col-4 text-center">
+                                        <div class="order-history-info__mob-label">Количество</div>
+                                        <div class="order-history-info__quantity">1 шт</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="order-history-info__mob-label">Цена</div>
+                                        <span class="order-history-info__cost">5 600 <span
+                                                class="rouble">a</span></span>
+                                        <span class="order-history-info__cost-old">5 600 <span
+                                                class="rouble">a</span></span>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="order-history-info__mob-label">Сумма</div>
+                                        <span class="order-history-info__cost">5 600 <span
+                                                class="rouble">a</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </li>
             </ul>
+
+
         </div>
     </div>
+    <div class="container-fluid ">
+        <div class="row justify-content-center tpad50 fpad50">
+            <div class="col-lg-6">
+                <div class="h2 text-center">Выберите город</div>
+                <input type="text" class="form-control">
+                <span class="form-control-info-footer tpad10">Выберите свой городе в списке или начните вводить название города. В зависимости от города, мы предложим вам варианты доставки.</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="h2 text-center">Выберите тип доставки</div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 fpad15">
+                <label class="order-delivery">
+                    <input type="radio" class="order-delivery__inp" checked name="delivery" value="1">
+                    <div class="order-delivery__box">
+                        <div class="order-delivery__box__ico">
+                            <img src="images/dist/del1.jpg" alt="">
+                        </div>
+                        <div class="order-delivery__box__title">
+                            ПОЧТА РОССИИ
+                        </div>
+                        <div class="order-delivery__box__price">
+                            <span>от 540 Р</span>
+                            <span>срок доставки от 7 до 14 дней</span>
+                        </div>
+                        <div class="order-delivery__box__body">
+                            Срок доставки указан в среднем по РФ и зависит от удаленности адреса получателя от места
+                            отправки, города Пскова. При оплате наложенным платежом "Почта России" взимает
+                            дополнительный сбор за перевод в размере 3% от общей суммы заказа.
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-3 col-md-6 fpad15">
+                <label class="order-delivery">
+                    <input type="radio" class="order-delivery__inp" name="delivery" value="2">
+                    <div class="order-delivery__box">
+                        <div class="order-delivery__box__ico">
+                            <img src="images/dist/del2.jpg" alt="">
+                        </div>
+                        <div class="order-delivery__box__title">
+                            СДЭК
+                        </div>
+                        <div class="order-delivery__box__price">
+                            <span> от 490 Р</span>
+                            <span>Срок доставки 2-9 дней</span>
+                        </div>
+                        <div class="order-delivery__box__body">
+                            <label class="custom-checkbox-form d-block">
+                                <input type="checkbox" checked>
+                                <span>
+                                    В пункт выдачи заказов <br>(без примерки)
+                                    <b class="cost">490 Р</b>
+                                </span>
+                            </label>
+                            <label class="custom-checkbox-form d-block">
+                                <input type="checkbox">
+                                <span>
+                                    В пункт выдачи заказов <br>(без примерки)
+                                    <b class="cost">490 Р</b>
+                                </span>
+                            </label>
+                            <label class="custom-checkbox-form d-block">
+                                <input type="checkbox">
+                                <span>
+                                    В пункт выдачи заказов <br>(без примерки)
+                                    <b class="cost">490 Р</b>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
 
-    <div class="truvor__lk__desc">
+                </label>
+            </div>
+            <div class="col-lg-3 col-md-6 fpad15">
+                <label class="order-delivery">
+                    <input type="radio" class="order-delivery__inp" name="delivery" value="3">
+                    <div class="order-delivery__box">
+                        <div class="order-delivery__box__ico">
+                            <img src="images/dist/del3.jpg" alt="">
+                        </div>
+                        <div class="order-delivery__box__title">
+                            OZON ROCKET
+                        </div>
+                        <div class="order-delivery__box__price">
+                            <span> от 490 Р</span>
+                            <span>Срок доставки 2-9 дней</span>
+                        </div>
+                        <div class="order-delivery__box__body">
+                            <label class="custom-checkbox-form d-block">
+                                <input type="checkbox" checked>
+                                <span>
+                                    В пункт выдачи заказов <br>(без примерки)
+                                    <b class="cost">490 Р</b>
+                                </span>
+                            </label>
+                            <label class="custom-checkbox-form d-block">
+                                <input type="checkbox">
+                                <span>
+                                    В пункт выдачи заказов <br>(без примерки)
+                                    <b class="cost">490 Р</b>
+                                </span>
+                            </label>
+                            <label class="custom-checkbox-form d-block">
+                                <input type="checkbox">
+                                <span>
+                                    В пункт выдачи заказов <br>(без примерки)
+                                    <b class="cost">490 Р</b>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-3 col-md-6 fpad15">
+                <label class="order-delivery">
+                    <input type="radio" class="order-delivery__inp" name="delivery" value="4">
+                    <div class="order-delivery__box">
+                        <div class="order-delivery__box__ico">
+                            <img src="images/dist/del4.jpg" alt="">
+                        </div>
+                        <div class="order-delivery__box__title">
+                            САМОВЫВОЗ
+                        </div>
+                        <div class="order-delivery__box__price">
+                            <span>бесплатно</span>
+                            <span>в день подтверждения заказа</span>
+                        </div>
+                        <div class="order-delivery__box__body">
+                            Осуществляется по адресу г. Псков , Рижский проспект, д. 40 (режим работы: с 8.00 до 17.00,
+                            с 13.00 до 14.00 обед; суббота, воскресенье — выходные). Необходимо предварительно
+                            согласовать с администратором время вашего приезда.
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="actionToast" class="toast hide w-100 truvor__alert-info" data-bs-autohide="false">
         <div class="container-fluid">
-            Здесь находятся товары, которые вы добавляли в Избранное.<br>
-            Вы можете убрать их из Избранного, просто нажав на флажок в верхней части карточки.
+            <div class="truvor__alert-info__wrap">
+                <button type="button" class="btn-close  float-end" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                <h3>Информация</h3>
+                <p>Это плашка с дополнительной информацией или подсказкой, которая всплывает в случае выбора того или
+                    иного способа оплаты. Тут может быть любой текст с подсказкой или предупреждением.</p>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row ">
-            <div class="col-xl-4 col-lg-6 col-sm-6 col-12 fpad50">
-                <div class="truvor__products__item">
-                    <a href="" class="truvor__products__favorite active">
-                        <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.75 23.25L9 17L0.25 23.25V3.25C0.25 2.58696 0.513392 1.95107 0.982233 1.48223C1.45107 1.01339 2.08696 0.75 2.75 0.75H15.25C15.913 0.75 16.5489 1.01339 17.0178 1.48223C17.4866 1.95107 17.75 2.58696 17.75 3.25V23.25Z"
-                            />
-                        </svg>
-                    </a>
-                    <a href="" class="truvor__products__item__images">
-                        <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                             class="lazy" data-src="images/dist/prod1.png" alt="">
-                    </a>
-                    <a href="" class="truvor__products__item__footer">
-                        <h2>Полуприлегающий мужской классический
-                            пиджак коричневый</h2>
-                        <div class="truvor__products__item__price">
-                            <span class="old-price">8 600 <span class="rouble">a</span></span>
-                            <span class="price">5 600 <span class="rouble">a</span></span>
-                        </div>
-                        <div class="truvor__products__item__props">TRUVOR Classic | Шерсть 100%</div>
-                        <div class="truvor__products__item__props">Артикул товара: СПО35299 2962VB 3079</div>
-                    </a>
+    <div class="container-fluid tpad50">
+        <div class="h2 text-center">Заполните ваши данные</div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="fpad20 ">
+                    <label class="form-label">Имя</label>
+                    <input type="text" class="form-control" name="name">
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-sm-6 col-12 fpad50">
-                <div class="truvor__products__item">
-                    <div class="truvor__products__item__label">
-                        Бесплатная доставка
-                        <span class="ml-15">-70%</span>
+            <div class="col-lg-4 col-md-6">
+                <div class="fpad20 ">
+                    <label class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" name="Фамилия">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="fpad20 ">
+                    <label class="form-label">Отчество</label>
+                    <input type="text" class="form-control" name="Отчество">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="fpad20 ">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="E-mail">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="fpad20 ">
+                    <label class="form-label">Телефон</label>
+                    <input type="tel" class="form-control" name="Телефон">
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col-lg-8 col-md-6">
+                <div class="fpad20 ">
+                    <label class="form-label disabled">Адрес (начните вводить улицу, дом, квартиру)</label>
+                    <input type="text" readonly class="form-control" name="addr">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 fpad20">
+                <button class="btn-border-blue">
+                    <svg class="mr-10" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.500009 9.40389L0.50001 9.40374C0.502795 7.04318 1.44176 4.78009 3.11093 3.11092C4.77996 1.44189 7.04281 0.502941 9.40316 0.5C11.7635 0.502941 14.0264 1.44189 15.6954 3.11092C17.3646 4.78009 18.3035 7.04318 18.3063 9.40374V9.40387C18.3091 11.3308 17.6797 13.2054 16.5146 14.7402L16.4646 14.806L16.4641 14.8076L16.3821 14.9145C16.3478 14.9592 16.3126 15.0049 16.2838 15.042L16.2473 15.089C16.2413 15.0966 16.2373 15.1016 16.235 15.1045C16.2341 15.1057 16.2334 15.1065 16.233 15.107C16.2325 15.1076 16.2323 15.1078 16.2324 15.1078L9.40316 23.1622L2.57402 15.1081L2.57403 15.1081L2.57238 15.1061C2.57239 15.1061 2.56871 15.1017 2.55956 15.0901L2.52313 15.0436C2.49425 15.0065 2.45907 14.9608 2.42466 14.9159L2.33277 14.7956L2.3034 14.757L2.29529 14.7463L2.29319 14.7435L2.29266 14.7428L2.29256 14.7427L2.29253 14.7427L2.2925 14.7426L2.2925 14.7426C1.12688 13.2072 0.497184 11.3317 0.500009 9.40389ZM13.3225 9.40378V9.40315C13.3225 8.62798 13.0926 7.87022 12.662 7.22569C12.2313 6.58116 11.6192 6.07881 10.903 5.78217C10.1869 5.48552 9.39882 5.40791 8.63854 5.55913C7.87826 5.71036 7.17991 6.08364 6.63178 6.63177C6.08365 7.1799 5.71037 7.87826 5.55914 8.63853C5.40792 9.39881 5.48553 10.1869 5.78218 10.903C6.07882 11.6192 6.58117 12.2313 7.2257 12.662C7.87023 13.0926 8.62799 13.3225 9.40316 13.3225H9.40379C10.4427 13.3212 11.4387 12.9079 12.1733 12.1733C12.9079 11.4387 13.3212 10.4427 13.3225 9.40378Z"
+                              stroke="#09214D"/>
+                    </svg>
+                    ВЫБРАТЬ ПУНКТ ВЫДАЧИ СДЭК НА КАРТЕ
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 fpad50">
+                <label class="form-label ">Комментарий</label>
+                <textarea name="Комментарий" class="form-control h150"></textarea>
+            </div>
+
+            <div class="col-12 fpad50">
+                <div class="truvor__footer-info-order">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="truvor__footer-info-order__left">
+                                <h3>Оплата производится при получении товара </h3>
+                                <span>наличными или банковской картой</span>
+                                <ul class="nav truvor__footer-info-order__left__list">
+                                    <li>При доставке в указанный Вами почтомат</li>
+                                    <li>При доставке в указанный Вами офис или пункт выдачи заказов СДЭК</li>
+                                    <li>При курьерской доставки СДЭК на указанный Вами адрес</li>
+                                    <li>В Вашем отделении Почты России (только наличными)</li>
+                                    <li>При самовывозе с нашего склада (г. Псков , Рижский проспект, дом 40, режим
+                                        работы:
+                                        <br>с 8.00 до 17.00, с 13:00 до 14:00 обед; суббота, воскресенье — выходные)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="truvor__footer-info-order__right">
+                                <h3>Сумма заказа</h3>
+                                <ul class="nav truvor__order-list">
+                                    <li>
+                                        <span class="truvor__order-list__count">1x</span>
+                                        <span class="truvor__order-list__title">Полуприлегающий мужской классический пиджак ....</span>
+                                        <span class="truvor__order-list__cost">
+                                            5 600 <span class="rouble">a</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="truvor__order-list__count">1x</span>
+                                        <span class="truvor__order-list__title">Полуприлегающий мужской классический пиджак ....</span>
+                                        <span class="truvor__order-list__cost">
+                                            5 600 <span class="rouble">a</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="truvor__order-delivery">
+                                    <div class="truvor__order-delivery__row">
+                                        <label>Промежуточный итог</label>
+                                        <span class="truvor__order-delivery__cost">
+                                            5 600 <span class="rouble">a</span>
+                                        </span>
+                                    </div>
+                                    <div class="truvor__order-delivery__row">
+                                        <label>Доставка</label>
+                                        <span class="truvor__order-delivery__cost">
+                                            5 600 <span class="rouble">a</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="truvor__order-itog">
+                                    <label>ИТОГО</label>
+                                    <div class="truvor__order-itog__cost">
+                                        5 600 <span class="rouble">a</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="" class="truvor__products__favorite active">
-                        <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.75 23.25L9 17L0.25 23.25V3.25C0.25 2.58696 0.513392 1.95107 0.982233 1.48223C1.45107 1.01339 2.08696 0.75 2.75 0.75H15.25C15.913 0.75 16.5489 1.01339 17.0178 1.48223C17.4866 1.95107 17.75 2.58696 17.75 3.25V23.25Z"
-                            />
-                        </svg>
-                    </a>
-                    <a href="" class="truvor__products__item__images">
-                        <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                             class="lazy" data-src="images/dist/prod1.png" alt="">
-                    </a>
-                    <a href="" class="truvor__products__item__footer">
-                        <h2>Полуприлегающий мужской классический
-                            пиджак коричневый</h2>
-                        <div class="truvor__products__item__price">
-                            <span class="old-price">8 600 <span class="rouble">a</span></span>
-                            <span class="price">5 600 <span class="rouble">a</span></span>
-                        </div>
-                        <div class="truvor__products__item__props">TRUVOR Classic | Шерсть 100%</div>
-                        <div class="truvor__products__item__props">Артикул товара: СПО35299 2962VB 3079</div>
-                    </a>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-sm-6 col-12 fpad50">
-                <div class="truvor__products__item">
-                    <div class="truvor__products__item__label">
-                        Бесплатная доставка
-                        <span class="ml-15">-70%</span>
-                    </div>
-                    <a href="" class="truvor__products__favorite active">
-                        <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.75 23.25L9 17L0.25 23.25V3.25C0.25 2.58696 0.513392 1.95107 0.982233 1.48223C1.45107 1.01339 2.08696 0.75 2.75 0.75H15.25C15.913 0.75 16.5489 1.01339 17.0178 1.48223C17.4866 1.95107 17.75 2.58696 17.75 3.25V23.25Z"
-                            />
-                        </svg>
-                    </a>
-                    <a href="" class="truvor__products__item__images">
-                        <img src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                             class="lazy" data-src="images/dist/prod1.png" alt="">
-                    </a>
-                    <a href="" class="truvor__products__item__footer">
-                        <h2>Полуприлегающий мужской классический
-                            пиджак коричневый</h2>
-                        <div class="truvor__products__item__price">
-                            <span class="old-price">8 600 <span class="rouble">a</span></span>
-                            <span class="price">5 600 <span class="rouble">a</span></span>
-                        </div>
-                        <div class="truvor__products__item__props">TRUVOR Classic | Шерсть 100%</div>
-                        <div class="truvor__products__item__props">Артикул товара: СПО35299 2962VB 3079</div>
-                    </a>
+            <div class="col-lg-6 fpad50">
+                <div class="fpad20">
+                    <button class="truvor__btn-blue w-100 h-66">ОФОРМИТЬ ЗАКАЗ</button>
                 </div>
+                <label class="custom-checkbox-form">
+                    <input type="checkbox" checked>
+                    <span>Отправляя форму, я соглашаюсь с <a href="">договором оферты</a>, <a
+                            href="">правилами сайта</a> и с <a href="">политикой ЗАО "Славянка"</a> в отношении обработки персональных данных.</span>
+                </label>
             </div>
+
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        if (document.getElementById('actionToast')) {
+            let actionToast = document.getElementById('actionToast');
+            let objActionToast = new bootstrap.Toast(actionToast);
+            objActionToast.show();
+            actionToast.addEventListener('hidden.bs.toast', function () {
+                console.log('close');
+            })
+        }
+    });
+</script>
 <footer class="truvor__footer">
     <div class="container-fluid">
         <div class="truvor__footer__top">

@@ -56,6 +56,16 @@
     margin-left: 70px;
   }
 
+  .truvor__page__confirm__footer,
+  .truvor__page__confirm__header,
+  .truvor__page__confirm__body {
+    padding-left: 50px;
+  }
+  .truvor__page__confirm__ps {
+    padding-left: 120px;
+    background-position: 50px 50%;
+  }
+
   .col-merka-left {
     padding-top: 200px;
   }
@@ -134,6 +144,7 @@
   .order-history-info__quantity-btn__nav {
     height: 28px;
     width: 28px;
+
     svg {
       width: 10px;
       height: 10px;
@@ -149,6 +160,7 @@
   .order-history-info__close__ico {
     width: 28px;
     height: 28px;
+
     svg {
       width: 10px;
       height: 10px;
@@ -378,6 +390,32 @@
       z-index: 10;
     }
   }
+  .truvor__page__confirm__header {
+    display: block;
+  }
+  .truvor__page__confirm__link-pdf a {
+    width: 220px;
+  }
+  .truvor__page__confirm__header h2 {
+    position: relative;
+    padding-right: 50px;
+
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .truvor__page__confirm__footer {
+    display: block;
+  }
+  .truvor__page__confirm__footer__left {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .truvor__page__confirm__footer__right {
+    justify-content: center;
+  }
   .truvor__page__size__top__right {
     width: 250px;
     position: absolute;
@@ -401,6 +439,7 @@
   .col-merka-left {
     padding-top: 30px;
     text-align: left;
+
     &__inner {
       padding-left: 70px;
       min-height: 200px;
@@ -409,9 +448,11 @@
   .col-merka-right {
     text-align: right;
     padding-top: 30px;
+
     &__inner1 {
       padding-right: 140px;
     }
+
     &__inner2 {
       padding-right: 100px;
       padding-top: 30px;
@@ -420,6 +461,22 @@
   .truvor__border-form {
 
     padding: 100px 80px 40px;
+  }
+
+  .truvor__footer-info-order {
+    border: none;
+    padding: 0;
+
+    &__left {
+      border: 1px solid #d5d5d5;
+      padding: 24px;
+      margin-bottom: 30px;
+    }
+
+    &__right {
+      border: 1px solid #d5d5d5;
+      padding: 24px;
+    }
   }
 }
 
@@ -588,12 +645,38 @@
   .truvor__footer__top {
     padding-bottom: 27px;
   }
+  .truvor__page__confirm__header {
+    padding: 15px 24px;
+  }
+  .truvor__page__confirm__body {
+    padding: 15px 24px 10px;
+  }
+  .truvor__page__confirm__body__info {
+    display: block;
+  }
+  .truvor__page__confirm__body__info .label,
+  .truvor__page__confirm__body__info .value {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .truvor__page__confirm__ps {
+    background-size: 36px auto;
+    background-position: 30px 24px;
+    padding: 25px 25px 25px 90px;
+    span {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
   .truvor__footer__logo img {
     width: 180px;
     height: auto;
   }
   .truvor__footer__logo {
     width: 180px;
+  }
+  .truvor__page__confirm__footer {
+    padding: 30px 24px;
   }
   .truvor__footer__col-right {
     display: block;
@@ -616,6 +699,29 @@
     li {
       width: 72px;
     }
+  }
+  .truvor__page__confirm__footer__left, 
+  .truvor__page__confirm__footer__right {
+    display: block;
+  }
+  .truvor__page__confirm__footer__ps-tel {
+    padding-left: 0;
+    border-left: none;
+  }
+  .truvor__page__confirm__footer__caption,
+  .truvor__page__confirm__footer__tel {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .truvor__page__confirm__footer__history,
+  .truvor__page__confirm__footer__ps-tel {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .truvor__page__confirm__header .h2, .truvor__page__confirm__header h2 {
+    font-size: 22px;
+    line-height: 28px;
   }
   .truvor__collection {
     margin: -30px -15px 0 -15px;
@@ -1229,6 +1335,7 @@
     .only-pc {
       display: none;
     }
+
     .only-mob {
       display: flex;
       align-items: center;
@@ -1238,9 +1345,7 @@
       color: #C8C8CA;
     }
   }
-  .truvor__page__nav-cart-top {
-    margin-bottom: 30px;
-  }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1498,7 +1603,39 @@
   .truvor__page__merka {
     padding-top: 120%;
   }
+  .truvor__footer-info-order .h3, .truvor__footer-info-order h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .truvor__footer-info-order__left__list li {
+    padding-bottom: 15px;
+  }
+  .truvor__footer-info-order__right .truvor__order-list li,
+  .truvor__footer-info-order__right .truvor__order-delivery__row label {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .truvor__footer-info-order__right .truvor__order-list__cost,
+  .truvor__footer-info-order__right .truvor__order-delivery__cost {
+    font-size: 17px;
+    line-height: 19px;
+  }
+  .truvor__footer-info-order__right .truvor__order-itog {
+    padding: 15px 0;
 
+    label {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+  .truvor__footer-info-order__right .truvor__order-itog__cost {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .fonts-22 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {

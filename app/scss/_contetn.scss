@@ -2532,6 +2532,11 @@ textarea.form-control {
 
 .color-silver {
   color: #666;
+
+  a {
+    color: #666;
+    text-decoration: underline;
+  }
 }
 
 .pl-35 {
@@ -2549,11 +2554,13 @@ textarea.form-control {
 
 .truvor__page__nav-cart-top {
   width: 100%;
-  margin-bottom: 60px;
+
   justify-content: space-between;
+
   li {
     width: 33.333%;
     padding: 0 3px;
+
     .only-pc {
       display: flex;
       padding: 5px 5px 25px;
@@ -2565,13 +2572,16 @@ textarea.form-control {
       line-height: 24px;
       color: #C8C8CA;
       align-items: center;
+
       svg {
         margin: 0 12px 0 16px;
       }
     }
+
     .only-mob {
       display: none;
     }
+
     &.active {
       span {
         color: #09214D;
@@ -2580,6 +2590,7 @@ textarea.form-control {
     }
   }
 }
+
 .truvor__page__cart {
   .truvor__lk__order-info__label-top {
     border-top: none;
@@ -2589,15 +2600,18 @@ textarea.form-control {
     border-bottom: 1px solid #cdcfd1;
     padding-right: 120px;
   }
+
   .order-history-info {
     border-bottom: 1px solid #cdcfd1;
     position: relative;
     padding-right: 120px;
   }
 }
+
 .order-history-info__quantity-btn {
   display: inline-flex;
   align-items: center;
+
   &__nav {
     display: flex;
     align-items: center;
@@ -2608,14 +2622,17 @@ textarea.form-control {
     border: 1px solid #09214D;
     color: #09214D;
     height: 48px;
+
     &:not(.disabled):hover {
       background: #09214D;
       color: #fff;
     }
+
     &.disabled {
       border-color: #CDCFD1 !important;
     }
   }
+
   &__value {
     width: 70px;
     height: 48px;
@@ -2640,6 +2657,7 @@ textarea.form-control {
   z-index: 1;
   top: 45px;
   right: 30px;
+
   &__ico {
     display: flex;
     align-items: center;
@@ -2648,6 +2666,7 @@ textarea.form-control {
     width: 44px;
     height: 44px;
   }
+
   &__hover {
     position: absolute;
     z-index: 2;
@@ -2663,6 +2682,7 @@ textarea.form-control {
     opacity: 0;
     visibility: hidden;
   }
+
   &:hover {
     .order-history-info__close__hover {
       opacity: 1;
@@ -2670,13 +2690,16 @@ textarea.form-control {
     }
   }
 }
+
 .truvor__page__cart__cupon {
   padding-top: 50px;
   max-width: 568px;
   margin: 0 auto 30px;
+
   &__form {
     border: 1px solid #09214D;
   }
+
   &__inp {
     flex-grow: 1;
     width: 200px;
@@ -2688,6 +2711,7 @@ textarea.form-control {
 
     letter-spacing: 0.02em;
     color: #202123;
+
     &:hover,
     &:focus,
     &:active {
@@ -2695,6 +2719,7 @@ textarea.form-control {
       box-shadow: none;
     }
   }
+
   &__submit {
     border-left: 1px solid #09214D;
     border-right: none;
@@ -2709,6 +2734,7 @@ textarea.form-control {
     line-height: 28px;
     background: #fff;
     transition: all 0.3s ease-in-out;
+
     &:hover,
     &:focus,
     &:active {
@@ -2719,21 +2745,26 @@ textarea.form-control {
     }
   }
 }
+
 .truvor__page__cart__submit {
   max-width: 397px;
   margin: 0 auto;
 }
+
 .truvor__page__cart__itog {
   display: flex;
   padding-bottom: 30px;
   align-items: flex-end;
+
   &__sale {
     width: 50%;
     padding-right: 10px;
     text-align: right;
+
     .truvor__page__cart__itog__cost {
       color: #C2C2C2;
       padding: 0 3px;
+
       &::after {
         background-color: #c2c2c2;
         content: "";
@@ -2747,9 +2778,11 @@ textarea.form-control {
       }
     }
   }
+
   &__value {
     width: 50%;
     padding-left: 10px;
+
     &__caption {
       display: block;
       font-weight: 400;
@@ -2758,15 +2791,384 @@ textarea.form-control {
       padding-bottom: 2px;
       color: #202123;
     }
+
     .truvor__page__cart__itog__cost {
       color: #09214D;
     }
   }
+
   &__cost {
     font-size: 28px;
     font-weight: 700;
     line-height: 32px;
     display: inline-block;
     position: relative;
+  }
+}
+
+.fonts-22 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.truvor__page__silver-box.border-none {
+  border-top: none;
+}
+
+.order-delivery {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  &__inp {
+    display: none;
+
+    &:checked + .order-delivery__box {
+      border-color: #09214D !important;
+    }
+  }
+
+  &__box {
+    display: block;
+    flex-grow: 1;
+    border: 1px solid #E5E5E5;
+    padding: 15px 25px;
+
+    &__ico {
+      display: flex;
+      align-items: center;
+      height: 100px;
+      padding-bottom: 15px;
+
+      img {
+        display: block;
+        max-height: 100%;
+        width: auto;
+      }
+    }
+
+    &__title {
+      color: #000000;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px;
+      padding-bottom: 15px;
+    }
+
+    &__price {
+      min-height: 80px;
+
+      span {
+        display: block;
+        padding-bottom: 4px;
+        font-size: 15px;
+        line-height: 17px;
+        color: #000000;
+      }
+    }
+
+    &__body {
+      font-size: 14px;
+      line-height: 19px;
+      color: #000000;
+      .custom-checkbox-form {
+        margin-bottom: 10px;
+        width: 100%;
+        span {
+          display: flex;
+          align-items: center;
+          min-height: 20px;
+          width: 100%;
+          b {
+            margin-left: auto;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+.truvor__alert-info {
+  background: #F3F3F3;
+  border: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 15px;
+  padding: 30px 0;
+  box-shadow: none !important;
+  &__wrap {
+    position: relative;
+    padding-right: 50px;
+    .btn-close {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      right: 0;
+      margin-top: -8px;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 1;
+      margin-bottom: 5px;
+      color: #666666;
+    }
+    p {
+      color: #666666;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 0;
+    }
+  }
+}
+.btn-border-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #09214D;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px;
+  text-align: center;
+
+  color: #09214D;
+}
+.form-label.disabled {
+  color: #D2D2D2;
+}
+textarea.form-control.h150 {
+  height: 150px;
+}
+.truvor__footer-info-order {
+  border: 1px solid #D5D5D5;
+  padding: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  &__left {
+    &__list {
+      padding-top: 50px;
+      li {
+        display: block;
+        width: 100%;
+        padding: 0 0 30px 32px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.77436 10.7799L3.09865 7.9999L2.1875 8.9399L5.77436 12.6666L13.4742 4.66656L12.5695 3.72656L5.77436 10.7799Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: 5px 0;
+        background-size: 16px auto;
+      }
+    }
+  }
+  &__right {
+    padding: 0 0 0 35px;
+    border-left: 1px solid #D4D4D4;
+    .truvor__order-list {
+      li {
+        padding-bottom: 24px;
+        display: flex;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #000;
+        width: 100%;
+
+      }
+      &__count {
+        width: 45px;
+        min-width: 45px;
+      }
+      &__title {
+        width: 300px;
+        padding-right: 15px;
+      }
+      &__cost {
+        margin-left: auto;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27px;
+        color: #1D1D1D;
+      }
+    }
+    .truvor__order-delivery {
+      padding: 20px 0;
+      border-top: 1px solid #F3F3F3;
+      border-bottom: 1px solid #F3F3F3;
+      &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0;
+        label {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;
+          color: #8D8D8D;
+        }
+      }
+      &__cost {
+        font-size: 24px;
+        line-height: 27px;
+        color: #1D1D1D;
+      }
+    }
+    .truvor__order-itog {
+      padding: 28px 0;
+      border-bottom: 1px solid #F3F3F3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      label {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        color: #000000;
+      }
+      &__cost {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: #09214D;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    color: #202123;
+  }
+}
+.truvor__page__confirm {
+  border: 1px solid #999999;
+  &__header {
+    padding: 60px 40px 30px 140px;
+    display: flex;
+    h2 {
+      font-size: 34px;
+      line-height: 40px;
+      font-weight: bold;
+      padding-bottom: 20px;
+      color: #09214D;
+      margin-bottom: 0;
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+  &__body {
+    padding: 0 30px 20px 140px;
+    &__info {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      .label {
+        width: 265px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #09214D;
+        padding-right: 10px;
+      }
+      .value {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        flex-grow: 1;
+        color: #000000;
+      }
+    }
+  }
+}
+.truvor__page__confirm__link-pdf {
+  margin-left: auto;
+  min-width: 220px;
+  a {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #09214D;
+    border: 1px solid #09214D;
+    svg {
+      min-width: 37px;
+      margin-right: 15px;
+    }
+  }
+}
+.truvor__page__confirm__ps {
+  padding: 24px 20px 24px 222px;
+  background-color: #09214D;
+  background-image: url("data:image/svg+xml,%3Csvg width='46' height='56' viewBox='0 0 46 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 52.6657C3 47.0218 7.49191 42.7324 14.3523 42.7324H31.3807C38.5269 42.7324 42.733 47.2475 42.733 52.6657' stroke='white' stroke-width='5' stroke-linecap='square' stroke-linejoin='round'/%3E%3Crect x='7.9668' y='3' width='29.7997' height='29.7997' rx='14.8999' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-position: 140px 50%;
+  background-repeat: no-repeat;
+  background-size: 46px auto;
+  span {
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 865px;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+.truvor__page__confirm__footer {
+  display: flex;
+  align-items: center;
+  padding: 50px 40px 50px 140px;
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  &__caption {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-right: 30px;
+    color: #09214D;
+  }
+  &__history {
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+  }
+  &__tel {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #09214D;
+    margin-right: 40px;
+  }
+  &__ps-tel {
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    border-left: 1px dashed #999;
+    color: #4E4E4E;
   }
 }
