@@ -3172,3 +3172,182 @@ textarea.form-control.h150 {
     color: #4E4E4E;
   }
 }
+.truvor__page__size__top-mob {
+  display: none;
+}
+.truvor__page__vibor {
+  &__top {
+    border-top: 1px solid #DFDCD7;
+    padding-top: 80px;
+  }
+  &__text {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000;
+    padding-bottom: 15px;
+  }
+  &__row1 {
+    margin: 0 -25px;
+  }
+  &__col-1 {
+    width: 31%;
+    flex-grow: 1;
+    padding: 0 25px;
+  }
+  &__col-2 {
+    width: 23%;
+    padding: 0 25px;
+  }
+}
+.form-label3 {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 8px;
+  color: #77797E;
+}
+.btn-silver {
+  background: #F2F3F4;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #9B9DA2;
+  border: 1px solid #DEDFE0;
+  transition:all  0.3s ease-in-out;
+  &:hover {
+    background: #09214D;
+    border-color: #09214D;
+    color: #fff;
+  }
+}
+.w-440 {
+  max-width: 440px;
+  width: 100%;
+}
+.truvor__page__vibor__res {
+  background: #F3F3F3;
+  padding: 30px;
+  margin-bottom: 40px;
+  &__top {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #09214D;
+    padding-bottom: 10px;
+    b {
+      font-weight: bold;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #202123;
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    span {
+      margin-right: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #77797E;
+    }
+    b {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: #202123;
+    }
+  }
+}
+.truvor__page__vibor__table-text {
+  border-bottom: 1px solid #DFDCD7;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  h3 {
+    font-weight: 400;
+    font-size: 22.5131px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  p {
+    color: #202123;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+.table-size--vibor {
+  .table-size__header div {
+    text-align: left;
+    padding-left: 40px;
+    &.color-silver {
+      color: #727272 !important;
+    }
+    &.color-blue {
+      color: #09214D !important;
+      font-weight: bold;
+    }
+  }
+  .table-size__body__row div {
+    text-align: left;
+    padding-left: 40px;
+    &.color-silver {
+      color: #727272 !important;
+    }
+    &.color-blue {
+      color: #09214D !important;
+      font-weight: bold;
+    }
+  }
+}
+.table-size__header__ico {
+  display: block;
+  position: relative;
+  &::after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAYAAAAZMl2nAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALWSURBVHgBrZe/UttAEMZ3TxIxTArxBJHJhIQq5gmQu0zGMOYJgCcIZTqgS5dHwHmBGPJv0tmuUsbuEsiMLx0dN0kKJZbvsmuBRxgLS7K+GY285731z3fr72SEK7le3Q3oBlNUAlBKnqhx7NV8RHEMoCUY7CKEHQ2WKoHdjedlETLAXxxSUajTJRPyCBCVMaYNYB0JCCtmBGLaNEYgWDGUgwi+MdDgnECeyCwg9j8xfA0a5D34vaxkO/HblLxnHsDCDqL+qo3YHxpRdcTwBYDYNUbvBfJDO5bTcrzn2wP5qQtptVjeNFGBdOJcmtMveVs7UVzz4zHL8eqVxfJWn2AqaeuOQCbHeLv4gtQwN+M8MGJyYGll65B6pk/XZbxwXIH8LI0ZVBHNIedMxpwzkCfd0IhtG+1mGphbINR8B1R0ne6jwkkTi4YRt4eQGtbxhRA+Ud35UywS5hYITarSbUdrvWEg3IYZKgxmWrPm0dwNXBTIvDCWs/x413ZXe6E6kzCnQvVD2e7KKdl/w3afqEB+7MTjUH3vafXtAt21jo3YRPdhR6vzixEIJbBf+ARyCgUoL4x1313rDdG8KmpV8sIgT+R9s1E3QxNmOx9miHsEcaF1z/xa53Msip0WedTobIpy+CSHA4uDpH2bV9HKrFZCcEqhOu9dxdwKHq1+J8o5k9SnjbGPZLXktEJEn+xK8uuSV6cVEbvk3/L6/SWvVofRo8SEitympXKtoQ08oG2oRhCatkU3KD6KfVYLzWAPpxUoAoYh6PZ0wfypBuC6SRD0ILUfyHdvrGlF5u2ZrBA8ZiUVywuTB+JOkDwweSFmgmSBmQXBzWqh/jINIhVIGpg0ENEYvJwGkRpkEsZ2H42PgwwQh0kQLAEZdG16ZFLHi+Vai47zS/YJhmALH47/oF0bGNv3bAgWQk6VvM0NQEcG/bc/b47TeQJ2kyy1wo5pAKkn3ndm1fsPPwu45tpjkpYAAAAASUVORK5CYII=');
+    content: "";
+    display: block;
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: -40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+.truvor__page__vibor__table-caption {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  padding-bottom: 28px;
+  color: #09214D;
+}
+.table-size--v-col2 {
+  & .table-size__header div:nth-child(4),
+  & .table-size__body__row div:nth-child(4) {
+    width: 170px;
+    min-width: 170px;
+  }
+}
