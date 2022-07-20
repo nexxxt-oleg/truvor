@@ -6,6 +6,7 @@ import '~/node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '~/node_modules/@fancyapps/ui/dist/fancybox.umd.js'
 //import './smooth-scroll.polyfills.min.js'
 import './lazyload.min.js'
+
 //import './sticky-sidebar.min.js'
 //import './imask.min.js'
 
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         new Swiper('#sliderCarusel', {
             slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 20,
             loop: true,
             lazy: {
@@ -63,17 +65,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 300: {
                     slidesPerView: 1,
+                    slidesPerGroup: 1
                 },
                 660: {
                     slidesPerView: 2,
+                    slidesPerGroup: 2
 
                 },
                 960: {
                     slidesPerView: 2,
+                    slidesPerGroup: 2
                 },
 
                 1280: {
                     slidesPerView: 3,
+                    slidesPerGroup: 3,
                 }
             }
 
@@ -157,7 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
             lazy: {
                 loadPrevNext: true,
             },
-            //loop: true,
+            loop: true,
+            speed: 500,
             //simulateTouch: false,
 
         });

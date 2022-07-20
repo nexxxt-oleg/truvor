@@ -24,6 +24,9 @@
       text-decoration: none;
       color: #202123;
       @include demi_fonts;
+      &:hover {
+        color: #09214D;
+      }
     }
     span {
       display: block;
@@ -47,8 +50,15 @@
   width: 34px;
   justify-content: center;
   text-decoration: none;
+  &:not(:hover) {
+    svg {
+      .hover-color {
+        fill: #202123 !important;
+      }
+    }
+  }
   svg {
-    color: #202123;
+    transition: all 0.3s ease-in-out;
   }
 }
 .mobail-collapsed {
@@ -68,6 +78,9 @@
      @include demi_fonts;
       color: #202123;
       text-decoration: none;
+      &:hover {
+        color: #09214D;
+      }
     }
   }
   &__submenu {
@@ -79,6 +92,9 @@
         line-height: 24px;
         text-decoration: none;
         color: #5A5D62;
+        &:hover {
+          color: #09214D;
+        }
       }
     }
   }

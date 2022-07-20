@@ -79,6 +79,11 @@
   justify-content: center;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:active {
+    background-color: #202123;
+  }
 }
 
 .truvor__carusel-catalog {
@@ -362,7 +367,8 @@ img {
     border: 1px solid #DEDFE0;
     background-color: #fff;
 
-    &.active {
+    &.active,
+    &:hover {
       border: 1px solid #09214D;
     }
   }
@@ -405,12 +411,13 @@ img {
         display: block;
         position: absolute;
         z-index: 10;
-        bottom: 0;
+        opacity: 0;
         left: 0;
         height: 2px;
         background-color: #09214D;
         transition: all 0.3s ease-in-out;
-        width: 0;
+        width: 100%;
+        bottom: 50%;
       }
 
       &.active,
@@ -418,7 +425,8 @@ img {
         color: #09214D;
 
         &::after {
-          width: 100%;
+          opacity: 1;
+          bottom: 0;
         }
       }
     }
@@ -481,6 +489,13 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6H4' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 12H8' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 18H12' stroke='%2377797E' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+  }
+  &:hover {
+    border-color: #09214d !important;
+    color: #09214d !important;
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6H4' stroke='%2309214d' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 12H8' stroke='%2309214d' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M20 18H12' stroke='%2309214d' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+    }
   }
 }
 
@@ -552,6 +567,7 @@ img {
   color: transparent;
 
   &.active {
+    border-color: #09214D !important;
     svg {
       path {
         fill: #09214D !important;
@@ -562,10 +578,17 @@ img {
   &:not(.active) {
     svg {
       path {
-        stroke: #202123;
+        stroke: #09214D;
         stroke-width: 1.5;
         stroke-linecap: round;
         stroke-linejoin: round;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          stroke: #202123 ;
+        }
       }
     }
   }
@@ -608,6 +631,9 @@ img {
     line-height: 28px;
     text-align: center;
     color: #09214D;
+    &:hover {
+      color: #202123;
+    }
   }
 }
 
@@ -662,7 +688,7 @@ img {
 
 .truvor__pagination {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 
   &__pages {
     text-align: center;
@@ -711,6 +737,24 @@ img {
     font-size: 16px;
     line-height: 24px;
     color: #fff;
+  }
+}
+
+.truvor__products__favorite.single{
+  &:not(.active) {
+    &:hover {
+      border-color: #202123;
+      svg path {
+        stroke: #202123
+      }
+    }
+  }
+}
+.truvor__link-size:hover {
+  svg {
+    path {
+      stroke: #202123 !important;
+    }
   }
 }
 
@@ -1335,28 +1379,49 @@ a {
       margin-right: 20px;
     }
 
-    &:hover {
-      color: #09214D;
-    }
-  }
-
-  &.active a {
-    color: #09214D;
-
     &::after {
       content: "";
       display: block;
       position: absolute;
       z-index: 11;
-      top: 100%;
+      top: 50%;
       left: 0;
       width: 100%;
       height: 6px;
       background: #09214D;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: #09214D;
+      svg path.color {
+        fill: #09214D;
+      }
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+      }
+    }
+  }
+
+  &.active a {
+    color: #09214D;
+    svg path.color {
+      fill: #09214D;
+    }
+    &::after {
+      opacity: 1;
+      visibility: visible;
+      top: 100% !important;
     }
   }
 }
-
+.truvor__lk__nav__item a .ico-sale {
+  color: #EF7D00 !important;
+}
 .truvor__lk__desc {
   padding: 40px 0;
   background: #F3F3F3;
@@ -1847,23 +1912,28 @@ a {
       font-weight: 700;
       font-size: 30px;
       line-height: 40px;
+
+    }
+    &__cost {
+      color: #202123;
+    }
+    &__percentages {
       color: #09214D;
     }
-
     &__percentages {
       margin-top: 80px;
     }
 
     &__line {
       background: #C4C4C4;
-      border-radius: 5px;
+
       height: 10px;
       overflow: hidden;
       position: relative;
 
       div {
         background: #09214D;
-        border-radius: 5px;
+
         height: 10px;
         overflow: hidden;
         position: absolute;
@@ -3353,4 +3423,27 @@ textarea.form-control.h150 {
 }
 .truvor__page__vibor__bottom {
   display: none;
+}
+.truvor__product__desc__item__ico-list {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  &__img {
+    width: 65px;
+    min-width: 65px;
+  }
+  &__caption {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5A5D62;
+  }
+}
+.truvor__product__btns__col-adv .truvor__products__favorite.single {
+  height: 50px !important;
+}
+.truvor__btn-blue-border:hover {
+  border-color: #09214d;
+  color: #fff;
+  background-color: #09214d;
 }
