@@ -1,3 +1,9 @@
+@media screen and (min-width: 768px) {
+  .truvor__filter-collapse.accordion-collapse.collapse {
+    display: block !important;
+  }
+}
+
 @media screen and (max-width: 1720px) {
   .truvor__header__right {
     margin-right: 20px;
