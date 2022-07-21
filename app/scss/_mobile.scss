@@ -1442,6 +1442,14 @@
     display: block;
     padding-bottom: 30px;
   }
+  .modal-dialog .modal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modal-dialog .modal-text {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1782,6 +1790,24 @@
   .truvor__page__cart__cupon__inp {
     font-size: 14px;
     line-height: 16px;
+  }
+  .truvor__header__search-box__form__inp {
+    input {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: 30px;
+    }
+  }
+  .truvor__header__search-box__form .btn-search,
+  .truvor__header__search-box__form__close .btn-search-close {
+    height: 30px;
+  }
+  .truvor__header__search-box__form__close {
+    padding-left: 10px;
+  }
+  .hamburger-box {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

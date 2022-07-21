@@ -3483,3 +3483,117 @@ textarea.form-control.h150 {
     color: #fff;
   }
 }
+.truvor__header__search-box  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  &__wrap {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  &__form {
+    &__inp {
+      flex-grow: 1;
+      position: relative;
+      input {
+        display: block;
+        width: 100%;
+        height: 44px;
+        border: 1px solid #999999;
+        border-radius: 5px;
+        padding: 10px 45px 10px 15px;
+        line-height: 22px;
+        font-size: 16px;
+        color: #09214d;
+        &:focus,
+        &:hover {
+          border-color: #09214d;
+          outline: none;
+        }
+      }
+    }
+    .btn-search{
+      display: flex;
+      height: 44px;
+      align-items: center;
+      color: #202123;
+      border: none;
+      width: 40px;
+      justify-content: flex-start;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      &:focus,
+      &:active {
+        color: #09214d;
+      }
+    }
+    &__close {
+      padding-left: 30px;
+
+      .btn-search-close {
+        display: flex;
+        height: 44px;
+        align-items: center;
+        color: #202123;
+        border: none;
+        width: 30px;
+        justify-content: center;
+        &:focus,
+        &:active {
+          color: #09214d;
+        }
+      }
+    }
+  }
+}
+.modal-dialog {
+  max-width: 888px;
+  margin-top: 40px;
+  .modal-content {
+    border: none;
+    border-radius: 0;
+    padding: 50px 70px;
+  }
+  .modal-close {
+    position: absolute;
+    z-index: 10;
+    top: -30px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    &:hover {
+      color: #77797E;
+    }
+  }
+  .truvor__form__footer {
+    padding-top: 0;
+    border-top: none;
+  }
+  .modal-title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  .modal-text {
+    padding-bottom: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+  }
+}
+.modal-backdrop.show {
+  opacity: 0.7 !important;
+}

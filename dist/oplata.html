@@ -42,7 +42,9 @@
                         </button>
                     </div>
                     <div class="truvor__header__search-mob">
-                        <a href="" class="truvor__header__search">
+                        <a href="#searchBox"
+                           data-bs-toggle="collapse" data-bs-target="#searchBox"
+                           class="truvor__header__search">
                             <svg class="ico2" width="24" height="24">
                                 <use xlink:href="#svg-search"></use>
                             </svg>
@@ -64,11 +66,17 @@
                     <span class="hidden-mob">8 800 550-52-58</span>
                 </a>
 
-                <a href="lk-send.html" class="btn-border truvor__header__callback hidden-mob">Заказать обратный звонок</a>
+                <a
+                        data-bs-toggle="modal" data-bs-target="#telModal"
+                        href="#telModal" class="btn-border truvor__header__callback hidden-mob">
+                    Заказать обратный звонок
+                </a>
 
                 <ul class="nav truvor__header__right">
                     <li class="hidden-mob">
-                        <a href="" class="truvor__header__search">
+                        <a href="#searchBox"
+                           data-bs-toggle="collapse" data-bs-target="#searchBox"
+                           class="truvor__header__search">
                             <svg class="ico2" width="24" height="24">
                                 <use xlink:href="#svg-search"></use>
                             </svg>
@@ -105,7 +113,8 @@
                     <div class="d-flex truvor__header__dropdown__row-top">
                         <div class="truvor__header__dropdown__col1 accordion">
                             <div class="accordion-item">
-                                <a href="" class="accordion-header" data-bs-toggle="collapse" data-bs-target="#nav1">МУЖСКАЯ ОДЕЖДА</a>
+                                <a href="" class="accordion-header" data-bs-toggle="collapse" data-bs-target="#nav1">МУЖСКАЯ
+                                    ОДЕЖДА</a>
                                 <div class="accordion-collapse collapse show" id="nav1">
                                     <ul class="nav flex-column truvor__header__dropdown__menu">
                                         <li><a href="category.html">Костюмы</a></li>
@@ -128,7 +137,8 @@
                         </div>
                         <div class="truvor__header__dropdown__col3 accordion">
                             <div class="accordion-item">
-                                <a href="" class="accordion-header collapsed" data-bs-toggle="collapse" data-bs-target="#nav2">ДЕТСКАЯ ОДЕЖДА ДЛЯ МАЛЬЧИКОВ</a>
+                                <a href="" class="accordion-header collapsed" data-bs-toggle="collapse"
+                                   data-bs-target="#nav2">ДЕТСКАЯ ОДЕЖДА ДЛЯ МАЛЬЧИКОВ</a>
                                 <div class="accordion-collapse collapse" id="nav2">
                                     <ul class="nav flex-column truvor__header__dropdown__menu">
                                         <li><a href="category.html">Костюмы</a></li>
@@ -140,7 +150,8 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <a href="" class="accordion-header collapsed" data-bs-toggle="collapse" data-bs-target="#nav3">ДЕТСКАЯ ОДЕЖДА ДЛЯ ДЕВОЧЕК</a>
+                                <a href="" class="accordion-header collapsed" data-bs-toggle="collapse"
+                                   data-bs-target="#nav3">ДЕТСКАЯ ОДЕЖДА ДЛЯ ДЕВОЧЕК</a>
                                 <div class="accordion-collapse collapse" id="nav3">
                                     <ul class="nav flex-column truvor__header__dropdown__menu">
                                         <li><a href="category.html">Костюмы</a></li>
@@ -174,10 +185,42 @@
                 </div>
             </div>
         </div>
+
+        <div class="truvor__header__search-box accordion-collapse collapse" id="searchBox">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="truvor__header__search-box__wrap ">
+                            <form action="" class="d-flex truvor__header__search-box__form">
+                                <div class="truvor__header__search-box__form__inp">
+                                    <input type="text" required name="s">
+
+                                    <button class="btn-search" type="submit">
+                                        <svg class="ico2" width="24" height="24">
+                                            <use xlink:href="#svg-search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+
+
+                                <div class="truvor__header__search-box__form__close">
+                                    <a href="#searchBox"
+                                       data-bs-toggle="collapse" data-bs-target="#searchBox" aria-expanded="false"
+                                       class="btn-search-close"
+                                    >
+                                        <svg class="ico2" width="18" height="18">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-
-
-
 <div class="truvor__page">
     <div class="container-fluid ">
         <header class="truvor__page__header">
@@ -596,7 +639,8 @@
                 <div class="truvor__footer__nav">
                     <div class="truvor__footer__nav__caption">
                         <a href="catalog-man.html">МУЖСКАЯ ОДЕЖДА</a>
-                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse" data-bs-target="#footer1"></div>
+                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#footer1"></div>
                     </div>
                     <div class="truvor__footer__nav__submenu accordion-collapse collapse" id="footer1">
                         <ul class="nav d-block">
@@ -613,7 +657,8 @@
                 <div class="truvor__footer__nav">
                     <div class="truvor__footer__nav__caption">
                         <a href="catalog-man.html">ДЛЯ МАЛЬЧИКОВ</a>
-                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse" data-bs-target="#footer2"></div>
+                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#footer2"></div>
                     </div>
                     <div class="truvor__footer__nav__submenu accordion-collapse collapse" id="footer2">
                         <ul class="nav d-block">
@@ -630,7 +675,8 @@
                 <div class="truvor__footer__nav">
                     <div class="truvor__footer__nav__caption">
                         <a href="catalog-man.html">ДЛЯ ДЕВОЧЕК</a>
-                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse" data-bs-target="#footer3"></div>
+                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#footer3"></div>
                     </div>
                     <div class="truvor__footer__nav__submenu accordion-collapse collapse" id="footer3">
                         <ul class="nav d-block">
@@ -646,7 +692,8 @@
                 <div class="truvor__footer__nav">
                     <div class="truvor__footer__nav__caption">
                         <a href="">БРЕНДЫ</a>
-                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse" data-bs-target="#footer4"></div>
+                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#footer4"></div>
                     </div>
                     <div class="truvor__footer__nav__submenu accordion-collapse collapse " id="footer4">
                         <ul class="nav d-block">
@@ -665,7 +712,8 @@
                 <div class="truvor__footer__nav">
                     <div class="truvor__footer__nav__caption">
                         <a href="catalog-man.html">ИНТЕРНЕТ-МАГАЗИН</a>
-                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse" data-bs-target="#footer5"></div>
+                        <div class="mobail-collapsed collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#footer5"></div>
                     </div>
                     <div class="truvor__footer__nav__submenu accordion-collapse collapse" id="footer5">
                         <ul class="nav d-block">
@@ -705,7 +753,8 @@
                         <li>
                             <a href="" target="_blank" class="truvor__soc-item">
                                 <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="hover-color" d="M0 13.92C0 7.35803 0 4.07707 2.03854 2.03854C4.07707 0 7.35803 0 13.92 0H15.08C21.642 0 24.9229 0 26.9615 2.03854C29 4.07707 29 7.35803 29 13.92V15.08C29 21.642 29 24.9229 26.9615 26.9615C24.9229 29 21.642 29 15.08 29H13.92C7.35803 29 4.07707 29 2.03854 26.9615C0 24.9229 0 21.642 0 15.08V13.92Z"
+                                    <path class="hover-color"
+                                          d="M0 13.92C0 7.35803 0 4.07707 2.03854 2.03854C4.07707 0 7.35803 0 13.92 0H15.08C21.642 0 24.9229 0 26.9615 2.03854C29 4.07707 29 7.35803 29 13.92V15.08C29 21.642 29 24.9229 26.9615 26.9615C24.9229 29 21.642 29 15.08 29H13.92C7.35803 29 4.07707 29 2.03854 26.9615C0 24.9229 0 21.642 0 15.08V13.92Z"
                                           fill="#0077FF"/>
                                     <path d="M15.4304 20.8925C8.82082 20.8925 5.05088 16.3613 4.8938 8.82129H8.20463C8.31338 14.3555 10.7542 16.6996 12.6875 17.183V8.82129H15.8051V13.5942C17.7143 13.3888 19.7199 11.2138 20.3965 8.82129H23.5141C22.9945 11.7696 20.8195 13.9446 19.2728 14.8388C20.8195 15.5638 23.2967 17.4609 24.2392 20.8925H20.8074C20.0703 18.5967 18.2339 16.8205 15.8051 16.5788V20.8925H15.4304Z"
                                           fill="white"/>
@@ -715,23 +764,28 @@
                         <li>
                             <a href="" target="_blank" class="truvor__soc-item">
                                 <svg viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="hover-color" d="M29.5363 0.00249165C29.1029 0.0213806 28.6991 0.146089 28.3437 0.288042C28.0107 0.420366 26.7385 0.959436 24.7346 1.8084C22.729 2.65811 20.0734 3.78451 17.2406 4.98805C11.5749 7.39511 5.20512 10.1046 1.94252 11.4914C1.81984 11.5435 1.39176 11.6786 0.937411 12.029C0.48306 12.3795 0 13.1056 0 13.9147C0 14.5671 0.314727 15.2153 0.71087 15.6023C1.10701 15.9893 1.52618 16.1804 1.88524 16.3252C3.188 16.8503 7.22844 18.4838 7.99143 18.7922C8.25994 19.6049 9.7224 24.0246 10.0615 25.1078C10.2851 25.8226 10.4979 26.2703 10.775 26.6256C10.9136 26.8032 11.0746 26.9589 11.2698 27.0809C11.3478 27.1297 11.4333 27.1672 11.5197 27.2018L11.5249 27.2044C11.5449 27.2123 11.562 27.2257 11.5822 27.2327C11.6203 27.2458 11.6458 27.2474 11.6968 27.2584C11.8999 27.3232 12.1049 27.3639 12.2879 27.3639C13.068 27.3639 13.5456 26.9394 13.5456 26.9394L13.5742 26.9188L17.5869 23.4897L22.4536 28.0379C22.5221 28.1336 23.1612 29 24.5706 29C25.4074 29 26.0713 28.5851 26.4975 28.1433C26.9237 27.7016 27.1892 27.2374 27.3021 26.6539V26.6513C27.4077 26.0998 31.8928 3.35192 31.8928 3.35192L31.885 3.38279C32.0163 2.79072 32.0507 2.23933 31.9058 1.69521C31.761 1.15109 31.3792 0.630126 30.9059 0.349783C30.4327 0.0695016 29.9696 -0.0163975 29.5363 0.00249165ZM29.2863 2.75509C29.2799 2.79353 29.2911 2.7742 29.2811 2.81941L29.2785 2.83484L29.2759 2.85028C29.2759 2.85028 24.8463 25.3072 24.6826 26.1625C24.6945 26.0979 24.6398 26.2263 24.5836 26.304C24.5042 26.2499 24.3414 26.1805 24.3414 26.1805L24.3154 26.1522L17.6676 19.9396L12.9675 23.9527L14.3658 18.4218C14.3658 18.4218 23.1066 9.48287 23.6332 8.9626C24.0571 8.54638 24.1461 8.40129 24.1461 8.25773C24.1461 8.06542 24.0447 7.92587 23.8181 7.92587C23.6141 7.92587 23.3398 8.12179 23.1931 8.21399C21.2825 9.41725 12.8945 14.247 9.13455 16.4075C8.53703 16.1659 4.3858 14.4871 2.97888 13.9199C2.98954 13.9152 2.98603 13.9169 2.99711 13.9121C6.26056 12.525 12.6276 9.81552 18.2925 7.40879C21.125 6.20543 23.7826 5.07817 25.7866 4.22915C27.7597 3.3932 29.1307 2.81788 29.2863 2.75509Z"
+                                    <path class="hover-color"
+                                          d="M29.5363 0.00249165C29.1029 0.0213806 28.6991 0.146089 28.3437 0.288042C28.0107 0.420366 26.7385 0.959436 24.7346 1.8084C22.729 2.65811 20.0734 3.78451 17.2406 4.98805C11.5749 7.39511 5.20512 10.1046 1.94252 11.4914C1.81984 11.5435 1.39176 11.6786 0.937411 12.029C0.48306 12.3795 0 13.1056 0 13.9147C0 14.5671 0.314727 15.2153 0.71087 15.6023C1.10701 15.9893 1.52618 16.1804 1.88524 16.3252C3.188 16.8503 7.22844 18.4838 7.99143 18.7922C8.25994 19.6049 9.7224 24.0246 10.0615 25.1078C10.2851 25.8226 10.4979 26.2703 10.775 26.6256C10.9136 26.8032 11.0746 26.9589 11.2698 27.0809C11.3478 27.1297 11.4333 27.1672 11.5197 27.2018L11.5249 27.2044C11.5449 27.2123 11.562 27.2257 11.5822 27.2327C11.6203 27.2458 11.6458 27.2474 11.6968 27.2584C11.8999 27.3232 12.1049 27.3639 12.2879 27.3639C13.068 27.3639 13.5456 26.9394 13.5456 26.9394L13.5742 26.9188L17.5869 23.4897L22.4536 28.0379C22.5221 28.1336 23.1612 29 24.5706 29C25.4074 29 26.0713 28.5851 26.4975 28.1433C26.9237 27.7016 27.1892 27.2374 27.3021 26.6539V26.6513C27.4077 26.0998 31.8928 3.35192 31.8928 3.35192L31.885 3.38279C32.0163 2.79072 32.0507 2.23933 31.9058 1.69521C31.761 1.15109 31.3792 0.630126 30.9059 0.349783C30.4327 0.0695016 29.9696 -0.0163975 29.5363 0.00249165ZM29.2863 2.75509C29.2799 2.79353 29.2911 2.7742 29.2811 2.81941L29.2785 2.83484L29.2759 2.85028C29.2759 2.85028 24.8463 25.3072 24.6826 26.1625C24.6945 26.0979 24.6398 26.2263 24.5836 26.304C24.5042 26.2499 24.3414 26.1805 24.3414 26.1805L24.3154 26.1522L17.6676 19.9396L12.9675 23.9527L14.3658 18.4218C14.3658 18.4218 23.1066 9.48287 23.6332 8.9626C24.0571 8.54638 24.1461 8.40129 24.1461 8.25773C24.1461 8.06542 24.0447 7.92587 23.8181 7.92587C23.6141 7.92587 23.3398 8.12179 23.1931 8.21399C21.2825 9.41725 12.8945 14.247 9.13455 16.4075C8.53703 16.1659 4.3858 14.4871 2.97888 13.9199C2.98954 13.9152 2.98603 13.9169 2.99711 13.9121C6.26056 12.525 12.6276 9.81552 18.2925 7.40879C21.125 6.20543 23.7826 5.07817 25.7866 4.22915C27.7597 3.3932 29.1307 2.81788 29.2863 2.75509Z"
                                           fill="#32AFE2"/>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank" class="truvor__soc-item">
-                                <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="hover-color" d="M9.50015 4.84001C11.4332 4.84001 13.0052 6.37365 13.0052 8.25947C13.0052 10.1435 11.4332 11.6775 9.50015 11.6775C7.56899 11.6775 5.99509 10.1435 5.99509 8.25947C5.99509 6.37365 7.56899 4.84001 9.50015 4.84001ZM9.50015 16.5157C14.1697 16.5157 17.9654 12.8126 17.9654 8.25947C17.9654 3.70455 14.1697 0 9.50015 0C4.83177 0 1.03486 3.70455 1.03486 8.25947C1.03486 12.8124 4.83177 16.5157 9.50015 16.5157ZM12.9251 23.2529C14.6484 22.8699 16.3105 22.2048 17.841 21.2666C18.9992 20.5544 19.3485 19.0604 18.6185 17.9302C17.8894 16.7975 16.3589 16.4569 15.1986 17.1691C11.7312 19.2969 7.26651 19.296 3.80096 17.1691C2.64043 16.4569 1.11015 16.7977 0.381816 17.9302C-0.348195 19.0613 -5.62535e-05 20.5544 1.15861 21.2666C2.68889 22.2037 4.35094 22.8699 6.0743 23.2529L1.34144 27.87C0.373802 28.8149 0.373802 30.3466 1.34237 31.2913C1.82711 31.7633 2.46133 31.9999 3.09536 31.9999C3.73051 31.9999 4.36566 31.7635 4.85041 31.2913L9.49903 26.7542L14.1518 31.2913C15.1194 32.2362 16.6894 32.2362 17.6578 31.2913C18.6272 30.3466 18.6272 28.8139 17.6578 27.87C17.6579 27.87 12.9251 23.2529 12.9251 23.2529Z"
+                                <svg width="19" height="32" viewBox="0 0 19 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover-color"
+                                          d="M9.50015 4.84001C11.4332 4.84001 13.0052 6.37365 13.0052 8.25947C13.0052 10.1435 11.4332 11.6775 9.50015 11.6775C7.56899 11.6775 5.99509 10.1435 5.99509 8.25947C5.99509 6.37365 7.56899 4.84001 9.50015 4.84001ZM9.50015 16.5157C14.1697 16.5157 17.9654 12.8126 17.9654 8.25947C17.9654 3.70455 14.1697 0 9.50015 0C4.83177 0 1.03486 3.70455 1.03486 8.25947C1.03486 12.8124 4.83177 16.5157 9.50015 16.5157ZM12.9251 23.2529C14.6484 22.8699 16.3105 22.2048 17.841 21.2666C18.9992 20.5544 19.3485 19.0604 18.6185 17.9302C17.8894 16.7975 16.3589 16.4569 15.1986 17.1691C11.7312 19.2969 7.26651 19.296 3.80096 17.1691C2.64043 16.4569 1.11015 16.7977 0.381816 17.9302C-0.348195 19.0613 -5.62535e-05 20.5544 1.15861 21.2666C2.68889 22.2037 4.35094 22.8699 6.0743 23.2529L1.34144 27.87C0.373802 28.8149 0.373802 30.3466 1.34237 31.2913C1.82711 31.7633 2.46133 31.9999 3.09536 31.9999C3.73051 31.9999 4.36566 31.7635 4.85041 31.2913L9.49903 26.7542L14.1518 31.2913C15.1194 32.2362 16.6894 32.2362 17.6578 31.2913C18.6272 30.3466 18.6272 28.8139 17.6578 27.87C17.6579 27.87 12.9251 23.2529 12.9251 23.2529Z"
                                           fill="#EE8208"/>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank" class="truvor__soc-item">
-                                <svg width="34" height="29" viewBox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="hover-color" d="M17 0C11.526 0 4.42112 1.38242 4.42112 1.38242L4.40324 1.40302C1.9101 1.80491 0 3.96424 0 6.59032V14.4987V14.5013V22.4071V22.4097C0.0024329 23.6639 0.448368 24.8761 1.25774 25.8287C2.0671 26.7813 3.18688 27.4119 4.41602 27.6073L4.42112 27.615C4.42112 27.615 11.526 29 17 29C22.474 29 29.5789 27.615 29.5789 27.615L29.5814 27.6124C30.8119 27.4175 31.933 26.7864 32.743 25.8326C33.5529 24.8789 33.9987 23.6651 34 22.4097V22.4071V14.5013V14.4987V6.59032C33.9982 5.3357 33.5525 4.12285 32.7431 3.16969C31.9337 2.21654 30.8135 1.58557 29.584 1.39015L29.5789 1.38242C29.5789 1.38242 22.474 0 17 0ZM13.0769 8.43356L23.5385 14.4987L13.0769 20.5639V8.43356Z"
+                                <svg width="34" height="29" viewBox="0 0 34 29" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover-color"
+                                          d="M17 0C11.526 0 4.42112 1.38242 4.42112 1.38242L4.40324 1.40302C1.9101 1.80491 0 3.96424 0 6.59032V14.4987V14.5013V22.4071V22.4097C0.0024329 23.6639 0.448368 24.8761 1.25774 25.8287C2.0671 26.7813 3.18688 27.4119 4.41602 27.6073L4.42112 27.615C4.42112 27.615 11.526 29 17 29C22.474 29 29.5789 27.615 29.5789 27.615L29.5814 27.6124C30.8119 27.4175 31.933 26.7864 32.743 25.8326C33.5529 24.8789 33.9987 23.6651 34 22.4097V22.4071V14.5013V14.4987V6.59032C33.9982 5.3357 33.5525 4.12285 32.7431 3.16969C31.9337 2.21654 30.8135 1.58557 29.584 1.39015L29.5789 1.38242C29.5789 1.38242 22.474 0 17 0ZM13.0769 8.43356L23.5385 14.4987L13.0769 20.5639V8.43356Z"
                                           fill="#C4302B"/>
                                 </svg>
                             </a>
@@ -743,6 +797,46 @@
     </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="telModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg  width="18" height="18">
+                    <use xlink:href="#svg-close2"></use>
+                </svg>
+            </button>
+
+            <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
+            <div class="modal-text">Оставьте заявку и мы перезвоним Вам.<br>
+                Рабочее время для звонка: с 08:00 до 17:00 по МСК.
+            </div>
+            <form action="" class="truvor__form">
+                <div class="fpad30">
+                    <label class="form-label2">Ваше имя</label>
+                    <input type="text" class="form-control" name="name" required>
+                </div>
+                <div class="fpad30">
+                    <label class="form-label2">Ваш телефон</label>
+                    <input type="tel" class="form-control" name="tel" required>
+                </div>
+                <div class="truvor__form__footer">
+                    <div class="truvor__form__submit-col2">
+                        <div class="fpad20">
+                            <label class="custom-checkbox-form">
+                                <input type="checkbox" checked>
+                                <span>Отправляя форму, я соглашаюсь с <a href="">договором оферты</a>, <a
+                                        href="">правилами сайта</a>
+                                        и с <a href="">политикой ЗАО "Славянка"</a> в отношении обработки персональных данных.</span>
+                            </label>
+                        </div>
+
+                        <button class="truvor__btn-blue w-100 h-50">ЗАКАЗАТЬ ЗВОНОК</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 </div>
 
