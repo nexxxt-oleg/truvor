@@ -217,7 +217,7 @@ h2 {
   font-size: 30px;
   line-height: 40px;
   color: #202123;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 p {
@@ -312,6 +312,12 @@ img {
     display: block;
     position: relative;
     height: 100%;
+    border: 1px solid #f2f3f4;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border: 1px solid #09214D;
+    }
 
     &__img {
       position: absolute;
@@ -1773,7 +1779,8 @@ a {
       margin-right: 20px;
     }
 
-    &.active {
+    &.active,
+    &:hover {
       background: #FFFFFF;
       border-color: #09214D;
       color: #09214D;
@@ -2022,7 +2029,7 @@ textarea.form-control {
 
 .truvor__page__delivery-calc-btn {
   width: 100%;
-  max-width: 602px;
+  max-width: 480px;
   margin: 0 auto 20px;
 }
 
@@ -2046,7 +2053,7 @@ textarea.form-control {
       font-size: 34px;
       line-height: 50px;
       text-decoration: none;
-      color: #202123;
+      color: #09214D;
     }
   }
 
@@ -2090,6 +2097,13 @@ textarea.form-control {
     }
 
     &.active {
+      border-bottom-color: #09214D;
+
+      span {
+        color: #09214D;
+      }
+    }
+    &:hover {
       border-bottom-color: #09214D;
 
       span {
@@ -2212,7 +2226,7 @@ textarea.form-control {
 }
 
 .truvor__page__faq-list {
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 
 }
 
@@ -2236,6 +2250,9 @@ textarea.form-control {
     font-size: 20px;
     line-height: 26px;
     color: #202123;
+  }
+  &:hover {
+    border-color: #09214d;
   }
 }
 
@@ -2298,9 +2315,9 @@ textarea.form-control {
   width: 100%;
   padding: 5px;
   height: 45px;
-  background: #fff;
   border: 1px solid #09214D;
-  color: #09214D;
+  background: #09214D;
+  color: #fff;
   font-size: 18px;
   line-height: 20px;
   cursor: pointer;
@@ -2310,8 +2327,9 @@ textarea.form-control {
   &:hover {
     outline: none;
     box-shadow: none;
-    color: #000;
-    border-color: #000;
+    color: #fff;
+    background: #202123;
+    border: 1px solid #09214D;
   }
 }
 
@@ -2586,7 +2604,7 @@ textarea.form-control {
 }
 
 .truvor__form__submit-col2 {
-  max-width: 440px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -2735,6 +2753,7 @@ textarea.form-control {
     border: 1px solid #202123;
     width: 44px;
     height: 44px;
+    color: #202123;
   }
 
   &__hover {
@@ -2754,6 +2773,11 @@ textarea.form-control {
   }
 
   &:hover {
+    .order-history-info__close__ico {
+      background: #09214D;
+      border-color: #09214D;
+      color: #fff;
+    }
     .order-history-info__close__hover {
       opacity: 1;
       visibility: visible;
@@ -3179,12 +3203,12 @@ textarea.form-control.h150 {
   }
 }
 .truvor__page__confirm__ps {
-  padding: 24px 20px 24px 222px;
+  padding: 24px 20px 24px 20px;
   background-color: #09214D;
-  background-image: url("data:image/svg+xml,%3Csvg width='46' height='56' viewBox='0 0 46 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 52.6657C3 47.0218 7.49191 42.7324 14.3523 42.7324H31.3807C38.5269 42.7324 42.733 47.2475 42.733 52.6657' stroke='white' stroke-width='5' stroke-linecap='square' stroke-linejoin='round'/%3E%3Crect x='7.9668' y='3' width='29.7997' height='29.7997' rx='14.8999' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  background-position: 140px 50%;
   background-repeat: no-repeat;
-  background-size: 46px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   span {
     display: block;
     color: #fff;
@@ -3196,6 +3220,11 @@ textarea.form-control.h150 {
       color: #fff;
       text-decoration: underline;
     }
+  }
+  &__ico {
+    min-width: 40px;
+    width: 40px;
+    margin-right: 30px;
   }
 }
 .truvor__page__confirm__footer {
@@ -3446,4 +3475,11 @@ textarea.form-control.h150 {
   border-color: #09214d;
   color: #fff;
   background-color: #09214d;
+}
+.btn-sdek {
+  &:hover {
+    background: #09214D;
+    border-color: #09214D;
+    color: #fff;
+  }
 }

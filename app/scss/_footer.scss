@@ -43,24 +43,49 @@
     }
   }
 }
-.truvor__soc-item {
-  display: flex;
-  align-items: center;
-  height: 34px;
-  width: 34px;
-  justify-content: center;
-  text-decoration: none;
-  &:not(:hover) {
-    svg {
-      .hover-color {
-        fill: #202123 !important;
+.nav {
+  &:not(.faq-soc) {
+    .truvor__soc-item {
+      display: flex;
+      align-items: center;
+      height: 34px;
+      width: 34px;
+      justify-content: center;
+      text-decoration: none;
+      &:not(:hover) {
+        svg {
+          .hover-color {
+            fill: #202123 !important;
+          }
+        }
+      }
+      svg {
+        transition: all 0.3s ease-in-out;
       }
     }
   }
-  svg {
-    transition: all 0.3s ease-in-out;
+  &.faq-soc {
+    .truvor__soc-item {
+      display: flex;
+      align-items: center;
+      height: 34px;
+      width: 34px;
+      justify-content: center;
+      text-decoration: none;
+      &:not(:hover) {
+        svg {
+          .hover-color {
+            fill: #09214D !important;
+          }
+        }
+      }
+      svg {
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }
+
 .mobail-collapsed {
   display: none;
 }

@@ -61,11 +61,6 @@
   .truvor__page__confirm__body {
     padding-left: 50px;
   }
-  .truvor__page__confirm__ps {
-    padding-left: 120px;
-    background-position: 50px 50%;
-  }
-
   .col-merka-left {
     padding-top: 200px;
   }
@@ -712,12 +707,19 @@
     line-height: 17px;
   }
   .truvor__page__confirm__ps {
-    background-size: 36px auto;
-    background-position: 30px 24px;
-    padding: 25px 25px 25px 90px;
+    padding: 25px;
     span {
       font-size: 18px;
       line-height: 120%;
+    }
+    &__ico {
+      min-width: 36px;
+      width: 36px;
+      margin-right: 20px;
+      svg {
+        width: 36px;
+        height: auto;
+      }
     }
   }
   .truvor__footer__logo img {
