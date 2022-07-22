@@ -638,7 +638,7 @@ img {
     text-align: center;
     color: #09214D;
     &:hover {
-      color: #202123;
+      color: #B1B1B1;
     }
   }
 }
@@ -3596,4 +3596,16 @@ textarea.form-control.h150 {
 }
 .modal-backdrop.show {
   opacity: 0.7 !important;
+}
+.truvor__header__dropdown .accordion-item a:hover {
+  color: #B1B1B1 !important;
+}
+.truvor__header__banner {
+  border: 1px solid #fff;
+}
+.truvor__header__banner:hover {
+  border: 1px solid #09214D;
+}
+#addProductModal .modal-dialog-right {
+  margin-top: 0 !important;
 }
